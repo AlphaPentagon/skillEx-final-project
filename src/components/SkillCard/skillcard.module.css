@@ -1,0 +1,34 @@
+/* @font-face {
+    font-family: 'copyFont';
+    src: url('/Fonts/Hyperjump\ Regular.otf');
+    font-weight: bold;
+    font-size: 30%;
+  } */
+
+.skillCard {
+  position: relative;
+  border-radius: 3%;
+  height: 25vh;
+  width: 40vw;
+  border: 3px solid #c8553d;
+  margin-bottom: 2%;
+  padding: 0;
+}
+
+.text {
+  color: var(--cream);
+  position: absolute;
+  bottom: 8px;
+  /* left: 16px; */
+  font-size: 5vw;
+  width: 30vw;
+  background-color: var(--terraCotta);
+  text-align: center;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 3%;
+  width: 100%;
+  height: 100%;
+}
