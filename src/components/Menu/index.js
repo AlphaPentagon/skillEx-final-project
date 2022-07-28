@@ -1,6 +1,7 @@
 //Menu
 //Burger menu visible on mobile
 import Image from "next/image";
+import Link from 'next/link';
 import { useState } from "react";
 import styles from "./menu.module.css";
 
@@ -67,30 +68,30 @@ export default function Menu() {
 
 
 
-					<ul className="pageLinks">
-						<li>
-							<a href="/" title="Go to home page">
+					<ul className={styles.pageLinks}>
+						<Link  href="/">
+							<a title="Go to home page">
 								Home
 							</a>
-						</li>
-						<li>
-							<a href="/" title="Discover skills">
+						</Link>
+						<Link href="/">
+							<a title="Discover skills">
 								Discover
 							</a>
-						</li>
-						<li>
-							<a href="/" title="Get in touch">
+						</Link>
+						<Link  href="/">
+							<a title="Get in touch">
 								Contact us
 							</a>
-						</li>
+						</Link>
 					</ul>
+
 					<br />
 
-					<ul className="userLinks">
+					<ul className={styles.userLinks}>
 						{!logIn && (
-							<li>
+							<Link href="#">
 								<a
-									href="#"
 									title="Sign up or log in"
 									onClick={() => {
 										toggleLogIn();
@@ -99,19 +100,18 @@ export default function Menu() {
 								>
 									Sign up / Log in
 								</a>
-							</li>
+							</Link>
 						)}
 						{logIn && (
 							<>
-								<li>
-									<a href="/" title="View your profile">
+								<Link href="/">
+									<a title="View your profile">
 										My profile
 									</a>
-								</li>
+								</Link>
 
-								<li>
+								<Link href="#">
 									<a
-										href="#"
 										title="Log out of your profile"
 										onClick={() => {
 											toggleLogIn();
@@ -120,7 +120,7 @@ export default function Menu() {
 									>
 										Log out
 									</a>
-								</li>
+								</Link>
 							</>
 						)}
 					</ul>
