@@ -12,7 +12,7 @@ export default function Navigation() {
         <Logo />
 
 
-<h1>Navigation</h1>
+
 
 
     </div>);

@@ -1,21 +1,19 @@
 .logoContainer {
-    background-color: red;
-    display: flex;
+
+
+    /* background-color: rgb(252, 227, 227); */
+
+    width: 40%;
+
+/* 
+    background-image: url('/media/icons/LogoMain.svg');
+    background-repeat: no-repeat;
+    background-size: 100%; */
+
+
+
 
 }
 
 
-.logoText {
 
-    background-color: green;
-    margin: 0;
-    padding: 0;
-}
-
-
-.logoImage {
-    padding: 0;
-    padding: 0;
-
-    background-color: purple;
-}

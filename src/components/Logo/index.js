@@ -1,36 +1,47 @@
 //Logo
 import Image from 'next/image'
+import Link from 'next/link';
 import styles from '../Logo/logo.module.css';
 
 
 export default function Logo() {
 
+ 
 
 
     return (<div className={styles.logoContainer}>
 
-<div className={styles.logoText}>
+<div className={styles.logo}>
+<Link href='/'>
+<a>
+<Image 
+    src='/media/icons/LogoMain.svg'
+    width={1133}
+    height={339}
+    layout='responsive'
+/>
 
-        <p className="logo">SkillEx</p>
-        <p className='tagLine'>The Knowhow Exchange</p>
+
+</a>
+</Link>
+
+
 
 </div>
 
 
 
-<div className={styles.logoImage}>
 
-        <Image 
-            src='/media/icons/LightBulbFAVICON.svg'
-            // src='../../../public/media/icons/LightBulbFAVICON.svg'
-            width={100}
-            height={100}
-            
-            
-            
-            />
-            </div>
-        
+
+
+
+
+
+
+
+
+
+
 
 
        
