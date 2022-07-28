@@ -41,34 +41,45 @@ export default function Menu() {
 						className="image"
 						src="/media/icons/menuIcon.png"
 						alt="open menu icon"
-						width="100"
-						height="100"
+						width={100}
+						height={100}
 					/>
 				</div>
 			)}
 			{menuOpen && (
 				<div className={styles.modal} onClick={toggleMenu}>
+
+
+
+
+				<div className={styles.menuClose}>
 					<Image
 						className="image"
 						src="/media/icons/menuClose.png"
 						alt="close menu icon"
-						width="20"
-						height="20"
-					/>
+						width={60}
+						height={60}
+						/>
+						</div>
+
+
+
+
+
 
 					<ul className="pageLinks">
 						<li>
-							<a href="." title="Go to home page">
+							<a href="/" title="Go to home page">
 								Home
 							</a>
 						</li>
 						<li>
-							<a href="." title="Discover skills">
+							<a href="/" title="Discover skills">
 								Discover
 							</a>
 						</li>
 						<li>
-							<a href="." title="Get in touch">
+							<a href="/" title="Get in touch">
 								Contact us
 							</a>
 						</li>
@@ -93,7 +104,7 @@ export default function Menu() {
 						{logIn && (
 							<>
 								<li>
-									<a href="." title="View your profile">
+									<a href="/" title="View your profile">
 										My profile
 									</a>
 								</li>

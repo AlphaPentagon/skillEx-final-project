@@ -3,6 +3,10 @@
 	width: 20%;
 }
 
+
+
+
+
 .modal {
 	background-color: lightblue;
 	height: 100vh;
@@ -12,6 +16,18 @@
 	left: 0;
 	z-index: 1;
 }
+
+
+.menuClose {
+	padding: 20px;
+	text-align: left;
+	position: absolute;
+
+}
+
+
+
+
 
 .modal ul {
 	list-style-type: none;
@@ -35,3 +51,23 @@
 .modal li:hover {
 	font-size: 1.75rem;
 }
+
+
+
+
+
+
+.pageLinks {
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
