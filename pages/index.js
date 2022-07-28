@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../src/components/Header";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
 
       <h1>SkillEx</h1>
       <p>The knowhow exchange</p>
+
+      <Header text="Welcome to SkillEx" colour="blue" />
     </div>
   );
 }
