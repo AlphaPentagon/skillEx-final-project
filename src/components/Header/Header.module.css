@@ -1,0 +1,15 @@
+.default{
+    font-family: inherit;
+    width: 100%
+    
+}
+
+.terraCotto{
+    background-color: var(--terraCotta);
+    
+
+}
+
+.blue {
+    background-color: var(--blue);
+}
