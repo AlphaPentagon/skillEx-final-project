@@ -1,0 +1,7 @@
+.navigation {
+    /* background-color: rgb(241, 152, 152); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}

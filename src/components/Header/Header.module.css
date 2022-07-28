@@ -1,0 +1,15 @@
+.terraCotta {
+  background-color: var(--terraCotta);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.heading {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 100%;
+  padding-top: 0.4rem;
+}

@@ -1,0 +1,17 @@
+.default {
+  font-size: 1.25rem;
+  color: var(--cream);
+  padding-inline: 1.5rem;
+  padding-block: 0.3rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.6rem;
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+.terraCotta {
+  background-color: var(--terraCotta);
+}
