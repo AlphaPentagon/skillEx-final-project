@@ -1,0 +1,21 @@
+.logoContainer {
+    background-color: red;
+    display: flex;
+
+}
+
+
+.logoText {
+
+    background-color: green;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logoImage {
+    padding: 0;
+    padding: 0;
+
+    background-color: purple;
+}
