@@ -1,8 +1,11 @@
-const SkillCard = () => {
+import styles from "./skillcard.module.css"
+import SkillGallery from "../SkillGallery";
+
+const SkillCard = ({image, title}) => {
   return (
-    <div>
-      <img src="/media/categories/accounting.jpg" alt="accounting-image" />
-      <h3>Accounting</h3>
+    <div className={styles.skillsContainer}>
+      <img className={styles.image} src={image} alt="image" />
+      <h3>{title}</h3>
     </div>
   );
 };

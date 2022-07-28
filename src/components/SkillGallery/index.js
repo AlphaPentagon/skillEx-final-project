@@ -1,14 +1,19 @@
-//import SkillCard from "../SkillCard";
+import SkillCard from "../SkillCard";
 import skillsDummyData from "../../libs/data/skills";
+import styles from "./skillgallery.module.css"
 
 const SkillGallery = () => {
   return (
-    <div>
+    <div className={styles.skilldiv}>
       {skillsDummyData.map((skill) => (
-        <div>
-          <img src={skill.image} alt="skill-image" />
-          <p>{skill.skill_name}</p>
-        </div>
+
+        <SkillCard 
+       
+        key={skill.skill_id}
+        image= {skill.image}
+        title={skill.skill_name}
+        
+        />
       ))}
     </div>
   );
