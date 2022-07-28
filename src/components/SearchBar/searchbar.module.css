@@ -9,13 +9,10 @@
     border-radius: 0.4rem;
     padding-block: 0.4rem;
     gap: 0.5rem;
-
 }
 
 .magnifyingGlass {
     width: min(20%, 30px);
-    
-
 }
 
 .searchInput{
