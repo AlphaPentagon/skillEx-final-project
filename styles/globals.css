@@ -48,7 +48,8 @@ h1 {
 .logo {
   font-family: mainLogo ;
   font-size: 2em;
-  color: var(--cream);
+  color: var(--terraCotta);
+  
 
 }
 
