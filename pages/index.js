@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <h1>Skill Ex</h1>
-      <SkillGallery />
+      
     </div>
   );
 }
