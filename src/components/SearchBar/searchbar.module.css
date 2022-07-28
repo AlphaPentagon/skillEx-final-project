@@ -1,0 +1,24 @@
+.container {
+    background-color: var(--terraCotta);
+    font-family: inherit;
+    color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 0.4rem;
+    padding-block: 0.4rem;
+    gap: 0.5rem;
+}
+
+.magnifyingGlass {
+    width: min(20%, 30px);
+}
+
+.searchInput{
+    width: 75%;
+    padding-block: 0.5rem;
+    border: none;
+    border-radius: 0.1rem;
+    padding-left: 0.5rem;
+}
