@@ -13,8 +13,8 @@
 }
 
 .magnifyingGlass {
-    width: 7%;
-    height: 7%;
+    width: min(20%, 30px);
+    
 
 }
 
@@ -23,4 +23,5 @@
     padding-block: 0.5rem;
     border: none;
     border-radius: 0.1rem;
+    padding-left: 0.5rem;
 }
