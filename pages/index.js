@@ -13,11 +13,9 @@ export default function Home() {
 				<link rel="icon" href="/LightBulbFAVICON.ico" />
 			</Head>
 
-
-			<h1>Skill Ex</h1>
-      			<Menu />
+      		
 			<Navigation />
-
+	
 
 
 		</div>
