@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navigation from '../src/components/Navigation';
-
+import Menu from '../src/components/Menu';
 
 export default function Home() {
 	return (
