@@ -1,5 +1,8 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Navigation from '../src/components/Navigation';
+
 
 export default function Home() {
 	return (
@@ -9,7 +12,14 @@ export default function Home() {
 				<meta name="description" content="SkillEx " />
 				<link rel="icon" href="/LightBulbFAVICON.ico" />
 			</Head>
-			<Menu />
+
+
+			<h1>Skill Ex</h1>
+      			<Menu />
+			<Navigation />
+
+
+
 		</div>
 	);
 }
