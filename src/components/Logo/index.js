@@ -5,8 +5,10 @@ export default function Logo() {
 
 
 
-    return (<div className="logo">
-        SkillEx
+    return (<div>
+        <p className="logo">SkillEx</p>
+        <p className='tagLine'>The Knowhow Exchange</p>
+        
 
 
        
