@@ -1,5 +1,11 @@
 //Navigation
 import Logo from "../Logo";
+import Menu from "../Menu";
+import styles from './navigation.module.css';
+
+
+
+
 
 export default function Navigation() {
 
@@ -7,8 +13,10 @@ export default function Navigation() {
 
 
 
-    return (<div>
+    return (<div className={styles.navigation}>
 
+
+        <Menu />
         <Logo />
 
 
