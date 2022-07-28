@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import SkillCard from "../src/components/SkillCard";
 import SkillGallery from "../src/components/SkillGallery";
 
 export default function Home() {

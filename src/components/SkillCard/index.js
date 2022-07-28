@@ -1,11 +1,10 @@
-import styles from "./skillcard.module.css"
-import SkillGallery from "../SkillGallery";
+import styles from "./skillCard.module.css";
 
-const SkillCard = ({image, title}) => {
+const SkillCard = ({ image, title }) => {
   return (
-    <div className={styles.skillsContainer}>
+    <div className={styles.skillCard}>
       <img className={styles.image} src={image} alt="image" />
-      <h3>{title}</h3>
+      <div className={styles.text}>{title}</div>
     </div>
   );
 };
