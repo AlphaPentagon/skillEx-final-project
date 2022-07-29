@@ -1,11 +1,9 @@
-
-
-
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navigation from '../src/components/Navigation';
 import Menu from '../src/components/Menu';
 import WhyChooseUs from '../src/components/WhyChooseUs';
+import AboutUs from "../src/components/AboutUs";
 
 
 export default function Home() {
@@ -17,13 +15,11 @@ export default function Home() {
 				<link rel="icon" href="/LightBulbFAVICON.ico" />
 			</Head>
 
-      		
 			<Navigation />
+
+			<AboutUs />
       <WhyChooseUs/>
 
-	
-
-
-		</div>
+			</div>
 	);
 }
