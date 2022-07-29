@@ -2,6 +2,7 @@
   --blue: #048998;
   --terraCotta: #C8553D;
   --cream: #F6F0ED;
+  --darkBrown: #2A0800;
 
 }
 
@@ -18,7 +19,11 @@
   src: url('/Fonts/Hyperjump\ Regular.otf');
 }
 
+@font-face {
+  font-family: 'subTitle';
+  src: url('/Fonts/Hyperjump\ ExtraBold.otf');
 
+}
 
 html,
 body {
@@ -27,6 +32,7 @@ body {
   font-family: copyFont;
   font-size: 16px;
   text-align: center;
+  color: var(--darkBrown);
 
 }
 
@@ -65,4 +71,10 @@ h1 {
   color: var(--terraCotta);
   
 
+}
+
+
+h2 {
+  font-size: 2em;
+  font-family: subTitle;
 }
