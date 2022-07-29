@@ -1,24 +1,24 @@
 :root {
   --blue: #048998;
-  --terraCotta: #C8553D;
-  --cream: #F6F0ED;
-
+  --terraCotta: #c8553d;
+  --cream: #f6f0ed;
+  --darkBrown: #2a0800;
 }
-
-
 
 @font-face {
-  font-family: 'mainLogo';
-  src: url('/Fonts/FrederickatheGreat-Regular.ttf');
+  font-family: "mainLogo";
+  src: url("/Fonts/FrederickatheGreat-Regular.ttf");
 }
-
 
 @font-face {
-  font-family: 'copyFont';
-  src: url('/Fonts/Hyperjump\ Regular.otf');
+  font-family: "copyFont";
+  src: url("/Fonts/Hyperjump\ Regular.otf");
 }
 
-
+@font-face {
+  font-family: "subTitle";
+  src: url("/Fonts/Hyperjump\ ExtraBold.otf");
+}
 
 html,
 body {
@@ -26,7 +26,8 @@ body {
   margin: 0;
   font-family: copyFont;
   font-size: 16px;
-
+  text-align: center;
+  color: var(--darkBrown);
 }
 
 a {
@@ -40,21 +41,25 @@ a {
 
 h1 {
   color: var(--cream);
+  background-color: var(--terraCotta);
 }
-
-
 
 .logo {
-  font-family: mainLogo ;
-  font-size: 2em;
-  color: var(--cream);
-
+  font-family: mainLogo;
+  font-size: 3em;
+  color: var(--terraCotta);
+  padding: 0;
+  margin: 0;
 }
 
-
 .tagLine {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  color: var(--terraCotta);
+}
 
-  font-size: 1.5em;
-  
-
+h2 {
+  font-size: 2em;
+  font-family: subTitle;
 }

@@ -1,0 +1,43 @@
+/* main wrapper: */
+.containerTestimonials {
+  /* background-color: rgb(238, 203, 203); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-family: var(--subTitle);
+}
+
+/* image: */
+.testimonials {
+  width: 100%;
+  padding: 10px;
+
+  /* background-color: purple; */
+}
+
+.testimonialsAndImage {
+  /* background-color: green; */
+
+  display: flex;
+  align-items: center;
+}
+
+.paragraphTestimonial {
+  font-style: oblique;
+  padding: 0 20px;
+  /* background-color: lightsalmon; */
+  width: 70%;
+}
+
+.button {
+  margin: 20px 5px 0 0;
+  background-color: var(--terraCotta);
+  border-radius: 50%;
+  padding: 15px;
+  border: 0;
+}

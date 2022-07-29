@@ -1,0 +1,23 @@
+.footerContainer {
+	display: flex;
+	flex-direction: column;
+	background-color: #c8553d;
+}
+
+.sitemapContainer {
+	padding: 2%;
+}
+
+.sitemapContainer a,
+.otherLinksContainer a,
+.copyrightContainer p {
+	color: white;
+}
+
+.otherLinksContainer a {
+	margin: 0% 2% 0% 2%;
+}
+
+.socialContainer a {
+	margin: 0% 2% 0% 2%;
+}

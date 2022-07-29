@@ -1,0 +1,20 @@
+.featureCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: min(25%, 70px);
+}
+
+.description {
+  background-color: var(--terraCotta);
+  color: var(--cream);
+  border-radius: 0.2rem;
+  padding-block: 0.8rem;
+  padding-inline: 0.5rem;
+  width: 40%;
+}
