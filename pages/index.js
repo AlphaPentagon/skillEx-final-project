@@ -20,12 +20,18 @@ export default function Home() {
         <link rel="icon" href="/LightBulbFAVICON.ico" />
       </Head>
       <Layout>
-        <Header />
-        <SearchBar />
-        <AboutUs />
-        <WhyChooseUs />
-        <Testimonials />
-        <SkillGallery />
+        <Header text="Welcome to SkillEx" />
+        <p className={styles.sloganText}>
+          Exchanging skills and knowhow made easy for FREE!
+        </p>
+        <div className={styles.bgContainer}>
+          <h2 className={styles.discoverHeading}>Discover Categories:</h2>
+          <SearchBar />
+          <SkillGallery />
+          <AboutUs />
+          <WhyChooseUs />
+          <Testimonials />
+        </div>
       </Layout>
     </>
   );
