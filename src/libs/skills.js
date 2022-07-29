@@ -1,4 +1,4 @@
-const skillsDummyData = [
+const skills = [
   {
     skill_id: 1,
     skill_name: "Accounting",
@@ -31,4 +31,4 @@ const skillsDummyData = [
   },
 ];
 
-export default skillsDummyData;
+export default skills;
