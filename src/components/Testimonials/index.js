@@ -26,8 +26,19 @@ function Testimonials() {
         <h2 className={styles.title}> Testimonials </h2>
 
 
+        <div className={styles.testimonials}> 
+        <Image 
+            src="/media/images/TestimonialsLowRes.gif"
+            width={853}
+            height={480}
+
+            layout='responsive'
+            alt='testimonials animated gif'
+        />
+        </div>
 
 
+{/* 
         <div className={styles.testimonialsAndImage}>
 
         <div className={styles.testimonials}> 
@@ -42,20 +53,20 @@ function Testimonials() {
         <div className={styles.paragraphTestimonial}>"{textData}"</div>
         </div>
        
-        
+         */}
 
 
 
 
 {/* buttons: */}
-      <div className={styles.buttons}>
+      {/* <div className={styles.buttons}>
         {text.map((data,i)=>
 
           <button key={i} onClick={()=>handleClick(i)}
           className={styles.button}></button>
 
         )}
-      </div>
+      </div> */}
 
 
 
