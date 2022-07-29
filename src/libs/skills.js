@@ -6,36 +6,26 @@ const skillsDummyData = [
   },
   {
     skill_id: 2,
-    skill_name: "Business",
-    image: "/media/categories/business.jpg",
-  },
-  {
-    skill_id: 3,
     skill_name: "Cooking",
     image: "/media/categories/cooking.jpg",
   },
   {
-    skill_id: 4,
-    skill_name: "Cooking",
-    image: "/media/categories/craft.jpg",
-  },
-  {
-    skill_id: 5,
+    skill_id: 3,
     skill_name: "DIY",
     image: "/media/categories/DIY.jpg",
   },
   {
-    skill_id: 6,
+    skill_id: 4,
     skill_name: "English",
     image: "/media/categories/english-2.jpg",
   },
   {
-    skill_id: 7,
+    skill_id: 5,
     skill_name: "Gardening",
     image: "/media/categories/gardening.webp",
   },
   {
-    skill_id: 8,
+    skill_id: 6,
     skill_name: "IT",
     image: "/media/categories/IT.jpg",
   },
