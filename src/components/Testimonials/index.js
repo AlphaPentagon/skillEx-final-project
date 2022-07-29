@@ -19,20 +19,52 @@ function Testimonials() {
   }
   return (
 
-    <div>
+    <div className={styles.containerTestimonials}>
+
+
+
         <h2> Testimonials </h2>
-        <div className={styles.testimonials}> <Image src= "/media/icons/testimonialsIcon.png" width={437} height={451} layout="responsive"/>
+
+
+
+
+        <div className={styles.testimonialsAndImage}>
+
+        <div className={styles.testimonials}> 
+        <Image src= "/media/icons/testimonialsIcon.png" 
+            width={437} 
+                height={451} 
+                layout="responsive"
+                alt='testimonials image'/>
+     
+        </div>
+
+        <div className={styles.paragraphTestimonial}>"{textData}"</div>
         </div>
        
         
-      <div>" {textData} "</div>
-      <div className='flex_row'>
+
+
+
+
+{/* buttons: */}
+      <div className={styles.buttons}>
         {text.map((data,i)=>
-          <button key={i} onClick={()=>handleClick(i)}>.</button>
+
+          <button key={i} onClick={()=>handleClick(i)}
+          className={styles.button}></button>
+
         )}
       </div>
+
+
+
+
     </div>
   );
 }
+
+
+
 
 export default Testimonials;
