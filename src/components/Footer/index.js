@@ -5,6 +5,8 @@ import Image from "next/image";
 const Footer = () => {
 	return (
 		<div className={styles.footerContainer}>
+
+
 			<div className={styles.sitemapContainer}>
 				<Link href="/">
 					<a title="Go to home page">Home</a>
@@ -22,7 +24,7 @@ const Footer = () => {
 				<Link href="/">
 					<a title="Facebook">
 						<Image
-							src="/media/icons/facebook.png"
+							src="/media/icons/creamIcons/Facebook-logo.png"
 							width={30}
 							height={30}
 						/>
@@ -31,7 +33,7 @@ const Footer = () => {
 				<Link href="/">
 					<a title="Instagram">
 						<Image
-							src="/media/icons/instagram.png"
+							src="/media/icons/creamIcons/instagram.png"
 							width={30}
 							height={30}
 						/>
@@ -39,13 +41,15 @@ const Footer = () => {
 				</Link>
 				<Link href="/">
 					<a title="TikTok">
-						<Image src="/media/icons/tiktok.png" width={30} height={30} />
+						<Image 
+							src="/media/icons/creamIcons/titok.png"
+							width={30} height={30} />
 					</a>
 				</Link>
 				<Link href="/">
 					<a title="Twitter">
 						<Image
-							src="/media/icons/twitter.png"
+							src="/media/icons/creamIcons/twitter.png"
 							width={30}
 							height={30}
 						/>
