@@ -5,7 +5,7 @@ import styles from "./WhyChooseUs.module.css";
 const WhyChooseUs = () => {
   return (
     <section className={styles.whyChooseUsSection}>
-      <h3 className={styles.title}>Why Choose Us?</h3>
+      <h2 className={styles.title}>Why Choose Us?</h2>
       <div className={styles.featureCardContainer}>
         {FeatureData.map((data) => (
           <FeatureCard

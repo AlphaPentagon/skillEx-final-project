@@ -13,11 +13,6 @@
   gap: 2rem;
 }
 
-.title {
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-
 /* @media (min-width: 400px) {
   .featureCardContainer {
     grid-template-columns: 1fr 1fr 1fr;
