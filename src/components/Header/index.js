@@ -11,6 +11,4 @@ create header.module.css ✅
 import and export ✅ 
 create a component (possible h1) to store text ✅
 taking in different colours ✅
-
-
 */

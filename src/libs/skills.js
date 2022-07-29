@@ -7,7 +7,7 @@ const skillsDummyData = [
   {
     skill_id: 2,
     skill_name: "Business",
-    image: "/media/categories/business.png",
+    image: "/media/categories/business.jpg",
   },
   {
     skill_id: 3,
@@ -17,7 +17,7 @@ const skillsDummyData = [
   {
     skill_id: 4,
     skill_name: "Cooking",
-    image: "/media/categories/craft.webp",
+    image: "/media/categories/craft.jpg",
   },
   {
     skill_id: 5,
