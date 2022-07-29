@@ -23,7 +23,7 @@ function Testimonials() {
 
 
 
-        <h2> Testimonials </h2>
+        <h2 className={styles.title}> Testimonials </h2>
 
 
 

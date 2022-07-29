@@ -14,6 +14,12 @@
 
 
 
+
+.title {
+    font-family: var(--subTitle);
+    
+}
+
 /* image: */
 .testimonials {
     width: 25%;
