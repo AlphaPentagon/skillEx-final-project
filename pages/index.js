@@ -5,6 +5,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navigation from '../src/components/Navigation';
 import Menu from '../src/components/Menu';
+import Testimonials from '../src/components/Testimonials';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
 
       		
 			<Navigation />
+			<Testimonials/>
 
 
 	
