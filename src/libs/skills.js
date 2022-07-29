@@ -27,7 +27,7 @@ const skillsDummyData = [
   {
     skill_id: 6,
     skill_name: "English",
-    image: "/media/categories/english.jpg",
+    image: "/media/categories/english-2.jpg",
   },
   {
     skill_id: 7,
