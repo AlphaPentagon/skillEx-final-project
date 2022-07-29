@@ -4,6 +4,7 @@ import Navigation from '../src/components/Navigation';
 import Menu from '../src/components/Menu';
 import WhyChooseUs from '../src/components/WhyChooseUs';
 import AboutUs from "../src/components/AboutUs";
+import Footer from "../src/components/Footer";
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
 
 			<AboutUs />
       <WhyChooseUs/>
-
+<Footer/>
 			</div>
 	);
 }

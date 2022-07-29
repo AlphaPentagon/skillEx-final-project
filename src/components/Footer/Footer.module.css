@@ -1,0 +1,16 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sitemapContainer {
+  justify-content: space-between;
+}
+
+.otherLinksContainer {
+  justify-content: space-between;
+}
+
+.socialContainer {
+  justify-content: space-between;
+}
