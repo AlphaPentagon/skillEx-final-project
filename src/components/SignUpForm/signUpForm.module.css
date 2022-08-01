@@ -256,9 +256,9 @@ END
 
 
 
-.containerCheckbox1 input:checked ~ .checkmark::after {
+/* .containerCheckbox1 input:checked ~ .checkmark::after {
     /* display: block; */
-}
+/* } */ 
 
 
 .containerCheckbox1 .checkmark::after,
@@ -354,9 +354,9 @@ END
 
 
 /* highlighting colums: */
-.checks:nth-child(1) {
+/* .checks:nth-child(1) { */
     /* background-color: rgb(238, 159, 159); */
-}
+/* } */
 
 
 
