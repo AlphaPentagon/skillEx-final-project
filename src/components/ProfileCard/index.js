@@ -18,9 +18,13 @@ const ProfileCard = ({
         <div className={styles.imageContainer}>
           <img className={styles.image} src={image} alt="profile picture" />
         </div>
-        <div className={styles.title}>{username}</div>
-        <div className={styles.title}>{teachSkills}</div>
-        <p className={styles.bio}>{bio}</p>
+        <div className={styles.titlesContainer}>
+          <div className={styles.title}>{`Name: ${username}`}</div>
+          <div className={styles.title}>{`Skills: ${teachSkills}`}</div>
+        </div>
+        <div className={styles.bioContainer}>
+          <p className={styles.bio}>{bio}</p>
+        </div>
         <Button
           className={styles.button}
           text="Get in touch"

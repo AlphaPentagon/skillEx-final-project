@@ -5,4 +5,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: var(--blue);
+  padding: 1em;
 }

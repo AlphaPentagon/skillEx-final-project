@@ -1,13 +1,19 @@
 .profileCard {
-  background-color: beige;
+  position: relative;
+  background-color: var(--cream);
   border-radius: 1em;
-  height: 25vh;
-  width: 35vw;
+  height: 40vh;
+  width: 40vw;
+  padding: 0.5em;
+  margin-top: 0.5em;
 }
 
 .imageContainer {
   height: 40%;
-  width: 80%;
+  width: 100%;
+  border-radius: 1em;
+  margin: 0.5em 0;
+  background-color: aquamarine;
 }
 
 .image {
@@ -16,6 +22,26 @@
   height: 100%;
 }
 
+.titlesContainer {
+  background-color: blueviolet;
+}
+
+.title {
+  font-size: 0.5rem;
+  text-align: left;
+}
+
+.bioContainer {
+  background-color: greenyellow;
+  height: 25%;
+}
+
 .bio {
-  font-size: 2vw;
+  font-size: 0.3em;
+  text-align: left;
+}
+
+.button {
+  height: 10%;
+  width: 10%;
 }
