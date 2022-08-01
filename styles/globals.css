@@ -20,6 +20,12 @@
   src: url("/Fonts/Hyperjump\ ExtraBold.otf");
 }
 
+body {
+  width: 100%;
+  background-image: url("/media/Backgrounds/main3.jpg");
+}
+
+
 html,
 body {
   padding: 0;
