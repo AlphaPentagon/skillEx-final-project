@@ -12,6 +12,7 @@ const SkillGallery = () => {
           key={skill.skill_id}
           image={skill.image}
           title={skill.skill_name}
+          description={skill.description}
         />
       ))}
     </div>
