@@ -1,0 +1,378 @@
+
+
+.signUpContainer {
+    /* background-color: rgb(160, 153, 253); */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.signUpSubContainer {
+    /* background-color: rgb(171, 252, 175); */
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+
+
+
+
+
+.container {
+    /* background-color: rgb(241, 105, 219); */
+    width: 80%;
+
+    /* display: flex;
+    flex-direction: column; */
+
+    
+}
+
+
+
+
+
+
+.inputContainer {
+    /* background-color: rgb(235, 227, 123); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+.inputField {
+    /* background-color: rgb(236, 154, 154); */
+    width: 70%;
+    
+      
+    
+    padding: 10px;
+    margin: 3px 5px;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+.descriptionContainer {
+    /* background-color: rgb(185, 238, 226); */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    justify-content: flex-end;
+
+    
+
+    
+}
+
+
+#description {
+    /* background-color: rgb(236, 180, 180); */
+    height: 200px;
+}
+
+
+
+
+.uploadPhotoButton {
+    /* background-color: red; */
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 28%;
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////// */
+
+.containerChecks {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(183, 241, 183);
+    width: 100%;
+}
+
+
+
+.checks {
+    /* background-color: rgb(240, 170, 170); */
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////   customising checkboxes:   /////////////// */
+
+.containerCheckbox1 {
+
+    /* background-color: rgb(250, 53, 53); */
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+
+
+
+    /* padding-left: 35px; */
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
+
+}
+
+
+
+
+
+.containerCheckbox1 input  {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+
+}
+
+
+/* on hover: */
+.containerCheckbox1:hover input ~ .checkmark, 
+.containerCheckbox1:hover input ~ .teach,
+.containerCheckbox1:hover input ~ .learn {
+    background-color: #ccc;
+
+}
+
+
+
+
+/* differentaite highl;ighted checkboxes: */
+.containerCheckbox1 input:checked ~ .checkmark,
+.containerCheckbox1 input:checked ~ .teach {
+    background-color: #864100;
+    
+}
+
+.containerCheckbox1 input:checked ~ .learn {
+    background-color: #05b2be;
+    
+}
+
+/* differentaite highl;ighted checkboxes:
+END
+
+*/
+
+
+
+
+
+
+
+
+.checkmark:after, .teach:after, .learn:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+
+/* .containerCheckbox1 input:checked ~ .checkmark::after {
+    /* display: block; */
+/* } */ 
+
+
+.containerCheckbox1 .checkmark::after,
+.containerCheckbox1 .teach::after,
+.containerCheckbox1 .learn::after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+
+.checkmark {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    height: 25px;
+    width: 25px;
+    background-color: rgb(173, 173, 173);
+
+    border-radius: 5px;
+
+}
+
+
+
+.learn {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(173, 173, 173);
+    border: solid 2px rgb(2, 143, 185);
+    border-radius: 5px;
+}
+
+
+
+
+
+.teach {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(173, 173, 173);
+    border: solid 2px rgb(126, 1, 115);
+    border-radius: 5px;
+}
+
+
+/* end of checkmark customising */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.learnHeader {
+    font-weight: bolder;
+    color:  #864100;
+    font-family: mainLogo;
+    font-size: 1.7em;
+}
+
+.teachHeader {
+    font-weight: bolder;
+    color:  #05b2be;
+    font-family: mainLogo;
+    font-size: 1.7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* highlighting colums: */
+/* .checks:nth-child(1) { */
+    /* background-color: rgb(238, 159, 159); */
+/* } */
+
+
+
+
+/* highlighting colums:
+END
+
+*/
+
+
+
+
+
+
+
+
+
+
+
