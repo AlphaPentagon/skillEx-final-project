@@ -1,5 +1,11 @@
+import SimpleSlider from "../src/components/Testimonials1";
+
 const Contact = () => {
-  return <h1>Contact Us Page</h1>;
-};
+  return (
+  <>
+  <SimpleSlider/>
+  <p>Contact Us Page</p>
+  </>
+)};
 
 export default Contact;
