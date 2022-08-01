@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import ProfileInfo from "../../src/components/ProfileInfo";
 import profiles from "../../src/libs/profiles";
 import Header from "../../src/components/Header/index";
+import Avatar from "../../src/components/Avatar/index";
 
 // needed for data fetching before rendering - creates static versions of each page/path
 export function getStaticPaths() {
@@ -30,7 +31,7 @@ const Profile = () => {
 
   return (
     <>
-      <img src={CURRENT_PROFILE.avatar_url} />
+      <Avatar name="Jenna" imageUrl={CURRENT_PROFILE.avatar_url} />
       <Header text={CURRENT_PROFILE.full_name} colour="blue" />
       <ProfileInfo profile={CURRENT_PROFILE} />
     </>
