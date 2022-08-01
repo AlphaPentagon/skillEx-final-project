@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Layout from "../src/components/Layout/Layout";
 import Header from "../src/components/Header";
 import SearchBar from "../src/components/SearchBar";
 import Testimonials from "../src/components/Testimonials";
@@ -19,20 +18,19 @@ export default function Home() {
         />
         <link rel="icon" href="/LightBulbFAVICON.ico" />
       </Head>
-      <Layout>
-        <Header text="Welcome to SkillEx" />
-        <p className={styles.sloganText}>
-          Exchanging skills and knowhow made easy for FREE!
-        </p>
-        <div className={styles.bgContainer}>
-          <h2 className={styles.discoverHeading}>Discover Categories:</h2>
-          <SearchBar />
-          <SkillGallery />
-          <AboutUs />
-          <WhyChooseUs />
-          <Testimonials />
-        </div>
-      </Layout>
+
+      <Header text="Welcome to SkillEx" />
+      <p className={styles.sloganText}>
+        Exchanging skills and knowhow made easy for FREE!
+      </p>
+      <div className={styles.bgContainer}>
+        <h2 className={styles.discoverHeading}>Discover Categories:</h2>
+        <SearchBar />
+        <SkillGallery />
+        <AboutUs />
+        <WhyChooseUs />
+        <Testimonials />
+      </div>
     </>
   );
 }
