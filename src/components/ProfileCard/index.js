@@ -1,4 +1,4 @@
-import styles from "./ProfileCard/ProfileCard.module.css";
+import styles from "./ProfileCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
 //import Avatar from "../Avatar/index.js";
@@ -10,21 +10,22 @@ const ProfileCard = ({
   teachSkills,
   learnSkills,
   bio,
-  avatar_url,
+  image,
 }) => {
   return (
     <Link href={`/profiles/${id}`}>
-      <div className={styles.ProfileCard}>
-        <Image
-          className={styles.image}
-          layout="fill"
-          src={avatar_url}
-          alt="profile picture"
-        />
-        <div className={styles.username}>{username}</div>
-        <div className={styles.skills}>{teachSkills}</div>
+      <div className={styles.profileCard}>
+        <div className={styles.imageContainer}>
+          <img className={styles.image} src={image} alt="profile picture" />
+        </div>
+        <div className={styles.title}>{username}</div>
+        <div className={styles.title}>{teachSkills}</div>
         <p className={styles.bio}>{bio}</p>
-        <Button></Button>
+        <Button
+          className={styles.button}
+          text="Get in touch"
+          colour="terraCotta"
+        />
       </div>
     </Link>
   );

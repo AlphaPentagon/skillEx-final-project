@@ -1,0 +1,21 @@
+.profileCard {
+  background-color: beige;
+  border-radius: 1em;
+  height: 25vh;
+  width: 35vw;
+}
+
+.imageContainer {
+  height: 40%;
+  width: 80%;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bio {
+  font-size: 2vw;
+}
