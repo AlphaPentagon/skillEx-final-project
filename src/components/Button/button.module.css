@@ -1,11 +1,12 @@
 .default {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--cream);
   padding-inline: 1.5rem;
   padding-block: 0.3rem;
   font-family: inherit;
   border: none;
   border-radius: 0.6rem;
+  font-weight: bold;
 }
 
 .blue {
@@ -15,6 +16,12 @@
 .terraCotta {
   background-color: var(--terraCotta);
 }
+
+
+.profileInfoButton {
+  background-color: var(--blue);
+  padding-inline: 4.5rem;
+  padding-block: 0.9rem;
 
 .profileCardButton {
   background-color: var(--terraCotta);
