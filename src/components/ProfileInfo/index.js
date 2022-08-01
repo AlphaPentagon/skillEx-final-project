@@ -1,6 +1,7 @@
 import styles from "./profileInfo.module.css";
 import Button from "../Button/index";
 import { useState } from "react";
+import Avatar from "../Avatar/index"
 
 const ProfileInfo = ({ profile }) => {
   const [text, setText] = useState("");
@@ -16,6 +17,10 @@ const ProfileInfo = ({ profile }) => {
 
   return (
     <section className={styles.profileSection}>
+  <Avatar 
+  name="Jenna"
+  imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhvL-qX7dyCm-sLoxH9TvU5qxcrXoD7fm-Vw&usqp=CAU"
+  />
       <div className={styles.profileInfoContainer}>
         <h3>Bio</h3>
         <p>{profile.bio}</p>
