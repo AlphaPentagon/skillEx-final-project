@@ -1,0 +1,44 @@
+.profileSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  gap: 3rem;
+  width: 100%;
+  color: var(--darkBrown);
+  font-family: copyFont;
+}
+
+.profileSection h3,
+.profileSection ul,
+.profileSection p {
+  margin: 0;
+  padding: 0;
+}
+
+.profileInfoContainer,
+.profileInfoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.profileInfoContainer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileInfoForm > textarea {
+  width: 90%;
+  height: 10rem;
+  border-radius: 0.5rem;
+  border: solid 2px var(--blue);
+  font-family: inherit;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--cream);
+}

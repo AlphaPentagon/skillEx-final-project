@@ -1,11 +1,12 @@
 .default {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--cream);
-  padding-inline: 1.5rem;
-  padding-block: 0.3rem;
+  padding-inline: 4.5rem;
+  padding-block: 0.9rem;
   font-family: inherit;
   border: none;
   border-radius: 0.6rem;
+  font-weight: bold;
 }
 
 .blue {

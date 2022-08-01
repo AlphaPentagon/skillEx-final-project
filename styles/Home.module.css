@@ -11,12 +11,3 @@
   color: var(--blue);
   margin: 1rem 0 0.5rem 0;
 }
-
-.bgContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-image: url("/media/Backgrounds/main3.jpg");
-}
