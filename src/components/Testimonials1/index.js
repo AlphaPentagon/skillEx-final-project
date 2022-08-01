@@ -21,24 +21,24 @@ export default function SimpleSlider() {
       <Slider {...settings}>
         <div className={styles.allTestimonials}>
           <div className={styles.containerTestimonials}>
-            <h6 className={styles.title}>Excellent</h6>
+            <h6 className={styles.title}>Lucy de Rojas</h6>
             <p className={styles.testimonials}>
-              Lorem ipsum dolor sit amet consectetur
+             This site is amazing and has really helped me to improve my skills 
             </p>
           </div>
         </div>
 
         <div className={styles.containerTestimonials}>
-          <h6 className={styles.title}>Excellent</h6>
+          <h6 className={styles.title}>Craig Summers</h6>
           <p className={styles.testimonials}>
-            Lorem ipsum dolor sit amet consectetur
+          Fantastic tutors, all willing to help me to learn piano
           </p>
         </div>
 
         <div className={styles.containerTestimonials}>
-          <h6 className={styles.title}>Excellent</h6>
+          <h6 className={styles.title}>Zainab Abid</h6>
           <p className={styles.testimonials}>
-            Lorem ipsum dolor sit amet consectetur
+            Love this site, I teach and learn which is great
           </p>
         </div>
       </Slider>
