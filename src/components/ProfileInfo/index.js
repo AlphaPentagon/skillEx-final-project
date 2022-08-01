@@ -44,7 +44,7 @@ const ProfileInfo = ({ profile }) => {
             placeholder="Type your message here..."
             value={text}
           ></textarea>
-          <Button colour="blue" text="Send" />
+          <Button type="profileInfoButton" text="Send" />
         </form>
       </div>
     </section>

@@ -1,8 +1,8 @@
 .default {
   font-size: 1.5rem;
   color: var(--cream);
-  padding-inline: 4.5rem;
-  padding-block: 0.9rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.3rem;
   font-family: inherit;
   border: none;
   border-radius: 0.6rem;
@@ -15,4 +15,10 @@
 
 .terraCotta {
   background-color: var(--terraCotta);
+}
+
+.profileInfoButton {
+  background-color: var(--blue);
+  padding-inline: 4.5rem;
+  padding-block: 0.9rem;
 }
