@@ -42,7 +42,8 @@ a {
 h1 {
   color: var(--cream);
   background-color: var(--terraCotta);
-}
+  width: 100%;
+  }
 
 .logo {
   font-family: mainLogo;

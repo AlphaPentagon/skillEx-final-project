@@ -1,0 +1,104 @@
+
+
+.signUpContainer {
+    /* background-color: rgb(241, 70, 241); */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.signUpSubContainer {
+    background-color: rgb(171, 252, 175);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+
+
+
+
+
+.container {
+    background-color: rgb(241, 105, 219);
+    width: 100%;
+
+    /* display: flex;
+    flex-direction: column; */
+
+    
+}
+
+
+
+
+
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+.inputField {
+    /* background-color: rgb(236, 154, 154); */
+    width: 70%;
+    
+      
+    
+    padding: 10px;
+    margin: 3px 5px;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+.descriptionContainer {
+    /* background-color: rgb(185, 238, 226); */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    justify-content: flex-end;
+
+    
+
+    
+}
+
+
+#description {
+    /* background-color: rgb(236, 180, 180); */
+    height: 200px;
+}
