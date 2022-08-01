@@ -7,6 +7,7 @@ import styles from './signUpForm.module.css';
 export default function SignUpForm() {
 
     function handleSumbit() {
+        console.log('submitting form');
     
     }
 
