@@ -28,27 +28,20 @@ const ContactForm = () => {
         </label>
         <br></br>
 
-        <Button colour="terraCotta" text="Submit Form" />
+        <Button type="contactFormButton" text="Submit Form" />
       </form>
 
       <div className={styles.contactInfo}>
         <p className={styles.label}>Address:</p>
         <p>
-          {" "}
-          <p>
-            
-          </p>2 Whitehall Ct, <br></br>
+          2 Whitehall Ct, <br></br>
           London <br></br>
           SW1A 2EJ
         </p>
       </div>
       <div className={styles.contactInfo}>
         <p className={styles.label}>Phone: </p>
-        <p>
-          <p>
-
-          </p>020 008 87545
-        </p>
+        <p>020 008 87545</p>
       </div>
     </>
   );

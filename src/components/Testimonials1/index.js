@@ -13,7 +13,7 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 3000,
-    vertical: true
+    vertical: true,
   };
   return (
     <div className={styles.wholeTestimonials}>
@@ -23,7 +23,7 @@ export default function SimpleSlider() {
           <div className={styles.containerTestimonials}>
             <h6 className={styles.title}>Lucy de Rojas</h6>
             <p className={styles.testimonials}>
-             This site is amazing and has really helped me to improve my skills 
+              This site is amazing and has really helped me to improve my skills
             </p>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function SimpleSlider() {
         <div className={styles.containerTestimonials}>
           <h6 className={styles.title}>Craig Summers</h6>
           <p className={styles.testimonials}>
-          Fantastic tutors, all willing to help me to learn piano
+            Fantastic tutors, all willing to help me to learn piano
           </p>
         </div>
 

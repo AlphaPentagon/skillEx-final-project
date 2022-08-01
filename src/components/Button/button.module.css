@@ -17,11 +17,11 @@
   background-color: var(--terraCotta);
 }
 
-
 .profileInfoButton {
   background-color: var(--blue);
   padding-inline: 4.5rem;
   padding-block: 0.9rem;
+}
 
 .profileCardButton {
   background-color: var(--terraCotta);

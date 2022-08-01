@@ -1,20 +1,21 @@
 .containerTestimonials {
-    background-color: var(--terraCotta); 
-    text-align: center;
-    padding: 30px;
-  }
+  background-color: var(--terraCotta);
+  text-align: center;
+  padding: 30px;
+}
 
-  .title {
-    font-family: var(--subTitle);
-    color:var(--cream);
-  }
+.title {
+  font-family: var(--subTitle);
+  color: var(--cream);
+}
 
-  .testimonials {
-    font-style: oblique;
-    color: var(--cream);
-    text-align: center;
-  }
+.testimonials {
+  font-style: oblique;
+  color: var(--cream);
+  text-align: center;
+}
 
-  .wholeTestimonials {
-    padding: 40px;
-  }
+.wholeTestimonials {
+  padding: 40px;
+  width: 100%;
+}
