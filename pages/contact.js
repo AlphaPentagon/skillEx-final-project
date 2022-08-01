@@ -1,5 +1,12 @@
+import ContactForm from "../src/components/ContactForm";
+import SimpleSlider from "../src/components/Testimonials1";
+
 const Contact = () => {
-  return <h1>Contact Us Page</h1>;
-};
+  return (
+  <>
+  <ContactForm/>
+  <p>Contact Us Page</p>
+  </>
+)};
 
 export default Contact;

@@ -2,10 +2,10 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../src/components/Header";
 import SearchBar from "../src/components/SearchBar";
-import Testimonials from "../src/components/Testimonials";
 import WhyChooseUs from "../src/components/WhyChooseUs";
 import AboutUs from "../src/components/AboutUs";
 import SkillGallery from "../src/components/SkillGallery";
+import SimpleSlider from "../src/components/Testimonials1";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
         <SkillGallery />
         <AboutUs />
         <WhyChooseUs />
-        <Testimonials />
+        <SimpleSlider/>
       </div>
     </>
   );
