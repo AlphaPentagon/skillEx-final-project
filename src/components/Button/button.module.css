@@ -17,8 +17,21 @@
   background-color: var(--terraCotta);
 }
 
+
 .profileInfoButton {
   background-color: var(--blue);
   padding-inline: 4.5rem;
   padding-block: 0.9rem;
+
+.profileCardButton {
+  background-color: var(--terraCotta);
+  height: 1rem;
+  width: 1rem;
+  font-size: 0.3rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.contactFormButton {
+  background-color: var(--terraCotta);
 }
