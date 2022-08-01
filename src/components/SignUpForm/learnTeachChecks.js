@@ -14,25 +14,46 @@ export default function LearnTeachChecks() {
 
 
 
+{/* headers: */}
+<div className={styles.checks}>
+<p className={styles.learnHeader}>Learn</p>
+<p></p>
+<p className={styles.teachHeader}>Teach</p>
+</div>
+
+
+
+
+
+
+
+
         {categories.map((item)=> {
             let learn = `learn${item}}`;
             let teach = `teach${item}}`;
             return (
 
 
-    <div className={styles.checks}>
+                
+                
+                
+                <div className={styles.checks}>
+
+   
+
 
         <label className={styles.containerCheckbox1}>
             <input type="checkbox" name="learn" value={learn} />
-            <span />
-        </label>
+            <span className={styles.teach} />
+         </label>
 
 
         <p>{item}</p>
 
 
-        <label>
+        <label className={styles.containerCheckbox1}>
         <input type="checkbox" name="teach" value={teach} />
+        <span className={styles.learn} />
         </label>
 
 
