@@ -63,10 +63,10 @@ export default function Menu() {
             <Link href="/">
               <a title="Go to home page">Home</a>
             </Link>
-            <Link href="/">
+            <Link href="/discover">
               <a title="Discover skills">Discover</a>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <a title="Get in touch">Contact us</a>
             </Link>
           </ul>
