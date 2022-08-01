@@ -25,11 +25,9 @@ const ProfileCard = ({
         <div className={styles.bioContainer}>
           <p className={styles.bio}>{bio}</p>
         </div>
-        <Button
-          className={styles.button}
-          text="Get in touch"
-          colour="terraCotta"
-        />
+        <div className={styles.buttonContainer}>
+          <Button text="Get in touch" type="profileCardButton" />
+        </div>
       </div>
     </Link>
   );
