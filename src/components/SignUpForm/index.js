@@ -6,14 +6,17 @@ import styles from './signUpForm.module.css';
 
 export default function SignUpForm() {
 
+    function handleSumbit() {
+    
+    }
+
 
     return (<div className={styles.signUpSubContainer} >
 
         <NamesAndDetails />
-
-
-
         <LearnTeachChecks />
+
+        <button onClick={handleSumbit}>Sign Up</button>
 
 
 
