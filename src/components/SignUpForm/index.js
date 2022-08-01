@@ -10,6 +10,9 @@ export default function SignUpForm() {
     return (<div className={styles.signUpSubContainer} >
 
         <NamesAndDetails />
+
+
+
         <LearnTeachChecks />
 
 

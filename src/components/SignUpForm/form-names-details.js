@@ -50,6 +50,12 @@ export default function NamesAndDetails() {
 
 
 
+<button className={styles.uploadPhotoButton}>Upload Photo</button>
+
+
+
+
+
 
 
     </div>);

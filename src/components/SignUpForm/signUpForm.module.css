@@ -1,7 +1,7 @@
 
 
 .signUpContainer {
-    /* background-color: rgb(241, 70, 241); */
+    /* background-color: rgb(160, 153, 253); */
     width: 100%;
     padding: 0;
     margin: 0;
@@ -20,7 +20,7 @@
 
 
 .signUpSubContainer {
-    background-color: rgb(171, 252, 175);
+    /* background-color: rgb(171, 252, 175); */
     width: 100%;
 
     display: flex;
@@ -40,7 +40,7 @@
 
 .container {
     background-color: rgb(241, 105, 219);
-    width: 100%;
+    width: 80%;
 
     /* display: flex;
     flex-direction: column; */
@@ -54,6 +54,7 @@
 
 
 .inputContainer {
+    /* background-color: rgb(235, 227, 123); */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,3 +103,77 @@
     /* background-color: rgb(236, 180, 180); */
     height: 200px;
 }
+
+
+
+
+.uploadPhotoButton {
+    /* background-color: red; */
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 28%;
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////// */
+
+.containerChecks {
+    background-color: rgb(183, 241, 183);
+    width: 100%;
+}
+
+
+
+.checks {
+    /* background-color: rgb(240, 170, 170); */
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+}
+
+
+
+.checkRow {
+    background-color: purple;
+}
+
+
+
+
+.containerCheckbox1  {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
