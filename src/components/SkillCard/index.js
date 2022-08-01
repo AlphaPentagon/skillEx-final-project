@@ -1,9 +1,10 @@
 import styles from "./skillCard.module.css";
+import Image from "next/image";
 
-const SkillCard = ({ image, title }) => {
+const SkillCard = ({ image, title, description }) => {
   return (
     <div className={styles.skillCard}>
-      <img className={styles.image} src={image} alt="image" />
+      <Image className={styles.image} layout="fill" src={image} alt={`${description}`} />
       <div className={styles.text}>{title}</div>
     </div>
   );
