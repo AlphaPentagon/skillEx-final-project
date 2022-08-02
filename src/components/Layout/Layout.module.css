@@ -1,12 +1,10 @@
-.mainContainer {
+/* .mainContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-image: url("/media/Backgrounds/main3.jpg");
-  background-position: 55% 50%; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  padding-top: 2rem;
-}
+
+} */
+
