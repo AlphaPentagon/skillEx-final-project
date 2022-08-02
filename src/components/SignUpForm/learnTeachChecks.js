@@ -1,6 +1,16 @@
 import styles from "./signUpForm.module.css";
+import { useState } from "react";
 
 export default function LearnTeachChecks() {
+  const [profileSkills, setProfileSkills] = useState({
+    learn_skills: [],
+    teach_skills: [],
+  });
+
+  const addOrRemoveSkill = (skill) => {
+    const 
+  };
+
   const categories = [
     "Cooking",
     "DIY",

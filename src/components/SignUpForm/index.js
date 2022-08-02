@@ -4,9 +4,7 @@ import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./signUpForm.module.css";
 
 export default function SignUpForm() {
-  
-  
-    function handleSumbit() {
+  function handleSubmit() {
     console.log("submitting form");
   }
 
@@ -15,7 +13,7 @@ export default function SignUpForm() {
       <NamesAndDetails />
       <LearnTeachChecks />
 
-      <button onClick={handleSumbit}>Sign Up</button>
+      <button onSubmit={handleSubmit}>Sign Up</button>
     </div>
   );
 }
