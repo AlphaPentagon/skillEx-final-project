@@ -26,7 +26,7 @@ export default function NamesAndDetails() {
         <div className={styles.inputContainer}>
           <label for="username">Username:</label>
           <input
-            value={username}
+            value={userName}
             type="text"
             id="username"
             name="username"
