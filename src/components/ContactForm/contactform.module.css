@@ -1,29 +1,32 @@
-.form{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+.form {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
 .label {
-    padding: 10px;
-    text-align:left;
-    font-weight: bold;
-    font-size: larger;
+	padding: 10px;
+	text-align: left;
+	font-weight: bold;
+	font-size: larger;
 }
 
-.messageInput{
-    height: 150px;
-    width:60%;
-    text-align: left;
-    margin-left: 20px;
+.messageInput {
+	height: 150px;
+	width: 60%;
+	text-align: left;
+	margin-left: 20px;
 }
 
 .emailInput {
-    width: 60%;
-    margin-left: 40px;
+	width: 60%;
+	margin-left: 40px;
 }
 
 .contactInfo {
-    display: flex;
+	text-align: left;
+	padding: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
 }
