@@ -57,13 +57,17 @@ const Footer = () => {
 				</Link>
 			</div>
 			<div className={styles.otherLinksContainer}>
-				<Link href="/">
+
+
+				<Link href="/terms-services#termsOfServices">
 					<a title="Code of Conduct">Code of Conduct</a>
 				</Link>
-				<Link href="/">
+
+
+				<Link href="/terms-services#privacy">
 					<a title="Privacy Policy">Privacy Policy</a>
 				</Link>
-				<Link href="/">
+				<Link href="/terms-services#termsOfServices">
 					<a title="Terms of Service">Terms of Service</a>
 				</Link>
 			</div>

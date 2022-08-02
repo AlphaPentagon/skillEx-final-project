@@ -1,0 +1,46 @@
+.container {
+    text-align: left;
+    padding: 0 5vw
+
+}
+
+
+.header1 {
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+
+    
+
+
+}
+
+
+
+.box {
+    padding: 5px 20px 20px 20px;
+    margin-top: 40px;
+    overflow: scroll;
+    /* background-color: rgba(250, 158, 158, 0.5); */
+    height: 250px;
+    position: relative;
+    border: 2px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
