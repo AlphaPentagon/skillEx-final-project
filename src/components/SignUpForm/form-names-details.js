@@ -1,7 +1,7 @@
 import styles from "./signUpForm.module.css";
 import { useState } from "react";
 
-export default function NamesAndDetails() {
+export default function NamesAndDetails({ onSubmit }) {
   const [profileDetails, setProfileDetails] = useState({
     fullName: "",
     username: "",
@@ -15,10 +15,12 @@ export default function NamesAndDetails() {
       ...profileDetails,
       [e.target.name]: value,
     });
+    onSubmit(profileDetails);
+    console.log(profileDetails);
   };
 
   return (
-    <form action="">
+    <form>
       <div className={styles.container}>
         <div className={styles.inputContainer}>
           <label for="fullName">Full Name:</label>

@@ -1,7 +1,7 @@
 import styles from "./signUpForm.module.css";
 import { useState } from "react";
 
-export default function LearnTeachChecks() {
+export default function LearnTeachChecks({ onSubmit }) {
   // const [profileSkills, setProfileSkills] = useState({
   //   learn_skills: [],
   //   teach_skills: [],
@@ -17,6 +17,7 @@ export default function LearnTeachChecks() {
       updatedLearn.splice(checkedLearn.indexOf(event.target.value), 1);
     }
     setCheckedLearn(updatedLearn);
+    onSubmit(checkedLearn);
   };
   console.log("Learn Array", checkedLearn);
   const handleCheckTeach = (event) => {
@@ -27,6 +28,7 @@ export default function LearnTeachChecks() {
       updatedTeach.splice(checkedTeach.indexOf(event.target.value), 1);
     }
     setCheckedTeach(updatedTeach);
+    onSubmit(checkedTeach);
   };
   console.log("Teach Array", checkedTeach);
 
