@@ -18,7 +18,7 @@ export default function NamesAndDetails() {
   };
 
   return (
-    <form>
+    <form action="">
       <div className={styles.container}>
         <div className={styles.inputContainer}>
           <label for="fullName">Full Name:</label>
