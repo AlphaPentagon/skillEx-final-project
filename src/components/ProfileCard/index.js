@@ -13,23 +13,23 @@ const ProfileCard = ({
   image,
 }) => {
   return (
-    <Link href={`/profiles/${id}`}>
-      <div className={styles.profileCard}>
-        <div className={styles.imageContainer}>
-          <img className={styles.image} src={image} alt="profile picture" />
-        </div>
-        <div className={styles.titlesContainer}>
-          <div className={styles.title}>{`Name: ${username}`}</div>
-          <div className={styles.title}>{`Skills: ${teachSkills}`}</div>
-        </div>
-        <div className={styles.bioContainer}>
-          <p className={styles.bio}>{bio}</p>
-        </div>
+    <div className={styles.profileCard}>
+      <div className={styles.imageContainer}>
+        <img className={styles.image} src={image} alt="profile picture" />
+      </div>
+      <div className={styles.titlesContainer}>
+        <div className={styles.title}>{`Name: ${username}`}</div>
+        <div className={styles.title}>{`Skills: ${teachSkills}`}</div>
+      </div>
+      <div className={styles.bioContainer}>
+        <p className={styles.bio}>{bio}</p>
+      </div>
+      <Link href={`/profiles/${id}`}>
         <div className={styles.buttonContainer}>
           <Button text="Get in touch" type="profileCardButton" />
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
