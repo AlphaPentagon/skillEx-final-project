@@ -2,14 +2,33 @@ import styles from "./signUpForm.module.css";
 import { useState } from "react";
 
 export default function LearnTeachChecks() {
-  const [profileSkills, setProfileSkills] = useState({
-    learn_skills: [],
-    teach_skills: [],
-  });
+  // const [profileSkills, setProfileSkills] = useState({
+  //   learn_skills: [],
+  //   teach_skills: [],
+  // });
+  const [checkedLearn, setCheckedLearn] = useState([]);
+  const [checkedTeach, setCheckedTeach] = useState([]);
 
-  const addOrRemoveSkill = (skill) => {
-    const 
+  const handleCheckLearn = (event) => {
+    var updatedLearn = [...checkedLearn];
+    if (event.target.checked) {
+      updatedLearn = [...checkedLearn, event.target.value];
+    } else {
+      updatedLearn.splice(checkedLearn.indexOf(event.target.value), 1);
+    }
+    setCheckedLearn(updatedLearn);
   };
+  console.log("Learn Array", checkedLearn);
+  const handleCheckTeach = (event) => {
+    var updatedTeach = [...checkedTeach];
+    if (event.target.checked) {
+      updatedTeach = [...checkedTeach, event.target.value];
+    } else {
+      updatedTeach.splice(checkedTeach.indexOf(event.target.value), 1);
+    }
+    setCheckedTeach(updatedTeach);
+  };
+  console.log("Teach Array", checkedTeach);
 
   const categories = [
     "Cooking",
@@ -33,19 +52,31 @@ export default function LearnTeachChecks() {
       </div>
 
       {categories.map((item) => {
-        let learn = `learn${item}}`;
-        let teach = `teach${item}}`;
+        {
+          /* let learn = `learn${item}}`;
+        let teach = `teach${item}}`; */
+        }
         return (
           <div className={styles.checks}>
             <label className={styles.containerCheckbox1}>
-              <input type="checkbox" name="learn" value={learn} />
+              <input
+                type="checkbox"
+                name="learn"
+                value={item}
+                onChange={handleCheckLearn}
+              />
               <span className={styles.teach} />
             </label>
 
             <p>{item}</p>
 
             <label className={styles.containerCheckbox1}>
-              <input type="checkbox" name="teach" value={teach} />
+              <input
+                type="checkbox"
+                name="teach"
+                value={item}
+                onChange={handleCheckTeach}
+              />
               <span className={styles.learn} />
             </label>
           </div>
