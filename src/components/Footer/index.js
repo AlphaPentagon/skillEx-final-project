@@ -1,22 +1,22 @@
 import styles from "./Footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { useUser } from "@auth0/nextjs-auth0";
 
 const Footer = () => {
+	const { user } = useUser();
 	return (
 		<div className={styles.footerContainer}>
-
-
 			<div className={styles.sitemapContainer}>
 				<Link href="/">
 					<a title="Go to home page">Home</a>
 				</Link>
 				<br />
-				<Link href="/">
+				<Link href="/discover">
 					<a title="Discover skills">Discover</a>
 				</Link>
 				<br />
-				<Link href="/">
+				<Link href="/contact">
 					<a title="Get in touch">Contact us</a>
 				</Link>
 			</div>
@@ -41,9 +41,11 @@ const Footer = () => {
 				</Link>
 				<Link href="/">
 					<a title="TikTok">
-						<Image 
+						<Image
 							src="/media/icons/creamIcons/titok.png"
-							width={30} height={30} />
+							width={30}
+							height={30}
+						/>
 					</a>
 				</Link>
 				<Link href="/">
@@ -67,6 +69,7 @@ const Footer = () => {
 					<a title="Terms of Service">Terms of Service</a>
 				</Link>
 			</div>
+
 			<div className={styles.copyrightContainer}>
 				<p>© 2022 SkillEx</p>
 			</div>
