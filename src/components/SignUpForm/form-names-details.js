@@ -17,6 +17,8 @@ export default function NamesAndDetails() {
     });
   };
 
+  console.log(profileDetails)
+  
   return (
     <form action="">
       <div className={styles.container}>

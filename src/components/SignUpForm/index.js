@@ -3,24 +3,24 @@ import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./signUpForm.module.css";
 
-export default function SignUpForm({
-  profileDetails,
-  checkedTeach,
-  checkedLearn,
-}) {
+export default function SignUpForm({fullName, Email}) {
+  
+  
   function handleSubmit(e) {
     //profileDetails = {...profileDetails, }
-    e.preventDefault();
-    console.log(profileDetails);
+     e.preventDefault();
+    console.log("profile details", profileDetails);
     console.log("submitting form");
   }
 
   return (
+    <form onSubmit={handleSubmit}>
     <div className={styles.signUpSubContainer}>
-      <NamesAndDetails />
+      <NamesAndDetails profileDetails={profileDetails} />
       <LearnTeachChecks />
 
-      <button onClick={handleSubmit}>Sign Up</button>
+      <button >Sign Up</button>
     </div>
+    </form>
   );
 }
