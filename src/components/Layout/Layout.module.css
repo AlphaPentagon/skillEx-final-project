@@ -1,10 +1,10 @@
-/* .mainContainer {
+.mainContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url("/media/Backgrounds/main3.jpg");
+  /* background-image: url("/media/Backgrounds/main3.jpg"); */
 
-} */
+}
 

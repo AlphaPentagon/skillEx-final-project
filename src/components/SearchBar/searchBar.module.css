@@ -5,19 +5,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 90%; 
   border-radius: 0.4rem;
   padding-block: 0.4rem;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
+
+
+  padding: 20px;
 }
 
 .magnifyingGlass {
   width: min(20%, 30px);
+  margin-left: 15px;
 }
 
 .searchInput {
   width: 75%;
+  margin-left: 15px;
+  
   padding-block: 0.5rem;
   border: none;
   border-radius: 0.1rem;
