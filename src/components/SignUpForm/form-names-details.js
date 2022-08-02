@@ -19,6 +19,8 @@ export default function NamesAndDetails({ onSubmit }) {
     console.log(profileDetails);
   };
 
+  console.log(profileDetails)
+  
   return (
     <form>
       <div className={styles.container}>

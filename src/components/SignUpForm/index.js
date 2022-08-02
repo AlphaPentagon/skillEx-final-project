@@ -15,7 +15,6 @@ export default function SignUpForm() {
   function handleSubmit(e) {
     //e.preventDefault();
     createNewUser();
-    console.log("submitting form");
   }
 
   return (
@@ -23,7 +22,7 @@ export default function SignUpForm() {
       <NamesAndDetails onSubmit={createNewUser} />
       <LearnTeachChecks onSubmit={createNewUser} />
 
-      <button onClick={handleSubmit}>Sign Up</button>
+      <button onSubmit={handleSubmit}>Sign Up</button>
     </div>
   );
 }
