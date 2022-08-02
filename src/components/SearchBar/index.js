@@ -1,6 +1,7 @@
 //SearchBar
 import styles from "./searchBar.module.css";
 import { useState } from "react";
+import styleSwitch from "./switch.module.css"
 
 const Searchbar = () => {
   const [text, setText] = useState("");
@@ -17,6 +18,10 @@ const Searchbar = () => {
 
   return (
     <div className={styles.container}>
+      <label for="switch">To Teach</label>
+      <label className={styleSwitch.label} for ="switch"></label>
+      <input className={styleSwitch.input} type="checkbox" id={styleSwitch.switch} />
+      <label for="switch">To Learn</label>
       <input
         value={text}
         onChange={handleChange}
