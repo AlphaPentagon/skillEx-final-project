@@ -3,6 +3,7 @@ import ProfileInfo from "../../src/components/ProfileInfo";
 import profiles from "../../src/libs/profiles";
 import Header from "../../src/components/Header/index";
 import Avatar from "../../src/components/Avatar/index";
+import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
 // needed for data fetching before rendering - creates static versions of each page/path
 export function getStaticPaths() {
@@ -23,7 +24,7 @@ export function getStaticProps() {
   };
 }
 
-const Profile = () => {
+export default withPageAuthRequired(function Profile({ user }) {
   const router = useRouter();
   const { profileId } = router.query;
   const CURRENT_INDEX = profileId - 1;
@@ -36,6 +37,4 @@ const Profile = () => {
       <ProfileInfo profile={CURRENT_PROFILE} />
     </>
   );
-};
-
-export default Profile;
+});
