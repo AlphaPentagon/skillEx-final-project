@@ -13,7 +13,7 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 3000,
-    vertical: true,
+    horizontal: true,
   };
   return (
     <div className={styles.wholeTestimonials}>

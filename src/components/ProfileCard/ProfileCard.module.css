@@ -3,7 +3,7 @@
   background-color: var(--cream);
   border-radius: 1em;
   height: 40vh;
-  width: 40vw;
+  width: 90vw;
   padding: 0.5em;
   margin-top: 0.5em;
 }
@@ -13,7 +13,6 @@
   width: 100%;
   border-radius: 1em;
   margin: 0.5em 0;
-  background-color: aquamarine;
 }
 
 .image {
@@ -23,25 +22,27 @@
 }
 
 .titlesContainer {
-  background-color: blueviolet;
+  margin: auto;
 }
 
 .title {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
   text-align: left;
+  vertical-align: bottom;
 }
 
 .bioContainer {
-  background-color: greenyellow;
   height: 25%;
 }
 
 .bio {
-  font-size: 0.3em;
+  font-size: 0.6em;
   text-align: left;
 }
 
-.button {
+.buttonContainer {
   height: 10%;
-  width: 10%;
+  width: 100%;
+  text-align: right;
 }
