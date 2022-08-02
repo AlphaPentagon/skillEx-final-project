@@ -1,7 +1,6 @@
 //SearchBar
 import styles from "./searchBar.module.css";
 import { useState } from "react";
-import styleSwitch from "./switch.module.css"
 
 const Searchbar = () => {
   const [text, setText] = useState("");
@@ -12,16 +11,21 @@ const Searchbar = () => {
   };
 
   const handleClick = () => {
+    const learn = document.querySelector(`input[name="learn"]:checked`)
+    const teach = document.querySelector(`input[name="teach"]:checked`)
+    console.log(teach)
+    console.log(learn)
+
     console.log("submitted", text); /* include search logic (get request etc)*/
     setText("");
   };
 
   return (
     <div className={styles.container}>
-      <label for="switch">To Teach</label>
-      <label className={styleSwitch.label} for ="switch"></label>
-      <input className={styleSwitch.input} type="checkbox" id={styleSwitch.switch} />
-      <label for="switch">To Learn</label>
+      <label for="Teach">Teach
+      <input type="radio" name="teach" value="teach"/></label>
+      <label for="Learn">Learn
+      <input type="radio" name="learn" value="learn"/></label>
       <input
         value={text}
         onChange={handleChange}
