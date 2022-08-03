@@ -24,6 +24,7 @@ const Footer = () => {
 				<Link href="/">
 					<a title="Facebook">
 						<Image
+							alt="Facebook logo"
 							src="/media/icons/creamIcons/Facebook-logo.png"
 							width={30}
 							height={30}
@@ -33,6 +34,7 @@ const Footer = () => {
 				<Link href="/">
 					<a title="Instagram">
 						<Image
+							alt="Instagram logo"
 							src="/media/icons/creamIcons/instagram.png"
 							width={30}
 							height={30}
@@ -42,6 +44,7 @@ const Footer = () => {
 				<Link href="/">
 					<a title="TikTok">
 						<Image
+							alt="TikTok logo"
 							src="/media/icons/creamIcons/titok.png"
 							width={30}
 							height={30}
@@ -51,6 +54,7 @@ const Footer = () => {
 				<Link href="/">
 					<a title="Twitter">
 						<Image
+							alt="Twitter logo"
 							src="/media/icons/creamIcons/twitter.png"
 							width={30}
 							height={30}
@@ -59,12 +63,9 @@ const Footer = () => {
 				</Link>
 			</div>
 			<div className={styles.otherLinksContainer}>
-
-
 				<Link href="/terms-services#termsOfServices">
 					<a title="Code of Conduct">Code of Conduct</a>
 				</Link>
-
 
 				<Link href="/terms-services#privacy">
 					<a title="Privacy Policy">Privacy Policy</a>
