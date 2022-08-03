@@ -2,8 +2,15 @@
 import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./signUpForm.module.css";
+import { useState } from "react";
 
 export default function SignUpForm() {
+  const [agree, setAgree] = useState(false);
+
+  function handleCheck() {
+    setAgree(!agree);
+  }
+
   function handleSubmit(e) {
     //e.preventDefault();
     let fullName = document.querySelector("#fullName").value;
@@ -20,6 +27,7 @@ export default function SignUpForm() {
     teach.forEach((item) => {
       teachAll.push(item.value);
     });
+    let isApproved = document.querySelector("#agree").value;
 
     let profile = {
       full_name: fullName,
@@ -28,6 +36,7 @@ export default function SignUpForm() {
       learn_skills: learnAll,
       bio: description,
       avatar_url: imageUrl,
+      approved: isApproved,
     };
 
     console.log(profile);
@@ -39,7 +48,21 @@ export default function SignUpForm() {
       <NamesAndDetails />
       <LearnTeachChecks />
 
-      <button onClick={handleSubmit}>Sign Up</button>
+      <label htmlFor="agree">
+        I consent to SkillEx storing my data and accept the{" "}
+        <a
+          href="http://localhost:3000/terms-services#termsOfServices
+"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          terms of service
+        </a>
+        <input type="checkbox" id="agree" onChange={handleCheck} />
+      </label>
+      <button disabled={!agree} onClick={handleSubmit}>
+        Sign Up
+      </button>
     </div>
   );
 }
