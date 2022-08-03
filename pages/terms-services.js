@@ -26,7 +26,7 @@ export default function TermsAndServices() {
         <h1 className={styles.header1}>Privacy Policy</h1>
 <p>Last updated: August 02, 2022</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.privacypolicies.com/privacy-policy-generator/" target="_blank">Privacy Policy Generator</a>.</p>
+<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. </p>
 <h2>Interpretation and Definitions</h2>
 <h3>Interpretation</h3>
 <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
@@ -222,7 +222,7 @@ export default function TermsAndServices() {
 <p><strong>Service</strong> refers to the Application.</p>
 </li>
 <li>
-<p><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the <a href="https://www.termsfeed.com/terms-conditions-generator/" target="_blank">TermsFeed Terms and Conditions Generator</a>.</p>
+<p><strong>Terms and Conditions</strong> (also referred as &quot;Terms&quot;) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.</p>
 </li>
 <li>
 <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
@@ -285,6 +285,87 @@ You agree that the original English text shall prevail in the case of a dispute.
 
 
 
+
+
+
+
+
+
+
+
+
+<div id="codeOfConduct" className={styles.box}>
+
+<h1 className={styles.header1}>Code Of Conduct</h1>
+
+<h2>Our Pledge</h2>
+
+<p>We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
+
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.</p>
+
+<h2>Our Standards</h2>
+
+<p>Examples of behavior that contributes to a positive environment for our community include:
+
+Demonstrating empathy and kindness toward other people
+Being respectful of differing opinions, viewpoints, and experiences
+Giving and gracefully accepting constructive feedback
+Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
+Focusing on what is best not just for us as individuals, but for the overall community
+Examples of unacceptable behavior include:
+
+The use of sexualized language or imagery, and sexual attention or advances of any kind
+Trolling, insulting or derogatory comments, and personal or political attacks
+Public or private harassment
+Publishing others' private information, such as a physical or email address, without their explicit permission
+Other conduct which could reasonably be considered inappropriate in a professional setting</p>
+
+<h2>Enforcement Responsibilities</h2>
+
+<p>Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.
+
+Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.</p>
+
+<h2>Scope</h2>
+
+<p>This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.</p>
+
+<h2>Enforcement</h2>
+
+<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at: 2 Whitehall Ct,   London,   SW1A 2EJ. All complaints will be reviewed and investigated promptly and fairly.
+
+All community leaders are obligated to respect the privacy and security of the reporter of any incident.</p>
+
+<h2>Enforcement Guidelines</h2>
+
+<p>Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:</p>
+
+<p><strong>1. Correction </strong></p>
+<p>Community Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.</p>
+
+<p><strong>Consequence: </strong></p>
+<p>A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.</p>
+
+<p><strong>2. Warning </strong></p>
+<p>Community Impact: A violation through a single incident or series of actions.</p>
+
+<p><strong>Consequence: </strong></p>
+<p>A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.</p>
+
+<p><strong>3. Temporary Ban </strong></p>
+<p>Community Impact: A serious violation of community standards, including sustained inappropriate behavior.</p>
+
+<p><strong>Consequence: </strong></p>
+<p>A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.</p>
+
+<p><strong>4. Permanent Ban </strong></p>
+<p>Community Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.</p>
+
+<p><strong>Consequence:</strong> A permanent ban from any sort of public interaction within the community.</p>
+
+
+</div>
 
 
 

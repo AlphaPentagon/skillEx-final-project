@@ -9,7 +9,7 @@
     text-align: center;
     padding: 10px 0;
     border-radius: 5px;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 
     
@@ -22,7 +22,7 @@
 .box {
     padding: 5px 20px 20px 20px;
     margin-top: 40px;
-    overflow: scroll;
+    overflow-y: scroll;
     /* background-color: rgba(250, 158, 158, 0.5); */
     height: 250px;
     position: relative;

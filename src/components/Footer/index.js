@@ -21,7 +21,7 @@ const Footer = () => {
 				</Link>
 			</div>
 			<div className={styles.socialContainer}>
-				<Link href="/">
+				<Link href="https://facebook.com">
 					<a title="Facebook">
 						<Image
 							src="/media/icons/creamIcons/Facebook-logo.png"
@@ -30,7 +30,7 @@ const Footer = () => {
 						/>
 					</a>
 				</Link>
-				<Link href="/">
+				<Link href="https://instagram.com">
 					<a title="Instagram">
 						<Image
 							src="/media/icons/creamIcons/instagram.png"
@@ -39,7 +39,7 @@ const Footer = () => {
 						/>
 					</a>
 				</Link>
-				<Link href="/">
+				<Link href="https://tiktok.com">
 					<a title="TikTok">
 						<Image
 							src="/media/icons/creamIcons/titok.png"
@@ -48,7 +48,7 @@ const Footer = () => {
 						/>
 					</a>
 				</Link>
-				<Link href="/">
+				<Link href="https://twitter.com/">
 					<a title="Twitter">
 						<Image
 							src="/media/icons/creamIcons/twitter.png"
@@ -61,7 +61,7 @@ const Footer = () => {
 			<div className={styles.otherLinksContainer}>
 
 
-				<Link href="/terms-services#termsOfServices">
+				<Link href="/terms-services#codeOfConduct">
 					<a title="Code of Conduct">Code of Conduct</a>
 				</Link>
 
