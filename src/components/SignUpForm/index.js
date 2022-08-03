@@ -1,25 +1,68 @@
 //SignUpForm
 import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
-import styles from './signUpForm.module.css';
-
+import styles from "./signUpForm.module.css";
+import { useState } from "react";
 
 export default function SignUpForm() {
+  const [agree, setAgree] = useState(false);
 
-    function handleSumbit() {
-        console.log('submitting form');
-    
-    }
+  function handleCheck() {
+    setAgree(!agree);
+  }
 
+  function handleSubmit(e) {
+    //e.preventDefault();
+    let fullName = document.querySelector("#fullName").value;
+    let username = document.querySelector("#username").value;
+    let imageUrl = document.querySelector("#imageUrl").value;
+    let description = document.querySelector("[name='description']").value;
+    let learnAll = [];
+    let teachAll = [];
+    let learn = document.querySelectorAll("input[name='learn']:checked");
+    let teach = document.querySelectorAll("input[name='teach']:checked");
+    learn.forEach((item) => {
+      learnAll.push(item.value);
+    });
+    teach.forEach((item) => {
+      teachAll.push(item.value);
+    });
+    let isApproved = document.querySelector("#agree").value;
 
-    return (<div className={styles.signUpSubContainer} >
+    let profile = {
+      full_name: fullName,
+      preferred_name: username,
+      teach_skills: teachAll,
+      learn_skills: learnAll,
+      bio: description,
+      avatar_url: imageUrl,
+      approved: isApproved,
+    };
 
-        <NamesAndDetails />
-        <LearnTeachChecks />
+    console.log(profile);
+    console.log("Submitting form");
+  }
 
-        <button onClick={handleSumbit}>Sign Up</button>
+  return (
+    <div className={styles.signUpSubContainer}>
+      <NamesAndDetails />
+      <LearnTeachChecks />
 
-
-
-    </div>);
+      <label htmlFor="agree">
+        I consent to SkillEx storing my data and accept the{" "}
+        <a
+          href="http://localhost:3000/terms-services#termsOfServices
+"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          terms of service
+        </a>
+        <input type="checkbox" id="agree" onChange={handleCheck} />
+      </label>
+      <button disabled={!agree} onClick={handleSubmit}>
+        Sign Up
+      </button>
+    </div>
+  );
 }
