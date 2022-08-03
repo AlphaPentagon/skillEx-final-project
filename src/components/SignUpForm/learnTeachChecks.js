@@ -1,36 +1,36 @@
 import styles from "./signUpForm.module.css";
 import { useState } from "react";
 
-export default function LearnTeachChecks({ onSubmit }) {
-  // const [profileSkills, setProfileSkills] = useState({
-  //   learn_skills: [],
-  //   teach_skills: [],
-  // });
-  const [checkedLearn, setCheckedLearn] = useState([]);
-  const [checkedTeach, setCheckedTeach] = useState([]);
+export default function LearnTeachChecks() {
+  // // const [profileSkills, setProfileSkills] = useState({
+  // //   learn_skills: [],
+  // //   teach_skills: [],
+  // // });
+  // const [checkedLearn, setCheckedLearn] = useState([]);
+  // const [checkedTeach, setCheckedTeach] = useState([]);
 
-  const handleCheckLearn = (event) => {
-    var updatedLearn = [...checkedLearn];
-    if (event.target.checked) {
-      updatedLearn = [...checkedLearn, event.target.value];
-    } else {
-      updatedLearn.splice(checkedLearn.indexOf(event.target.value), 1);
-    }
-    setCheckedLearn(updatedLearn);
-    onSubmit(checkedLearn);
-  };
-  console.log("Learn Array", checkedLearn);
-  const handleCheckTeach = (event) => {
-    var updatedTeach = [...checkedTeach];
-    if (event.target.checked) {
-      updatedTeach = [...checkedTeach, event.target.value];
-    } else {
-      updatedTeach.splice(checkedTeach.indexOf(event.target.value), 1);
-    }
-    setCheckedTeach(updatedTeach);
-    onSubmit(checkedTeach);
-  };
-  console.log("Teach Array", checkedTeach);
+  // const handleCheckLearn = (event) => {
+  //   var updatedLearn = [...checkedLearn];
+  //   if (event.target.checked) {
+  //     updatedLearn = [...checkedLearn, event.target.value];
+  //   } else {
+  //     updatedLearn.splice(checkedLearn.indexOf(event.target.value), 1);
+  //   }
+  //   setCheckedLearn(updatedLearn);
+  //   onSubmit(checkedLearn);
+  // };
+  // console.log("Learn Array", checkedLearn);
+  // const handleCheckTeach = (event) => {
+  //   var updatedTeach = [...checkedTeach];
+  //   if (event.target.checked) {
+  //     updatedTeach = [...checkedTeach, event.target.value];
+  //   } else {
+  //     updatedTeach.splice(checkedTeach.indexOf(event.target.value), 1);
+  //   }
+  //   setCheckedTeach(updatedTeach);
+  //   //onSubmit(checkedTeach);
+  // };
+  // console.log("Teach Array", checkedTeach);
 
   const categories = [
     "Cooking",
@@ -61,24 +61,14 @@ export default function LearnTeachChecks({ onSubmit }) {
         return (
           <div className={styles.checks}>
             <label className={styles.containerCheckbox1}>
-              <input
-                type="checkbox"
-                name="learn"
-                value={item}
-                onChange={handleCheckLearn}
-              />
+              <input type="checkbox" name="learn" value={item} />
               <span className={styles.teach} />
             </label>
 
             <p>{item}</p>
 
             <label className={styles.containerCheckbox1}>
-              <input
-                type="checkbox"
-                name="teach"
-                value={item}
-                onChange={handleCheckTeach}
-              />
+              <input type="checkbox" name="teach" value={item} />
               <span className={styles.learn} />
             </label>
           </div>

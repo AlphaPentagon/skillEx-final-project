@@ -1,50 +1,26 @@
 import styles from "./signUpForm.module.css";
-import { useState } from "react";
 
-export default function NamesAndDetails({ onSubmit }) {
-  const [profileDetails, setProfileDetails] = useState({
-    fullName: "",
-    username: "",
-    description: "",
-    imageUrl: "",
-  });
-
-  const handleChange = (e) => {
-    const value = e.target.value;
-    setProfileDetails({
-      ...profileDetails,
-      [e.target.name]: value,
-    });
-    onSubmit(profileDetails);
-    console.log(profileDetails);
-  };
-
-  console.log(profileDetails)
-  
+export default function NamesAndDetails() {
   return (
     <form>
       <div className={styles.container}>
         <div className={styles.inputContainer}>
           <label for="fullName">Full Name:</label>
           <input
-            value={profileDetails.fullName}
             type="text"
             id="fullName"
             name="fullName"
             className={styles.inputField}
-            onChange={handleChange}
           />
         </div>
 
         <div className={styles.inputContainer}>
           <label for="username">Username:</label>
           <input
-            value={profileDetails.username}
             type="text"
             id="username"
             name="username"
             className={styles.inputField}
-            onChange={handleChange}
           />
         </div>
 
@@ -63,24 +39,20 @@ export default function NamesAndDetails({ onSubmit }) {
         <div className={styles.inputContainer}>
           <label for="imageUrl">Image Url:</label>
           <input
-            value={profileDetails.imageUrl}
             type="text"
             id="imageUrl"
             name="imageUrl"
             className={styles.inputField}
-            onChange={handleChange}
           />
         </div>
 
         <div className={styles.descriptionContainer}>
           <label for="description">Description:</label>
           <input
-            value={profileDetails.description}
             type="text"
             name="description"
             className={styles.inputField}
             id={styles.description}
-            onChange={handleChange}
           />
         </div>
 
