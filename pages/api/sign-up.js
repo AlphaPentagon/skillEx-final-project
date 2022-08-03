@@ -5,7 +5,17 @@
 
 export default async (req, res)=> {
 
-    console.log('hello');
+
+    if (req.method == "POST") {
+        
+        console.log('data: ', req.body);
+
+        console.log('name: ', req.body.full_name);
+
+
+
+    }
+
 
 }
 

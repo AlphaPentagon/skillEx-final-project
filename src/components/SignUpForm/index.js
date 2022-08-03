@@ -11,7 +11,12 @@ export default function SignUpForm() {
     setAgree(!agree);
   }
 
-  function handleSubmit(e) {
+
+
+
+
+
+  async function handleSubmit(e) {
     //e.preventDefault();
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
@@ -39,9 +44,51 @@ export default function SignUpForm() {
       approved: isApproved,
     };
 
+
+
+    let response = await fetch('/api/sign-up',{
+      method: "POST",
+      headers: {
+        'Content-Type':'application/json'},
+
+        body:JSON.stringify(profile),
+      
+    } );
+
+
+    let content = await response.json();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     console.log(profile);
     console.log("Submitting form");
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <div className={styles.signUpSubContainer}>
