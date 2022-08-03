@@ -5,7 +5,7 @@ import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./signUpForm.module.css";
 
 export default function SignUpForm() {
-  const [newUser, setNewUser] = useState({});
+  const [newUser, setNewUser] = useState();
 
   function createNewUser(details, teach, learn) {
     setNewUser({ ...details, teach_skills: teach, learn_skills: learn });
@@ -15,6 +15,7 @@ export default function SignUpForm() {
   function handleSubmit(e) {
     //e.preventDefault();
     createNewUser();
+    console.log("Submitting form");
   }
 
   return (
@@ -22,7 +23,7 @@ export default function SignUpForm() {
       <NamesAndDetails onSubmit={createNewUser} />
       <LearnTeachChecks onSubmit={createNewUser} />
 
-      <button onSubmit={handleSubmit}>Sign Up</button>
+      <button onClick={handleSubmit}>Sign Up</button>
     </div>
   );
 }
