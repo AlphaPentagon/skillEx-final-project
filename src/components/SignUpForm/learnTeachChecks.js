@@ -30,7 +30,7 @@ export default function LearnTeachChecks() {
               <span className={styles.teach} />
             </label>
 
-            <p>{item}</p>
+            <p className={styles.skills}>{item}</p>
 
             <label className={styles.containerCheckbox1}>
               <input type="checkbox" name="teach" value={item} />

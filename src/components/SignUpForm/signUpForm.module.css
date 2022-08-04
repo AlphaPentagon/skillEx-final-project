@@ -1,239 +1,158 @@
-
-
 .signUpContainer {
-    /* background-color: rgb(160, 153, 253); */
-    width: 100%;
-    padding: 0;
-    margin: 0;
+ 
+  width: 100%;
+  padding: 0;
+  margin: 0;
 
-    display: flex;
-    flex-direction: column;
-  
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
 }
-
-
-
-
-
-
-
 
 .signUpSubContainer {
-    /* background-color: rgb(171, 252, 175); */
-    width: 100%;
 
-    display: flex;
-    flex-direction: column;
+  width: 100%;
 
-    align-items: center;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: column;
 
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-
-
-
 
 .container {
-    /* background-color: rgb(241, 105, 219); */
-    width: 80%;
+  
+  width: 95%;
 
-    /* display: flex;
+
+  /* display: flex;
     flex-direction: column; */
-
-    
 }
-
-
-
-
-
 
 .inputContainer {
-    /* background-color: rgb(235, 227, 123); */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
+
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
 }
-
-
-
-
-
-
 
 .inputField {
-    /* background-color: rgb(236, 154, 154); */
-    width: 70%;
-    
-      
-    
-    padding: 10px;
-    margin: 3px 5px;
-    border-radius: 5px;
+   background-color: #f6f0ed;
+  width: 95%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px ;
+  margin: 3px 7px;
+  border-radius: 5px;
+  border: solid 2px #c8553d }
 
+.label {
+    font-weight: bold;
+    color: #2a0800;
+    text-align: right;
+    padding: 12px;
 }
-
-
-
-
-
-
 .descriptionContainer {
-    /* background-color: rgb(185, 238, 226); */
 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-    justify-content: flex-end;
-
-    
-
-    
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+    justify-content: center;
 }
-
 
 #description {
-    /* background-color: rgb(236, 180, 180); */
-    height: 200px;
+
+  height: 200px;
+  
+  background-color: #f6f0ed;
+  width: 98%;
+  padding-top: 15px;
+  margin: 2px 3px;
+  border-radius: 5px;
+ 
 }
-
-
-
 
 .uploadPhotoButton {
-    /* background-color: red; */
-    padding: 10px 10px;
-    border-radius: 10px;
-    width: 70%;
-    margin-left: 28%;
-    
-    
-
+   background-color: red; 
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 28%;
 }
-
-
-
-
-
-
-
-
 
 /* ///////////////////////////// */
 
 .containerChecks {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: rgb(183, 241, 183);
-    width: 100%;
+    background-color: lightblue;
+    background-color: #c8553d; /* For browsers that do not support gradients */
+    background: linear-gradient(to right,
+    #0095a672 33%, #c8543d74 33% 65%, #c8543da5 33% 60%);
+ 
+  padding-bottom: 20px;
+  width: 100%;
+  border-radius: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 10%;
 }
-
-
 
 .checks {
-    /* background-color: rgb(240, 170, 170); */
-    width: 100%;
-
+  /* background-color: rgb(240, 170, 170); */
+  width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    justify-content: center;
+  grid-template-columns: repeat(3, 33%);
+  justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ////   customising checkboxes:   /////////////// */
 
 .containerCheckbox1 {
+  /* background-color: rgb(250, 53, 53); */
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
 
-    /* background-color: rgb(250, 53, 53); */
-    /* display: block; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* position: relative; */
+  /* padding-left: 35px; */
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
 
-
-
-    /* padding-left: 35px; */
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    
-
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-
-
-
-
-.containerCheckbox1 input  {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-
+.containerCheckbox1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  color: green;
 
 }
-
 
 /* on hover: */
-.containerCheckbox1:hover input ~ .checkmark, 
+.containerCheckbox1:hover input ~ .checkmark,
 .containerCheckbox1:hover input ~ .teach,
 .containerCheckbox1:hover input ~ .learn {
-    background-color: #ccc;
-
+  background-color: #ccc;
 }
-
-
-
 
 /* differentaite highl;ighted checkboxes: */
 .containerCheckbox1 input:checked ~ .checkmark,
 .containerCheckbox1 input:checked ~ .teach {
-    background-color: #864100;
-    
+  background-color: #864100;
 }
 
 .containerCheckbox1 input:checked ~ .learn {
-    background-color: #05b2be;
-    
+  background-color: #05b2be;
 }
 
 /* differentaite highl;ighted checkboxes:
@@ -241,138 +160,95 @@ END
 
 */
 
-
-
-
-
-
-
-
-.checkmark:after, .teach:after, .learn:after {
-    content: "";
-    position: absolute;
-    display: none;
+.checkmark:after,
+.teach:after,
+.learn:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
-
-
 
 /* .containerCheckbox1 input:checked ~ .checkmark::after {
     /* display: block; */
-/* } */ 
-
+/* } */
 
 .containerCheckbox1 .checkmark::after,
 .containerCheckbox1 .teach::after,
 .containerCheckbox1 .learn::after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
-
-
-
 
 .checkmark {
-    /* position: absolute;
+  /* position: absolute;
     top: 0;
     left: 0; */
-    height: 25px;
-    width: 25px;
-    background-color: rgb(173, 173, 173);
+  height: 25px;
+  width: 25px;
+  background-color: rgb(173, 173, 173);
 
-    border-radius: 5px;
-
+  border-radius: 5px;
 }
-
-
 
 .learn {
-    height: 25px;
-    width: 25px;
-    background-color: rgb(173, 173, 173);
-    border: solid 2px rgb(2, 143, 185);
-    border-radius: 5px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(173, 173, 173);
+  border: solid 2px #048998;
+  border-radius: 5px;
 }
-
-
-
-
 
 .teach {
-    height: 25px;
-    width: 25px;
-    background-color: rgb(173, 173, 173);
-    border: solid 2px rgb(126, 1, 115);
-    border-radius: 5px;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(173, 173, 173);
+  border: solid 2px #c8553d ;
+  border-radius: 5px;
 }
-
 
 /* end of checkmark customising */
 
-
-
-
-
-
-
-
-
-
-
-
-
 .learnHeader {
-    font-weight: bolder;
-    color:  #864100;
-    font-family: mainLogo;
-    font-size: 1.7em;
+  font-weight: bolder;
+  color:  #c8553d;
+  font-family: mainLogo;
+  font-size: 1.7em;
 }
 
 .teachHeader {
-    font-weight: bolder;
-    color:  #05b2be;
-    font-family: mainLogo;
-    font-size: 1.7em;
+  font-weight: bolder;
+  color: #048998;
+  font-family: mainLogo;
+  font-size: 1.7em;
 }
 
+.termsContainer{
+    padding-bottom: 5%;
 
+}
 
+.signUpButton{
+    padding-bottom: 5%;
+}
 
-
-
-
-
-
-
-
-
+.skills {
+    font-weight: bold;
+    color: #2a0800;
+    text-align: center;
+}
 /* highlighting colums: */
 /* .checks:nth-child(1) { */
-    /* background-color: rgb(238, 159, 159); */
+/* background-color: rgb(238, 159, 159); */
 /* } */
-
-
-
 
 /* highlighting colums:
 END
 
 */
-
-
-
-
-
-
-
-
-
-
-
