@@ -53,6 +53,7 @@ export default function NamesAndDetails() {
             name="description"
             className={styles.inputField}
             id={styles.description}
+            placeholder=""
           />
         </div>
 
