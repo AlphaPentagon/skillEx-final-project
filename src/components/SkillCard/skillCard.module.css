@@ -3,7 +3,7 @@
   border-radius: 1em;
   height: 25vh;
   width: 40vw;
-  border: 3px solid #c8553d;
+  border: 3px solid var(--terraCotta);
   margin-bottom: 2%;
   padding: 0;
 }
@@ -15,8 +15,13 @@
   /* left: 16px; */
   font-size: 5vw;
   width: 30vw;
-  background-color: var(--blue);
+  background-color: var(--terraCotta);
   text-align: center;
+  
+}
+
+.text:hover {
+  background-color: var(--blue);
 }
 
 .image {
