@@ -7,6 +7,7 @@
   border: none;
   border-radius: 0.6rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .blue {
@@ -21,6 +22,7 @@
   background-color: var(--blue);
   padding-inline: 4.5rem;
   padding-block: 0.9rem;
+  cursor: pointer;
 }
 
 .profileCardButton {
@@ -30,8 +32,14 @@
   font-size: 0.6rem;
   white-space: nowrap;
   font-weight: normal;
+  cursor: pointer;
 }
 
 .contactFormButton {
+  background-color: var(--terraCotta);
+  cursor: pointer;
+}
+
+.signUpFormButton {
   background-color: var(--terraCotta);
 }

@@ -7,28 +7,37 @@ const ContactForm = () => {
 		<>
 			<Header text="Contact us" colour="terraCotta" />
 			<form className={styles.form}>
-				<label className={styles.label}>
+				<div className={styles.inputContainer}>
+				<div className={styles.padding}>
+					<label className={styles.label} />
 					Email:
+					</div>
 					<input
 						className={styles.emailInput}
 						type="text"
 						name="email"
 						placeholder="Enter your email"
 					/>
-				</label>
+				
+				</div>
 				<br></br>
-				<label className={styles.label}>
+				<div className={styles.inputContainer}>
+					<div className={styles.padding}>
+				<label className={styles.label}/>
 					Message:
+					</div>
 					<input
 						className={styles.messageInput}
 						type="text"
 						name="message"
 						placeholder="Type your request"
 					/>
-				</label>
+				
+				</div>
 				<br></br>
-
+				<div className= {styles.contactFormButton}>
 				<Button type="contactFormButton" text="Submit" />
+				</div>
 			</form>
 
 			<div className={styles.contactInfo}>
@@ -41,6 +50,7 @@ const ContactForm = () => {
 				<p className={styles.label}>Phone: </p>
 				<p>020 008 87545</p>
 			</div>
+
 		</>
 	);
 };

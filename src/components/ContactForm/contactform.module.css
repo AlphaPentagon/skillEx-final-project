@@ -2,6 +2,8 @@
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
+	font-weight: bold;
+	text-align: center;
 }
 
 .label {
@@ -9,18 +11,40 @@
 	text-align: left;
 	font-weight: bold;
 	font-size: larger;
+	font-size: 16px;
+	
 }
 
 .messageInput {
 	height: 150px;
-	width: 60%;
+	width: 75%;
 	text-align: left;
 	margin-left: 20px;
+
+	padding-top: 5px;
+   padding-left: 10px;
+   padding-right: 15px;
+   padding-bottom: 5px ;
+   margin: 3px 7px;
+   border-radius: 5px;
+   border: solid 2px #c8553d;
 }
 
 .emailInput {
-	width: 60%;
+	width: 68.5%;
 	margin-left: 40px;
+
+	background-color: #f6f0ed;
+
+   padding-top: 5px;
+   padding-left: 10px;
+   padding-right: 15px;
+   padding-bottom: 5px ;
+   margin: 3px 7px 0px 26px;
+   border-radius: 5px;
+   border: solid 2px #c8553d 
+
+	
 }
 
 .contactInfo {
@@ -29,4 +53,51 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
+
+	padding-top: 5px;
+   padding-left: 10px;
+   padding-right: 15px;
+   padding-bottom: 5px ;
+   margin: 3px 7px;
+   border-radius: 5px;
+   border: solid 2px #c8553d 
 }
+
+.contactFormButton{
+    padding-bottom: 5%;
+}
+
+.inputField {
+	background-color: #f6f0ed;
+   width: 95%;
+   padding-top: 5px;
+   padding-left: 10px;
+   padding-right: 15px;
+   padding-bottom: 5px ;
+   margin: 3px 7px;
+   border-radius: 5px;
+   border: solid 2px #c8553d 
+}
+ 
+.inputContainer {
+
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+}
+
+.padding {
+	padding-top: 10px;
+}
+
+
+.inputField {
+	background-color: #f6f0ed;
+   width: 95%;
+   padding-top: 5px;
+   padding-left: 10px;
+   padding-right: 15px;
+   padding-bottom: 5px ;
+   margin: 3px 7px;
+   border-radius: 5px;
+   border: solid 2px #c8553d }

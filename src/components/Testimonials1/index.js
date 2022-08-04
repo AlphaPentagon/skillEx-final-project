@@ -42,6 +42,13 @@ export default function SimpleSlider() {
 					</p>
 					<p className={styles.title}>Zainab Abid</p>
 				</div>
+
+				<div className={styles.containerTestimonials}>
+					<p className={styles.testimonials}>
+					"Got fed up with little things around the house breaking and having to pay an arm and a leg to get a contractor in to fix them. Popped over to SkillEx and quickly learnt how to fix all of my own DIY problems! What a site!"
+					</p>
+					<p className={styles.title}>Jay Whittingham</p>
+				</div>
 			</Slider>
 		</div>
 	);

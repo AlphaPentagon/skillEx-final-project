@@ -1,6 +1,7 @@
 .menu {
 	height: auto;
 	width: 20%;
+	cursor: pointer;
 }
 
 .menuClose {
@@ -8,6 +9,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+	cursor: pointer;
 }
 
 .modal {
