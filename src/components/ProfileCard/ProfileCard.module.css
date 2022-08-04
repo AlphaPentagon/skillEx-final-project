@@ -2,17 +2,18 @@
   position: relative;
   background-color: var(--cream);
   border-radius: 1em;
-  height: 40vh;
-  width: 90vw;
+  height: 42vh;
+  width: 55vw;
   padding: 0.5em;
   margin-top: 0.5em;
 }
 
 .imageContainer {
-  height: 40%;
+  height: 43%;
   width: 100%;
   border-radius: 1em;
   margin: 0.5em 0;
+  background-color: antiquewhite;
 }
 
 .image {
@@ -26,7 +27,7 @@
 }
 
 .title {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: bold;
   text-align: left;
   vertical-align: bottom;
@@ -37,12 +38,27 @@
 }
 
 .bio {
-  font-size: 0.6em;
+  font-size: 0.8rem;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .buttonContainer {
-  height: 10%;
-  width: 100%;
-  text-align: right;
+  position: relative;
+
+}
+
+.button{
+  position: relative;
+  padding: 7%;
+  margin-left: 60%;
+}
+
+.button:hover {
+
+background-color: #048998;
 }
