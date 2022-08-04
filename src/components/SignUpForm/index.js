@@ -102,6 +102,7 @@ export default function SignUpForm() {
         <a
           href="http://localhost:3000/terms-services#termsOfServices
 "
+        className={styles.hyperlink}
           target="_blank"
           rel="noopener noreferrer"
         >

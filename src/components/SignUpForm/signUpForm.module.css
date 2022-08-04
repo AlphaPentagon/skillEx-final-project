@@ -192,7 +192,7 @@ END
     left: 0; */
   height: 25px;
   width: 25px;
-  background-color: rgb(173, 173, 173);
+  background-color: #f6f0ed;
 
   border-radius: 5px;
 }
@@ -200,7 +200,7 @@ END
 .learn {
   height: 25px;
   width: 25px;
-  background-color: rgb(173, 173, 173);
+  background-color:#f6f0ed;
   border: solid 2px #048998;
   border-radius: 5px;
 }
@@ -208,7 +208,7 @@ END
 .teach {
   height: 25px;
   width: 25px;
-  background-color: rgb(173, 173, 173);
+  background-color: #f6f0ed;
   border: solid 2px #c8553d ;
   border-radius: 5px;
 }
@@ -243,6 +243,17 @@ END
     color: #2a0800;
     text-align: center;
 }
+
+.hyperlink{
+    color: blue;
+    text-decoration: underline;
+}
+
+.hyperlink :hover {
+    cursor: pointer;
+}
+
+
 /* highlighting colums: */
 /* .checks:nth-child(1) { */
 /* background-color: rgb(238, 159, 159); */
