@@ -5,7 +5,7 @@ export default function NamesAndDetails() {
     <form>
       <div className={styles.container}>
         <div className={styles.inputContainer}>
-          <label for="fullName">Full Name:</label>
+          <label className={styles.label} for="fullName">Full Name:</label>
           <input
             type="text"
             id="fullName"
@@ -15,7 +15,7 @@ export default function NamesAndDetails() {
         </div>
 
         <div className={styles.inputContainer}>
-          <label for="username">Username:</label>
+          <label className={styles.label} for="username">Username:</label>
           <input
             type="text"
             id="username"
@@ -37,7 +37,7 @@ export default function NamesAndDetails() {
         </div> */}
 
         <div className={styles.inputContainer}>
-          <label for="imageUrl">Image Url:</label>
+          <label className={styles.label} for="imageUrl">Image Url:</label>
           <input
             type="text"
             id="imageUrl"
@@ -46,13 +46,14 @@ export default function NamesAndDetails() {
           />
         </div>
 
-        <div className={styles.descriptionContainer}>
-          <label for="description">Description:</label>
+        <div className={styles.inputContainer}>
+          <label className={styles.label} for="description">Description:</label>
           <input
             type="text"
             name="description"
             className={styles.inputField}
             id={styles.description}
+            placeholder=""
           />
         </div>
 

@@ -3,7 +3,7 @@ import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./signUpForm.module.css";
 import { useState } from "react";
-
+import Button from "../Button/index"
 export default function SignUpForm() {
   const [agree, setAgree] = useState(false);
 
@@ -94,12 +94,15 @@ export default function SignUpForm() {
     <div className={styles.signUpSubContainer}>
       <NamesAndDetails />
       <LearnTeachChecks />
-
-      <label htmlFor="agree">
+<div className={styles.termsContainer}>
+      <label 
+      className={styles.label}
+      htmlFor="agree">
         I consent to SkillEx storing my data and accept the{" "}
         <a
           href="http://localhost:3000/terms-services#termsOfServices
 "
+        className={styles.hyperlink}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -107,9 +110,12 @@ export default function SignUpForm() {
         </a>
         <input type="checkbox" id="agree" onChange={handleCheck} />
       </label>
-      <button disabled={!agree} onClick={handleSubmit}>
+      </div>
+      <div className= {styles.signUpButton}>
+      <Button text="Sign Up" type= "signUpFormButton" disabled={!agree} onClick={handleSubmit}>
         Sign Up
-      </button>
+      </Button>
+      </div>
     </div>
   );
 }
