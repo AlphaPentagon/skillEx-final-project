@@ -12,7 +12,7 @@ datasource db {
 
 model Profiles {
   id     Int   @id @default(autoincrement())
-  profile_id    Int
+  profile_id    String   @db.VarChar(255)
   preferred_name String   @db.VarChar(255)
   full_name      String   @db.VarChar(255)
   teach_skills   String[] @db.VarChar(64)

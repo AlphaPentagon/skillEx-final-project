@@ -3,18 +3,19 @@ import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./signUpForm.module.css";
 import { useState } from "react";
+
+import { useUser } from "@auth0/nextjs-auth0";
+
+
 import Button from "../Button/index"
+
 export default function SignUpForm() {
   const [agree, setAgree] = useState(false);
+  const { user } = useUser();
 
   function handleCheck() {
     setAgree(!agree);
   }
-
-
-
-
-
 
   async function handleSubmit(e) {
     //e.preventDefault();
@@ -35,6 +36,7 @@ export default function SignUpForm() {
     let isApproved = document.querySelector("#agree").value;
 
     let profile = {
+      profile_id: user.sub,
       full_name: fullName,
       preferred_name: username,
       teach_skills: teachAll,
@@ -44,51 +46,20 @@ export default function SignUpForm() {
       approved: isApproved,
     };
 
-
-
-    let response = await fetch('/api/sign-up',{
+    let response = await fetch("/api/profiles", {
       method: "POST",
       headers: {
-        'Content-Type':'application/json'},
+        "Content-Type": "application/json",
+      },
 
-        body:JSON.stringify(profile),
-      
-    } );
-
+      body: JSON.stringify(profile),
+    });
 
     let content = await response.json();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     console.log(profile);
     console.log("Submitting form");
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   return (
     <div className={styles.signUpSubContainer}>

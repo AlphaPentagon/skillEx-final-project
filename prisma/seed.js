@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 const profiles = [
   {
-    profile_id: 1,
+    profile_id: "1",
     full_name: "Bronson Sprigings",
     preferred_name: "bsprigings0",
     teach_skills: ["English", "Cooking"],
@@ -14,7 +14,7 @@ const profiles = [
     approved: "on",
   },
   {
-    profile_id: 2,
+    profile_id: "2",
     full_name: "Veronique Saye",
     preferred_name: "vsaye1",
     teach_skills: ["Gardening"],
