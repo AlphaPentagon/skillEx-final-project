@@ -33,10 +33,10 @@ const Searchbar = () => {
 
 
       <label for="Teach">Teach
-      <input type="radio" name="switch" value="teach"/></label>
+      <input className={styles.radio} type="radio" name="switch" value="teach"/></label>
 
       <label for="Learn">Learn
-      <input type="radio" name="switch" value="learn"/></label>
+      <input className={styles.radio} type="radio" name="switch" value="learn"/></label>
 
 
 
