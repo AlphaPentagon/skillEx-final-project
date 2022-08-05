@@ -1,4 +1,4 @@
-import styles from "./signUpForm.module.css";
+import styles from "./EditProfile.module.css";
 
 export default function NamesAndDetails() {
   return (
