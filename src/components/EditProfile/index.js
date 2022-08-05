@@ -46,7 +46,7 @@ export default function EditProfile() {
 /* This will need to be changed over to a PUT/PATCH request? */
 
     let response = await fetch("/api/profiles", {
-      method: "POST",
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
