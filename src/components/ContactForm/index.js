@@ -16,7 +16,7 @@ const ContactForm = () => {
 						className={styles.emailInput}
 						type="text"
 						name="email"
-						placeholder="Enter your email"
+						placeholder=""
 					/>
 				
 				</div>
@@ -30,7 +30,7 @@ const ContactForm = () => {
 						className={styles.messageInput}
 						type="text"
 						name="message"
-						placeholder="Type your request"
+						placeholder=""
 					/>
 				
 				</div>

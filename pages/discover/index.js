@@ -1,3 +1,4 @@
+
 import Header from "../../src/components/Header";
 import ProfileGallery from "../../src/components/ProfileGallery";
 import Searchbar from "../../src/components/SearchBar";

@@ -105,7 +105,7 @@ export default function Menu() {
 						)}
 						{user && (
 							<>
-								<Link href="/profiles/sign-up">
+								<Link href="/profiles/edit">
 									<a title="View your profile">My profile</a>
 								</Link>
 
