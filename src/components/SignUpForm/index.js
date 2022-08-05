@@ -45,6 +45,9 @@ export default function SignUpForm() {
       approved: isApproved,
     };
 
+    console.log(profile);
+    console.log("Submitting form");
+
     let response = await fetch("/api/profiles", {
       method: "POST",
       headers: {
@@ -55,9 +58,6 @@ export default function SignUpForm() {
     });
 
     let content = await response.json();
-
-    console.log(profile);
-    console.log("Submitting form");
   }
 
   return (
@@ -80,14 +80,14 @@ export default function SignUpForm() {
         </label>
       </div>
       <div className={styles.signUpButton}>
-        <Button
+        <button
           text="Sign Up"
           type="signUpFormButton"
           disabled={!agree}
           onClick={handleSubmit}
         >
           Sign Up
-        </Button>
+        </button>
       </div>
     </div>
   );
