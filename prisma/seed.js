@@ -11,7 +11,7 @@ const profiles = [
     bio: "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
     avatar_url:
       "https://robohash.org/nequepraesentiumsit.png?size=50x50&set=set1",
-    approved: "on",
+    approved: true,
   },
   {
     profile_id: "2",
@@ -21,7 +21,7 @@ const profiles = [
     learn_skills: ["cooking"],
     bio: "Praesent lectus.",
     avatar_url: "https://robohash.org/hicsolutamagni.png?size=50x50&set=set1",
-    approved: "on",
+    approved: true,
   },
 ];
 

@@ -2,7 +2,7 @@ import Header from "../../src/components/Header";
 import ProfileGallery from "../../src/components/ProfileGallery";
 import Searchbar from "../../src/components/SearchBar";
 import SkillGallery from "../../src/components/SkillGallery/index";
-import styles from "./discover.module.css";
+import styles from "../../styles/Home.module.css"
 
 // fetch all profiles
 // pass the array to the SkillGallery component
@@ -12,7 +12,11 @@ const Discover = ({ profilesArr }) => {
   return (
     <>
       <Header text="Discover" />
+      <p className={styles.sloganText}>
+        Teach and Learn at the same time, all you need to search and find all the tutors that teach that skill
+      </p>
       <ProfileGallery profiles={profilesArr} />
+
       <Searchbar />
       <SkillGallery />
     </>
