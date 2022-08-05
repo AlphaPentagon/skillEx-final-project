@@ -32,7 +32,7 @@ export default function SignUpForm() {
     teach.forEach((item) => {
       teachAll.push(item.value);
     });
-    let isApproved = document.querySelector("#agree").value;
+    let isApproved = document.querySelector("#agree").checked;
 
     let profile = {
       profile_id: user.sub,

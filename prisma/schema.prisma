@@ -19,5 +19,5 @@ model Profiles {
   learn_skills   String[] @db.VarChar(64)
   bio    String   @db.Text 
   avatar_url     String   @db.VarChar(255)
-  approved       String @db.VarChar(3)
+  approved       Boolean @default(false)
 }
