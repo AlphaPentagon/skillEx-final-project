@@ -53,20 +53,17 @@ export default function SimpleSlider() {
 
         <div className={styles.containerTestimonials}>
           <p className={styles.testimonials}>
-            "Got fed up with little things around the house breaking and having
-            to pay an arm and a leg to get a contractor in to fix them. Popped
-            over to SkillEx and quickly learnt how to fix all of my own DIY
-            problems! What a site!"
+            "Got fed up with things breaking around the house, discovered
+            Skillex and learnt how to do all my own DIY"
           </p>
           <p className={styles.title}>Jay Whittingham</p>
         </div>
 
         <div className={styles.containerTestimonials}>
           <p className={styles.testimonials}>
-            "Exactly what I've been looking for! I've tried to learn martial
-            arts from watching videos online but the personal touch of
-            one-on-one tutoring has made all the difference. This site kicks
-            a**, and now so can I!"
+            "I've tried to learn martial arts from YouTube but the personal
+            touch of one-on-one tutoring has made all the difference. This site
+            kicks a**, and now so can I!"
           </p>
           <p className={styles.title}>Pira Tejasakulsin</p>
         </div>
