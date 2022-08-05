@@ -29,7 +29,7 @@ font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- column-gap: 2.5rem;
+ column-gap: 2.9rem;
   width: 100%;
  
   
@@ -39,17 +39,20 @@ font-weight: bold;
 
 .bio {
   text-align: right;
-  margin-left: 20%;
+  padding: auto;
+ 
 
 }
 
 .learnSkills {
   text-decoration: none;
   text-align:right;
+  
 }
 
 .teachSkills{
   text-align: right;
+ 
 }
 .profileInfoContainer ul {
   display: flex;
