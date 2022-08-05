@@ -6,8 +6,7 @@ import { useState } from "react";
 
 import { useUser } from "@auth0/nextjs-auth0";
 
-
-import Button from "../Button/index"
+import Button from "../Button/index";
 
 export default function SignUpForm() {
   const [agree, setAgree] = useState(false);
@@ -33,7 +32,7 @@ export default function SignUpForm() {
     teach.forEach((item) => {
       teachAll.push(item.value);
     });
-    let isApproved = document.querySelector("#agree").value;
+    let isApproved = document.querySelector("#agree").checked;
 
     let profile = {
       profile_id: user.sub,
@@ -65,27 +64,30 @@ export default function SignUpForm() {
     <div className={styles.signUpSubContainer}>
       <NamesAndDetails />
       <LearnTeachChecks />
-<div className={styles.termsContainer}>
-      <label 
-      className={styles.label}
-      htmlFor="agree">
-        I consent to SkillEx storing my data and accept the{" "}
-        <a
-          href="http://localhost:3000/terms-services#termsOfServices
+      <div className={styles.termsContainer}>
+        <label className={styles.label} htmlFor="agree">
+          I consent to SkillEx storing my data and accept the{" "}
+          <a
+            href="http://localhost:3000/terms-services#termsOfServices
 "
-        className={styles.hyperlink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          terms of service
-        </a>
-        <input type="checkbox" id="agree" onChange={handleCheck} />
-      </label>
+            className={styles.hyperlink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            terms of service
+          </a>
+          <input type="checkbox" id="agree" onChange={handleCheck} />
+        </label>
       </div>
-      <div className= {styles.signUpButton}>
-      <Button text="Sign Up" type= "signUpFormButton" disabled={!agree} onClick={handleSubmit}>
-        Sign Up
-      </Button>
+      <div className={styles.signUpButton}>
+        <Button
+          text="Sign Up"
+          type="signUpFormButton"
+          disabled={!agree}
+          onClick={handleSubmit}
+        >
+          Sign Up
+        </Button>
       </div>
     </div>
   );
