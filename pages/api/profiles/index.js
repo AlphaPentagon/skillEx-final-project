@@ -5,7 +5,6 @@ const prisma = new PrismaClient();
 //   prisma pgsql syntax
 //   const result = await prisma.$queryRaw`SELECT * FROM "Profiles"`;
 
-
 export default async (req, res) => {
   if (req.method == "GET") {
     const result = await prisma.profiles.findMany();
