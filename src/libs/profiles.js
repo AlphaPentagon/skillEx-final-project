@@ -8,6 +8,7 @@ const profiles = [
 		learn_skills: ["accounting", "diy", "it"],
 		bio: "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
 		avatar_url: "https://randomuser.me/api/portraits/men/63.jpg",
+		approved: true,
 	},
 	{
 		id: 2,
@@ -18,6 +19,7 @@ const profiles = [
 		learn_skills: ["cooking"],
 		bio: "Praesent lectus.",
 		avatar_url: "https://randomuser.me/api/portraits/women/34.jpg",
+		approved: true,
 	},
 	{
 		id: 3,
@@ -28,6 +30,7 @@ const profiles = [
 		learn_skills: ["it"],
 		bio: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.",
 		avatar_url: "https://randomuser.me/api/portraits/women/92.jpg",
+		approved: true,
 	},
 	{
 		id: 4,
@@ -38,6 +41,7 @@ const profiles = [
 		learn_skills: ["cooking"],
 		bio: "Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue.",
 		avatar_url: "https://randomuser.me/api/portraits/women/86.jpg",
+		approved: true,
 	},
 	{
 		id: 5,
@@ -48,6 +52,7 @@ const profiles = [
 		learn_skills: ["it"],
 		bio: "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna.",
 		avatar_url: "https://randomuser.me/api/portraits/men/13.jpg",
+		approved: true,
 	},
 	{
 		id: 6,
@@ -58,6 +63,7 @@ const profiles = [
 		learn_skills: ["gardening"],
 		bio: "Duis at velit eu est congue elementum. In hac habitasse platea dictumst.",
 		avatar_url: "https://randomuser.me/api/portraits/women/65.jpg",
+		approved: true,
 	},
 	{
 		id: 7,
@@ -68,6 +74,7 @@ const profiles = [
 		learn_skills: ["accounting"],
 		bio: "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
 		avatar_url: "https://randomuser.me/api/portraits/women/9.jpg",
+		approved: true,
 	},
 	{
 		id: 8,
@@ -78,6 +85,7 @@ const profiles = [
 		learn_skills: ["diy"],
 		bio: "Integer a nibh.",
 		avatar_url: "https://randomuser.me/api/portraits/women/16.jpg",
+		approved: true,
 	},
 	{
 		id: 9,
@@ -88,6 +96,7 @@ const profiles = [
 		learn_skills: ["english"],
 		bio: "Nulla mollis molestie lorem.",
 		avatar_url: "https://randomuser.me/api/portraits/men/31.jpg",
+		approved: true,
 	},
 	{
 		id: 10,
@@ -98,6 +107,7 @@ const profiles = [
 		learn_skills: ["it"],
 		bio: "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti.",
 		avatar_url: "https://randomuser.me/api/portraits/men/24.jpg",
+		approved: true,
 	},
 	{
 		id: 11,
@@ -108,6 +118,7 @@ const profiles = [
 		learn_skills: ["cooking"],
 		bio: "Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
 		avatar_url: "https://randomuser.me/api/portraits/men/35.jpg",
+		approved: true,
 	},
 	{
 		id: 12,
@@ -118,6 +129,7 @@ const profiles = [
 		learn_skills: ["diy"],
 		bio: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend.",
 		avatar_url: "https://randomuser.me/api/portraits/men/10.jpg",
+		approved: true,
 	},
 ];
 
