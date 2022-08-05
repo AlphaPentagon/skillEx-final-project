@@ -6,6 +6,7 @@
   width: 100%;
   color: var(--darkBrown);
   font-family: copyFont;
+ 
 }
 
 .profileSection h3,
@@ -14,22 +15,50 @@
   margin: 0;
   padding: 0;
 }
+.profileSection h3 {
+margin-left: 10%;
+padding: 3%;
+border-radius: 12%;
+font-weight: bold;
 
-.profileInfoContainer,
-.profileInfoForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
-  width: 100%;
 }
 
+
+
+.profileInfoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ column-gap: 2.9rem;
+  width: 100%;
+ 
+  
+}
+
+
+
+.bio {
+  text-align: right;
+  padding: auto;
+ 
+
+}
+
+.learnSkills {
+  text-decoration: none;
+  text-align:right;
+  
+}
+
+.teachSkills{
+  text-align: right;
+ 
+}
 .profileInfoContainer ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: right;
+  justify-content: right;
 }
 
 .profileInfoForm > textarea {
@@ -41,4 +70,22 @@
   padding: 0.5rem;
   font-size: 1rem;
   background-color: var(--cream);
+  margin: 6%;
+}
+
+.messageContainer{
+  margin-top: -15%;
+}
+
+.messageTitle{
+  margin-bottom: 10%;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.title {
+  display:inline-block;
+  height:fit-content;
+  background-color: var(--blue);
+  color: var(--cream);
 }
