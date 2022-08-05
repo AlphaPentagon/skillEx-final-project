@@ -66,7 +66,7 @@ export default function EditProfile() {
       <LearnTeachChecks />
 
       <div className= {styles.signUpButton}>
-      <Button text="Edit Profile" type= "signUpFormButton" onClick={handleSubmit}>
+      <Button text="Update Profile" type= "signUpFormButton" onClick={handleSubmit}>
         Update Profile
       </Button>
       </div>
