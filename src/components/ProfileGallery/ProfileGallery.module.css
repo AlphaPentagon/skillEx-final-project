@@ -10,7 +10,9 @@
 
 .iconLeftArrow {
   color: var(--terraCotta);
-  font-size: 30px;
+  font-size: 40px;
+  padding-top: 0.2rem;
+ 
  
 }
 
@@ -22,8 +24,8 @@
 
 .iconRightArrow {
   color: var(--terraCotta);
-  font-size: 30px;
-  
+  font-size: 40px;
+  padding-top: 0.2rem;
  
 }
 
