@@ -19,7 +19,7 @@ const ProfileGallery = () => {
   }
   return (
     <div>
-    <div className={styles.subHeading}>Find Tutors to Teach and Learn different skills, Simply Search a Tutor and enter a skill! </div>
+    
       <LeftArrow className={styles.iconLeftArrow} onClick={prevSlide} />
       <RightArrow className={styles.iconRightArrow} onClick={nextSlide} />
 
@@ -41,6 +41,7 @@ const ProfileGallery = () => {
                     teachSkills={profile.teach_skills}
                     bio={profile.bio}
                   />
+                  
                 )}
               </div>
             );
