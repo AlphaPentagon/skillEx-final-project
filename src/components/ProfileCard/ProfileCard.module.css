@@ -20,6 +20,8 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+ 
+  border-radius: 7%;
 }
 
 .titlesContainer {
@@ -27,7 +29,7 @@
 }
 
 .title {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
   text-align: left;
   vertical-align: bottom;
@@ -38,7 +40,7 @@
 }
 
 .bio {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -48,14 +50,15 @@
 }
 
 .buttonContainer {
-  position: relative;
+  margin-top: -8%;
 
 }
 
 .button{
   position: relative;
-  padding: 7%;
+  padding: 1%;
   margin-left: 60%;
+  
 }
 
 .button:hover {

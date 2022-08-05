@@ -31,7 +31,7 @@ const ProfileGallery = () => {
             return (
               <div key={index} className={styles.profileGallery}>
                 {index === current && (
-                  <ProfileCard
+                  <ProfileCard 
                     /* TODO key & id for dummy data only, change after Auth0 setup */
                     key={profile.profile_id}
                     id={profile.id}
