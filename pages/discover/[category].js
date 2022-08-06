@@ -4,17 +4,17 @@ import ProfileGallery from "../../src/components/ProfileGallery";
 import Searchbar from "../../src/components/SearchBar";
 import SkillGallery from "../../src/components/SkillGallery/index";
 const Discover = () => {
-	const router = useRouter();
-	const { category } = router.query;
+  const router = useRouter();
+  const { category } = router.query;
 
-	return (
-		<>
-			<Header text={category} />
-			<ProfileGallery />
-			<Searchbar />
-			<SkillGallery />
-		</>
-	);
+  return (
+    <>
+      <Header text={category} />
+      {/* <ProfileGallery /> */}
+      <Searchbar />
+      <SkillGallery />
+    </>
+  );
 };
 
 export default Discover;

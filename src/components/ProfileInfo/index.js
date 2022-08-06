@@ -17,29 +17,27 @@ const ProfileInfo = ({ profile }) => {
   return (
     <section className={styles.profileSection}>
       <div className={styles.profileInfoContainer}>
-        <h3 className={styles.title}>Bio </h3>
+        <h3 className={styles.title}>Bio</h3>
         <p className={styles.bio}>{profile.bio}</p>
       </div>
       <div className={styles.profileInfoContainer}>
         <h3 className={styles.title}>Teach</h3>
-        <ul>
+        <div className={styles.skillsContainer}>
           {profile.teach_skills.map((skill) => (
-            <p className={styles.teachSkills}>{skill}</p>
+            <p className={styles.skillsContent}>{skill}</p>
           ))}
-        </ul>
+        </div>
       </div>
       <div className={styles.profileInfoContainer}>
         <h3 className={styles.title}>Learn</h3>
-        <ul>
+        <div className={styles.skillsContainer}>
           {profile.learn_skills.map((skill) => (
-            <p className={styles.teachSkills}>{skill}</p>
+            <p className={styles.skillsContent}>{skill}</p>
           ))}
-        </ul>
-      </div>
-      <div className={styles.profileInfoContainer}>
+        </div>
       </div>
       <div className={styles.messageContainer}>
-        <p className={styles.messageTitle}>Write a message</p>
+        <h3 className={styles.title}>Write a message</h3>
         <form className={styles.profileInfoForm} onSubmit={handleSend}>
           <textarea
             onChange={handleChange}
@@ -48,7 +46,7 @@ const ProfileInfo = ({ profile }) => {
           ></textarea>
           <Button type="profileInfoButton" text="Send" />
         </form>
-          </div>
+      </div>
     </section>
   );
 };

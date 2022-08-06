@@ -48,7 +48,7 @@ export default function SignUpForm() {
     console.log(profile);
     console.log("Submitting form");
 
-    let response = await fetch("/api/profiles", {
+    let response = await fetch("http://localhost:3000/api/profiles", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
