@@ -16,7 +16,10 @@ export default withPageAuthRequired(function Profile({ profile }) {
   );
 });
 
-// needed for data fetching before rendering - creates static versions of each page/path
+/* needed for data fetching before rendering - creates static versions of each page/path
+  queries the database directly using prisma as an ORM and tells next what profile pages to create, based on the id
+  do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
+
 export async function getStaticPaths() {
   const data = await prisma.profiles.findMany();
 
@@ -35,7 +38,10 @@ export async function getStaticPaths() {
   };
 }
 
-// needed for data fetching before rendering - makes the profileId available as a prop in the component
+/* needed for data fetching before rendering - makes the profile object available as a prop in the component
+  queries the database directly using prisma as an ORM and fetches the current profile, based on the id
+  do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
+
 export async function getStaticProps(context) {
   const { params } = context;
   const data = await prisma.profiles.findUnique({

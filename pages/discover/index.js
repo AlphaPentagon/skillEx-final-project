@@ -5,9 +5,6 @@ import SkillGallery from "../../src/components/SkillGallery/index";
 import styles from "./discover.module.css";
 import prisma from "../../prisma/client";
 
-// fetch all profiles
-// pass the array to the SkillGallery component
-
 const Discover = ({ profilesArr }) => {
   console.log(profilesArr);
   return (
@@ -22,7 +19,10 @@ const Discover = ({ profilesArr }) => {
 
 export default Discover;
 
-// needed for data fetching before rendering - makes the profileId available as a prop in the component
+/* needed for data fetching before rendering - makes all profiles available as a prop in the component
+  queries the database directly using prisma as an ORM and fetches all profiles
+  do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
+
 export async function getStaticProps() {
   const data = await prisma.profiles.findMany();
   return {
