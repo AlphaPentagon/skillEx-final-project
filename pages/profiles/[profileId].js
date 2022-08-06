@@ -5,7 +5,7 @@ import Avatar from "../../src/components/Avatar/index";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
 export default withPageAuthRequired(function Profile({ profile }) {
-  console.log("current profile: ", profile);
+  // console.log("current profile: ", profile);
 
   return (
     <>
@@ -30,7 +30,7 @@ export async function getStaticPaths() {
       },
     };
   });
-  console.log(paths);
+  // console.log(paths);
 
   return {
     paths,
@@ -48,7 +48,7 @@ export async function getStaticProps(context) {
     where: { id: Number(params.profileId) },
   });
 
-  console.log("profile: ", data);
+  // console.log("profile: ", data);
   return {
     props: { profile: { ...data } },
   };
