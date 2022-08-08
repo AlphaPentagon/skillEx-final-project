@@ -80,7 +80,12 @@ export default function SignUpForm() {
         </label>
       </div>
       <div className={styles.signUpButton}>
+
+
+
+
         <button
+          id={styles.signUPButton}
           text="Sign Up"
           type="signUpFormButton"
           disabled={!agree}
@@ -88,6 +93,10 @@ export default function SignUpForm() {
         >
           Sign Up
         </button>
+
+
+
+
       </div>
     </div>
   );
