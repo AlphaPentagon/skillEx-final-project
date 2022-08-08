@@ -5,6 +5,7 @@ import styles from "./signUpForm.module.css";
 import { useState } from "react";
 
 import { useUser } from "@auth0/nextjs-auth0";
+import Link from "next/link";
 
 import Button from "../Button/index";
 
@@ -68,7 +69,7 @@ export default function SignUpForm() {
         <label className={styles.label} htmlFor="agree">
           I consent to SkillEx storing my data and accept the{" "}
           <a
-            href="http://localhost:3000/terms-services#termsOfServices
+            href="/terms-services#termsOfServices
 "
             className={styles.hyperlink}
             target="_blank"
@@ -80,14 +81,20 @@ export default function SignUpForm() {
         </label>
       </div>
       <div className={styles.signUpButton}>
+        <Link href="/discover">
+        <a>
         <button
           text="Sign Up"
           type="signUpFormButton"
           disabled={!agree}
           onClick={handleSubmit}
+          
+          
         >
           Sign Up
         </button>
+        </a>
+        </Link>
       </div>
     </div>
   );
