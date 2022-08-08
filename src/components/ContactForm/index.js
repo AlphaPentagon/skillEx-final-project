@@ -26,12 +26,19 @@ const ContactForm = () => {
 				<label className={styles.label}/>
 					Message:
 					</div>
-					<input
+
+
+
+					<textarea
 						className={styles.messageInput}
 						type="text"
 						name="message"
 						placeholder=""
 					/>
+
+
+
+
 				
 				</div>
 				<br></br>

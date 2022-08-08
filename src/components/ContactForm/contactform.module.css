@@ -15,35 +15,73 @@
 	
 }
 
+
+
+
+
+
+
+
+.emailInput {
+	width: 63%;
+	text-align: left;
+
+   padding: 5px 15px;
+   margin: 0px 25px;
+
+
+   border-radius: 5px;
+   border: solid 2px var(--blue);
+
+   font-family: copyFont;
+}
+
+
+
+
+
+
 .messageInput {
 	height: 150px;
 	width: 75%;
 	text-align: left;
-	margin-left: 20px;
 
-	padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px;
+   padding: 5px 15px;
+   margin: 0px 10px;
+
+
    border-radius: 5px;
    border: solid 2px var(--blue);
+
+   font-family: copyFont;
+
+   
+   
 }
 
-.emailInput {
-	width: 68.5%;
-	margin-left: 40px;
 
-	background-color: #f6f0ed;
 
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px 0px 26px;
-   border-radius: 5px;
-   border: solid 2px var(--blue);	
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contactInfo {
 	text-align: left;
@@ -61,9 +99,27 @@
    border: solid 2px var(--blue) 
 }
 
-.contactFormButton{
-    padding-bottom: 5%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .inputField {
 	background-color: #f6f0ed;
