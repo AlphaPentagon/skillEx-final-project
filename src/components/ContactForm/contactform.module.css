@@ -27,7 +27,7 @@
    padding-bottom: 5px ;
    margin: 3px 7px;
    border-radius: 5px;
-   border: solid 2px var(--blue);
+   border: solid 2px var(--terraCotta);
 }
 
 .emailInput {
@@ -42,7 +42,7 @@
    padding-bottom: 5px ;
    margin: 3px 7px 0px 26px;
    border-radius: 5px;
-   border: solid 2px var(--blue);	
+   border: solid 2px var(--terraCotta);	
 }
 
 .contactInfo {
@@ -58,7 +58,7 @@
    padding-bottom: 5px ;
    margin: 3px 7px;
    border-radius: 5px;
-   border: solid 2px var(--blue) 
+   border: solid 2px var(--terraCotta) 
 }
 
 .contactFormButton{
@@ -74,7 +74,7 @@
    padding-bottom: 5px ;
    margin: 3px 7px;
    border-radius: 5px;
-   border: solid 2px var(--blue) 
+   border: solid 2px var(--terraCotta) 
 }
  
 .inputContainer {

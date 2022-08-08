@@ -20,7 +20,7 @@ export default withPageAuthRequired(function Edit({ user }) {
         </Head>
         
         <h1>Edit Profile</h1>
-        <div>Hello  {user.name} </div>
+        <div>Hello  "{user.name}" </div>
         <br></br>
         <EditProfile />
     </div>);
