@@ -6,6 +6,11 @@
 }
 
 
+/* sample link: */
+/* 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/blob/master/FILE' */
+
+
+
 
 
 /* 
@@ -19,10 +24,6 @@
 }
 
 
-/* sample link: */
-/* 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/blob/master/FILE' */
-
-
 
 
 
@@ -33,8 +34,6 @@
   font-family: "subTitle";
   src: url("/Fonts/Hyperjump\ ExtraBold.otf");
 } */
-
-
 @font-face {
   font-family: "subTitle";
   src: url("https://raw.githubusercontent.com/SchoolOfCode/final-project_front-end-2b-2b/blob/dev/public/Fonts/Hyperjump%20ExtraBold.otf");
@@ -52,7 +51,6 @@
   font-family: "copyFont";
   src: url("/Fonts/Hyperjump\ Regular.otf");
 } */
-
 @font-face {
   font-family: "copyFont" ;
   src: url('https://raw.githubusercontent.com/SchoolOfCode/final-project_front-end-2b-2b/blob/dev/public/Fonts/Hyperjump%20Regular.otf');
