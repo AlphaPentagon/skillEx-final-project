@@ -12,12 +12,17 @@
 
 @font-face {
   font-family: "copyFont";
-  src: url("/Fonts/Hyperjump\ Regular.otf");
+  src: url("/Fonts/Hyperjump Regular.otf");
 }
 
 @font-face {
   font-family: "subTitle";
-  src: url("/Fonts/Hyperjump\ ExtraBold.otf");
+  src: url("/Fonts/Hyperjump ExtraBold.otf");
+}
+
+body {
+  width: 100%;
+  background-image: url("/media/Backgrounds/main3.jpg");
 }
 
 html,
@@ -42,6 +47,7 @@ a {
 h1 {
   color: var(--cream);
   background-color: var(--terraCotta);
+  width: 100%;
 }
 
 .logo {

@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.iconLeftArrow {
+  color: var(--terraCotta);
+  font-size: 40px;
+  padding-top: 0.2rem;
+ 
+ 
+}
+
+.iconLeftArrow :hover{
+  color:var(--blue);
+}
+
+
+
+.iconRightArrow {
+  color: var(--terraCotta);
+  font-size: 40px;
+  padding-top: 0.2rem;
+ 
+}
+
+
+.iconRightArrow :hover{
+  color: var(--blue);
+}
+
+.subHeading{
+  color:var(--darkBrown);
+  font-weight: bold;
+  font-size: 95%;
+  padding:5%;
+
+}
+
+.searchResult{
+  color:var(--darkBrown);
+  font-weight: bold;
+  font-size: 95%;
+  padding-top:2%;
+}
+
+.profileGallery{
+  margin-left: 40%;
+  margin-right: 40%;
+}

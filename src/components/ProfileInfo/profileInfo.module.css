@@ -1,0 +1,51 @@
+.profileSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkBrown);
+  font-family: copyFont;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+
+.title {
+  margin: 0 0 1rem 0;
+  display: block;
+  padding-top: 0.2rem;
+  font-weight: bold;
+  background-color: var(--terraCotta);
+  color: var(--cream);
+}
+
+.profileInfoContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+}
+
+.profileInfoForm > textarea {
+  width: 90%;
+  height: 10rem;
+  border-radius: 0.5rem;
+  border: solid 2px var(--blue);
+  font-family: inherit;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.skillsContent {
+  text-transform: capitalize;
+  margin: 0 0 0.5rem 0;
+}
+
+.skillsContainer {
+  height: auto;
+}
+
+.bio {
+  margin: 0;
+}
