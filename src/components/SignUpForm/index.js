@@ -71,16 +71,15 @@ export default function SignUpForm() {
 		window.location.href = "/discover";
 	}
 
-	return (
-		<div className={styles.signUpSubContainer}>
-			<NamesAndDetails />
-			<LearnTeachChecks />
-			<div className={styles.termsContainer}>
-				<label className={styles.label} htmlFor="agree">
-					I consent to SkillEx storing my data and accept the{" "}
-					<a
-						href="http://localhost:3000/terms-services#termsOfServices
-"
+  return (
+    <div className={styles.signUpSubContainer}>
+      <NamesAndDetails />
+      <LearnTeachChecks />
+      <div className={styles.termsContainer}>
+        <label className={styles.label} htmlFor="agree">
+          I consent to SkillEx storing my data and accept the{" "}
+          <a
+            href="/terms-services#termsOfServices"
 						className={styles.hyperlink}
 						target="_blank"
 						rel="noopener noreferrer"
