@@ -1,40 +1,55 @@
-import { useRouter } from "next/router";
+import prisma from "../../prisma/client";
 import ProfileInfo from "../../src/components/ProfileInfo";
-import profiles from "../../src/libs/profiles";
 import Header from "../../src/components/Header/index";
 import Avatar from "../../src/components/Avatar/index";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 
-// needed for data fetching before rendering - creates static versions of each page/path
-export function getStaticPaths() {
-  const pagesArr = [];
-  profiles.map((profile, index) => {
-    pagesArr.push({ params: { profileId: "" + (index + 1) } });
-  });
-  return {
-    paths: pagesArr,
-    fallback: true,
-  };
-}
-
-// needed for data fetching before rendering - makes the profileId available as a prop in the component
-export function getStaticProps() {
-  return {
-    props: { profileId: {} },
-  };
-}
-
-export default withPageAuthRequired(function Profile({ user }) {
-  const router = useRouter();
-  const { profileId } = router.query;
-  const CURRENT_INDEX = profileId - 1;
-  const CURRENT_PROFILE = profiles[CURRENT_INDEX];
+export default withPageAuthRequired(function Profile({ profile }) {
+  // console.log("current profile: ", profile);
 
   return (
     <>
-      <Avatar name="Jenna" imageUrl={CURRENT_PROFILE.avatar_url} />
-      <Header text={CURRENT_PROFILE.full_name} colour="blue" />
-      <ProfileInfo profile={CURRENT_PROFILE} />
+      <Avatar name="Jenna" imageUrl={profile.avatar_url} />
+      <Header text={profile.full_name} colour="blue" />
+      <ProfileInfo profile={profile} />
     </>
   );
 });
+
+/* needed for data fetching before rendering - creates static versions of each page/path
+  queries the database directly using prisma as an ORM and tells next what profile pages to create, based on the id
+  do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
+
+export async function getStaticPaths() {
+  const data = await prisma.profiles.findMany();
+
+  const paths = data.map((profile) => {
+    return {
+      params: {
+        profileId: `${profile.id}`,
+      },
+    };
+  });
+  // console.log(paths);
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+/* needed for data fetching before rendering - makes the profile object available as a prop in the component
+  queries the database directly using prisma as an ORM and fetches the current profile, based on the id
+  do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
+
+export async function getStaticProps(context) {
+  const { params } = context;
+  const data = await prisma.profiles.findUnique({
+    where: { id: Number(params.profileId) },
+  });
+
+  // console.log("profile: ", data);
+  return {
+    props: { profile: { ...data } },
+  };
+}

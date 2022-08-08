@@ -1,6 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import prisma from "../../../prisma/client.js";
 
 //   prisma pgsql syntax
 //   const result = await prisma.$queryRaw`SELECT * FROM "Profiles"`;

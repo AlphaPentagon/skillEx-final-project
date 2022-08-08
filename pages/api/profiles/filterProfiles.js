@@ -1,7 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
-
+import prisma from "../../../prisma/client.js";
 // example fetch request URL
 // GET /api/filterProfiles?searchString=:searchString&mode=:mode
 

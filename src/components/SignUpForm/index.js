@@ -27,10 +27,10 @@ export default function SignUpForm() {
     let learn = document.querySelectorAll("input[name='learn']:checked");
     let teach = document.querySelectorAll("input[name='teach']:checked");
     learn.forEach((item) => {
-      learnAll.push(item.value);
+      learnAll.push(item.value.toLowerCase());
     });
     teach.forEach((item) => {
-      teachAll.push(item.value);
+      teachAll.push(item.value.toLowerCase());
     });
     let isApproved = document.querySelector("#agree").checked;
 
@@ -48,7 +48,7 @@ export default function SignUpForm() {
     console.log(profile);
     console.log("Submitting form");
 
-    let response = await fetch("/api/profiles", {
+    let response = await fetch("http://localhost:3000/api/profiles", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

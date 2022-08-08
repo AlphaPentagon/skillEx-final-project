@@ -1,64 +1,28 @@
 .profileSection {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 2rem;
-  gap: 3rem;
-  width: 100%;
+  grid-template-rows: 1fr 1fr 1fr 3fr;
+  justify-content: center;
+  align-items: center;
   color: var(--darkBrown);
   font-family: copyFont;
- 
+  margin: 0 0 1rem 0;
+  width: 100%;
 }
 
-.profileSection h3,
-.profileSection ul,
-.profileSection p {
-  margin: 0;
-  padding: 0;
+.title {
+  margin: 0 0 1rem 0;
+  display: block;
+  padding-top: 0.2rem;
+  font-weight: bold;
+  background-color: var(--terraCotta);
+  color: var(--cream);
 }
-.profileSection h3 {
-margin-left: 10%;
-padding: 3%;
-border-radius: 12%;
-font-weight: bold;
-
-}
-
-
 
 .profileInfoContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- column-gap: 2.9rem;
-  width: 100%;
- 
-  
-}
-
-
-
-.bio {
-  text-align: right;
-  padding: auto;
- 
-
-}
-
-.learnSkills {
-  text-decoration: none;
-  text-align:right;
-  
-}
-
-.teachSkills{
-  text-align: right;
- 
-}
-.profileInfoContainer ul {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  justify-content: right;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
 }
 
 .profileInfoForm > textarea {
@@ -70,22 +34,18 @@ font-weight: bold;
   padding: 0.5rem;
   font-size: 1rem;
   background-color: var(--cream);
-  margin: 6%;
+  margin-bottom: 1rem;
 }
 
-.messageContainer{
-  margin-top: -15%;
+.skillsContent {
+  text-transform: capitalize;
+  margin: 0 0 0.5rem 0;
 }
 
-.messageTitle{
-  margin-bottom: 10%;
-  font-weight: bold;
-  font-size: 1.2rem;
+.skillsContainer {
+  height: auto;
 }
 
-.title {
-  display:inline-block;
-  height:fit-content;
-  background-color: var(--blue);
-  color: var(--cream);
+.bio {
+  margin: 0;
 }
