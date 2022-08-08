@@ -4,7 +4,6 @@ import { handleLogin } from "@auth0/nextjs-auth0";
 export default async function signup(req, res) {
   try {
     await handleLogin(req, res, {
-      // TODO: Remove hardcoded localhost address
       returnTo: "/profiles/sign-up",
       authorizationParams: {
         // Note that this can be combined with prompt=login , which indicates if

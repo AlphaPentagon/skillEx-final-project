@@ -68,7 +68,7 @@ export default function SignUpForm() {
         <label className={styles.label} htmlFor="agree">
           I consent to SkillEx storing my data and accept the{" "}
           <a
-            href="http://localhost:3000/terms-services#termsOfServices
+            href="/terms-services#termsOfServices
 "
             className={styles.hyperlink}
             target="_blank"
