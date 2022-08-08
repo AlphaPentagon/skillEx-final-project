@@ -19,7 +19,8 @@ const ProfileCard = ({
       </div>
       <div className={styles.titlesContainer}>
         <div className={styles.title}>{`Name: ${username}`}</div>
-        <div className={styles.title}>{`Skills: ${teachSkills}`}</div>
+        <div className={styles.title}>{`Teaching: ${teachSkills}`}</div>
+        <div className={styles.title}>{`Wants to learn: ${learnSkills}`}</div>
       </div>
       <div className={styles.bioContainer}>
         <p className={styles.bio}>{bio}</p>
