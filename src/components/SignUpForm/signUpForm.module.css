@@ -59,16 +59,7 @@
    border-radius: 5px;
    border: solid 2px #c8553d }
    
-.inputFieldDescription {
-  background-color: #f6f0ed;
- width: 95%;
- padding-top: 5px;
- padding-left: 10px;
- padding-right: 15px;
- padding-bottom: 5px ;
- margin: 3px 7px 0px 5px;
- border-radius: 5px;
- border: solid 2px #c8553d }
+
  
 
 .label {
@@ -85,17 +76,41 @@
     justify-content: center;
 }
 
+
+
+
+
+
+
+
+
 #description {
+  box-sizing: border-box;
 
   height: 200px;
   
   background-color: #f6f0ed;
   width: 100%;
-  padding-top: 15px;
+
+  padding: 15px 14px;
+
   margin: 6px 3px 0px 1px;
   border-radius: 5px;
- 
+  border: solid 2px #c8553d
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .uploadPhotoButton {
    background-color: red; 
