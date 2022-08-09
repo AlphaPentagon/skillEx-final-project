@@ -1,27 +1,38 @@
-import profile from "../../pages/api/profiles/[id].js";
+import profiles from "../../pages/api/profiles/index.js";
 import { createMocks } from "node-mocks-http";
 
-describe("/api/profiles/[id]", () => {
-  test("returns profile where id is 1 and object conatins correct data types", async () => {
+describe("/api/profiles/", () => {
+  test("returns posted profile object", async () => {
     const { req, res } = createMocks({
-      method: "GET",
-      query: {
-        id: "1",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: {
+        profile_id: "62e3f0e6fc13ae3b3e000005",
+        full_name: "John Smith",
+        preferred_name: "John",
+        teach_skills: ["english", "cooking"],
+        learn_skills: ["accounting", "diy", "it"],
+        bio: "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
+        avatar_url: "https://randomuser.me/api/portraits/men/63.jpg",
+        approved: true,
       },
     });
 
-    await profile(req, res);
+    await profiles(req, res);
 
     const expected = {
-      id: 1,
-      profile_id: expect.any(String),
-      full_name: expect.any(String),
-      preferred_name: expect.any(String),
-      teach_skills: expect.arrayContaining([expect.any(String)]),
-      learn_skills: expect.arrayContaining([expect.any(String)]),
-      bio: expect.any(String),
-      avatar_url: expect.any(String),
-      approved: expect.any(Boolean),
+      id: expect.any(Number),
+      profile_id: "62e3f0e6fc13ae3b3e000005",
+      full_name: "John Smith",
+      preferred_name: "John",
+      teach_skills: ["english", "cooking"],
+      learn_skills: ["accounting", "diy", "it"],
+      bio: "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
+      avatar_url: "https://randomuser.me/api/portraits/men/63.jpg",
+      approved: true,
     };
 
     //expect(res._getStatusCode()).toBe(200);
