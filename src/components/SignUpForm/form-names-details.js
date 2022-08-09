@@ -48,10 +48,10 @@ export default function NamesAndDetails() {
 
         <div className={styles.inputContainer}>
           <label className={styles.label} for="description">Description:</label>
-          <input
+          <textarea
             type="text"
             name="description"
-            className={styles.inputFieldDescription}
+
             id={styles.description}
             placeholder=""
           />
