@@ -14,6 +14,7 @@ const SkillGallery = () => {
 					title={skill.skill_name}
 					description={skill.description}
 					path={skill.skill_name}
+					className={styles.SkillCard}
 				/>
 			))}
 		</div>
