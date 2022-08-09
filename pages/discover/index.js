@@ -5,6 +5,7 @@ import SkillGallery from "../../src/components/SkillGallery/index";
 import styles from "./discover.module.css";
 import prisma from "../../prisma/client";
 import stylesHome from "../../styles/Home.module.css"
+import Head from "next/head";
 
 
 
@@ -12,6 +13,9 @@ const Discover = ({ profilesArr }) => {
   console.log(profilesArr);
   return (
     <>
+    <Head>
+      <title>Discover</title>
+    </Head>
       <Header text="Discover" />
       <p className={stylesHome.sloganText}>
         Teach and Learn at the same time, all you need to search and find all the tutors that teach that skill
