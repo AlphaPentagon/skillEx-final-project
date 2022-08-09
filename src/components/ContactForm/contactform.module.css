@@ -1,6 +1,6 @@
 .form {
 	padding: 30px;
-	
+	display: flex;
 	flex-direction: column;
 	font-weight: bold;
 	text-align: center;
@@ -56,28 +56,19 @@
 	width: 75%;
 	text-align: left;
 
+   padding: 5px 15px;
+   margin: 0px 10px;
 
-	padding-top: 5px;
-   padding-left: 25px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px;
    border-radius: 5px;
+   border: solid 2px var(--blue);
    border: solid 2px var(--terraCotta);
-   resize: none;
+   
+   font-family: copyFont;
 
 }
 
 
 
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px 0px 26px;
-   border-radius: 5px;
-   border: solid 2px var(--terraCotta);	
-}
 
 
 .contactInfo {
@@ -92,15 +83,6 @@
    padding-right: 15px;
    padding-bottom: 5px ;
    margin: 3px 7px;
-
-
-}
-
-.contactFormButton{
-    padding-bottom: 5%;
-    padding-left: 14%;
-}
-
    border-radius: 5px;
    border: solid 2px var(--terraCotta) 
 }
@@ -148,99 +130,3 @@
 .padding {
 	padding-top: 10px;
 }
-
-
-@media (min-width: 600px) {
-
-   .form {
-      padding: 30px 0 0 0;
-
-      flex-direction: column;
-      font-weight: bold;
-      text-align: center;
-   }
-   
-}
-@media (min-width: 600px) {
-
-   .label {
-      padding: 10px;
-      text-align: left;
-      font-weight: bold;
-      font-size: larger;
-      font-size: 16px;
-      
-      
-   }
-}
-   @media (min-width: 600px) {   
-   .messageInput {
-      height: 150px;
-      width: 100%;
-      text-align: left;
-      margin-left: 20px;
-   
-      padding-top: 5px;
-      padding-left: 25px;
-      padding-right: 100%;
-      padding-bottom: 5px ;
-      margin: 3px 7px;
-      resize: none;
-   }
-}
-   @media (min-width: 600px) {  
-   .emailInput {
-      width: 92%;
-      margin-left: 40px;
-   
-      background-color: #f6f0ed;
-   
-      padding-top: 5px;
-      padding-left: 10px;
-      padding-right: 98%;   /*2.3rem*/
-      padding-bottom: 5px ;
-      margin: 3px 7px 0px 26px;
-   }
-}
-   @media (min-width: 600px) {
-   .contactInfo {
-      text-align: left;
-      padding: 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-   
-      padding-top: 5px;
-      padding-left: 10px;
-      padding-right: 15px;
-      padding-bottom: 5px ;
-      margin: 3px 7px;
-     
-   }
-   }
-   @media (min-width: 600px) {
-   .contactFormButton{
-       padding-bottom: 5%;
-       padding-left: 34%;
-   }
-}
-   @media (min-width: 600px) {
-   .inputField {
-      background-color: #f6f0ed;
-      width: 95%;
-      padding-top: 5px;
-      padding-left: 10px;
-      padding-right: 15px;
-      padding-bottom: 5px ;
-      margin: 3px 7px;
-   }
-
-   }
-   @media (min-width: 600px) {
-   
-   .inputContainer {
-       display:grid;
-       grid-template-columns: max-content max-content;
-       grid-gap:5px;
-   }
-   }
