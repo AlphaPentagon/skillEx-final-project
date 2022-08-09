@@ -49,12 +49,11 @@ export default function SignUpForm() {
 		console.log(profile);
 		console.log("Submitting form");
 
-
-    let response = await fetch("/api/profiles", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+		let response = await fetch("/api/profiles", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
 
 			body: JSON.stringify(profile),
 		});
@@ -63,7 +62,6 @@ export default function SignUpForm() {
 
 		// Show alert "Your profile has now been created, go to Discover to search. You can edit your profile from the My Profile page"
 		// redirect to Discover page
-
 		alert(
 			"Congratulations! Your profile has now been created.\r\n\r\nPlease go to the Discover page to search for educators and learners.\r\n\r\nIf you would like to view or edit your profile, please visit the My Profile page from the navigation menu"
 		);
@@ -125,7 +123,6 @@ export default function SignUpForm() {
 
 
   }
-
 
 
 
