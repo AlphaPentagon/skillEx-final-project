@@ -4,8 +4,18 @@ import ProfileGallery from "../../src/components/ProfileGallery";
 import Searchbar from "../../src/components/SearchBar";
 import SkillGallery from "../../src/components/SkillGallery/index";
 
+
+
+
+
+
 const Discover = ({ profiles, category }) => {
   const isProfiles = profiles.length > 0;
+
+
+
+
+
 
   return (
     <>
@@ -23,6 +33,17 @@ const Discover = ({ profiles, category }) => {
 };
 
 export default Discover;
+
+
+
+
+
+
+
+
+
+
+
 
 /* needed for data fetching before rendering - creates static versions of each page/path
 
