@@ -16,33 +16,45 @@ export default withPageAuthRequired(function Profile({ profile }) {
   );
 });
 
-/* needed for data fetching before rendering - creates static versions of each page/path
-  queries the database directly using prisma as an ORM and tells next what profile pages to create, based on the id
-  do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
+// /* needed for data fetching before rendering - creates static versions of each page/path
+//   queries the database directly using prisma as an ORM and tells next what profile pages to create, based on the id
+//   do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
 
-export async function getStaticPaths() {
-  const data = await prisma.profiles.findMany();
+// export async function getStaticPaths() {
+//   const data = await prisma.profiles.findMany();
 
-  const paths = data.map((profile) => {
-    return {
-      params: {
-        profileId: `${profile.id}`,
-      },
-    };
-  });
-  // console.log(paths);
+//   const paths = data.map((profile) => {
+//     return {
+//       params: {
+//         profileId: `${profile.id}`,
+//       },
+//     };
+//   });
+//   // console.log(paths);
 
-  return {
-    paths,
-    fallback: false,
-  };
-}
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// }
 
-/* needed for data fetching before rendering - makes the profile object available as a prop in the component
-  queries the database directly using prisma as an ORM and fetches the current profile, based on the id
-  do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
+// /* needed for data fetching before rendering - makes the profile object available as a prop in the component
+//   queries the database directly using prisma as an ORM and fetches the current profile, based on the id
+//   do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
 
-export async function getStaticProps(context) {
+// export async function getStaticProps(context) {
+//   const { params } = context;
+//   const data = await prisma.profiles.findUnique({
+//     where: { id: Number(params.profileId) },
+//   });
+
+//   // console.log("profile: ", data);
+//   return {
+//     props: { profile: { ...data } },
+//   };
+// }
+
+export async function getServerSideProps(context) {
   const { params } = context;
   const data = await prisma.profiles.findUnique({
     where: { id: Number(params.profileId) },

@@ -27,6 +27,7 @@
     height: 250px;
     position: relative;
     border: 2px solid red;
+    border-radius: 7px;
 }
 
 

@@ -1,5 +1,8 @@
 import styles from "./signUpForm.module.css";
 
+
+
+
 export default function LearnTeachChecks() {
   const categories = [
     "Cooking",
@@ -13,6 +16,10 @@ export default function LearnTeachChecks() {
     "Martial Arts",
   ];
 
+
+
+
+  
   return (
     <div className={styles.containerChecks}>
       {/* headers: */}
