@@ -51,7 +51,7 @@ export default function NamesAndDetails() {
           <textarea
             type="text"
             name="description"
-            className={styles.inputFieldDescription}
+
             id={styles.description}
             placeholder=""
           />
