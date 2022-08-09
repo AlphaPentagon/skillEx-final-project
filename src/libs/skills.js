@@ -26,7 +26,7 @@ const skills = [
 	{
 		skill_id: 5,
 		skill_name: "gardening",
-		image: "/media/categories/gardening.webp",
+		image: "/media/categories/gardening.jpg",
 		description: "PLACEHOLDER",
 	},
 	{

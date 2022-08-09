@@ -6,6 +6,10 @@
 	text-align: center;
 }
 
+
+
+
+
 .label {
 	padding: 10px;
 	text-align: left;
@@ -41,6 +45,12 @@
 
 
 
+
+
+
+
+
+
 .messageInput {
 	height: 150px;
 	width: 75%;
@@ -49,35 +59,13 @@
    padding: 5px 15px;
    margin: 0px 10px;
 
-
    border-radius: 5px;
    border: solid 2px var(--blue);
-
+   border: solid 2px var(--terraCotta);
+   
    font-family: copyFont;
 
-   
-   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -96,7 +84,7 @@
    padding-bottom: 5px ;
    margin: 3px 7px;
    border-radius: 5px;
-   border: solid 2px var(--blue) 
+   border: solid 2px var(--terraCotta) 
 }
 
 
@@ -130,7 +118,7 @@
    padding-bottom: 5px ;
    margin: 3px 7px;
    border-radius: 5px;
-   border: solid 2px var(--blue) 
+   border: solid 2px var(--terraCotta) 
 }
  
 .inputContainer {

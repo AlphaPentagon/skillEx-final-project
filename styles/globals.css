@@ -7,54 +7,47 @@
 
 
 /* sample link: */
-/* 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/blob/master/FILE' */
+/* 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/blob/master/FILE' 
+"https://raw.githubusercontent.com/SchoolOfCode/final-project_front-end-2b-2b/blob/dev/public/Fonts/FrederickatheGreat-Regular.ttf"
+
+
+*/
 
 
 
 
 
-/* 
+
 @font-face {
   font-family: "mainLogo";
   src: url("/Fonts/FrederickatheGreat-Regular.ttf");
-} */
-@font-face {
-  font-family: "mainLogo";
-  src: url("https://raw.githubusercontent.com/SchoolOfCode/final-project_front-end-2b-2b/blob/dev/public/Fonts/FrederickatheGreat-Regular.ttf");
-}
+} 
 
 
 
-
-
-
-
-
-/* @font-face {
-  font-family: "subTitle";
-  src: url("/Fonts/Hyperjump\ ExtraBold.otf");
-} */
 @font-face {
   font-family: "subTitle";
-  src: url("https://raw.githubusercontent.com/SchoolOfCode/final-project_front-end-2b-2b/blob/dev/public/Fonts/Hyperjump%20ExtraBold.otf");
-}
+  src: url("/Fonts/Hyperjump ExtraBold.otf");
+} 
 
 
 
 
-
-
-
-
-/* 
 @font-face {
   font-family: "copyFont";
-  src: url("/Fonts/Hyperjump\ Regular.otf");
-} */
-@font-face {
-  font-family: "copyFont" ;
-  src: url('https://raw.githubusercontent.com/SchoolOfCode/final-project_front-end-2b-2b/blob/dev/public/Fonts/Hyperjump%20Regular.otf');
+  src: url("/Fonts/Hyperjump Regular.otf");
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -66,7 +59,6 @@ body {
   width: 100%;
   background-image: url("/media/Backgrounds/main3.jpg");
 }
-
 
 html,
 body {
@@ -91,7 +83,7 @@ h1 {
   color: var(--cream);
   background-color: var(--terraCotta);
   width: 100%;
-  }
+}
 
 .logo {
   font-family: mainLogo;
