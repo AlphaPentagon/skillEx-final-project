@@ -2,8 +2,8 @@
   position: relative;
   background-color: var(--cream);
   border-radius: 1em;
-  height: 42vh;
-  width: 55vw;
+  height: 350px;
+  width: 260px;
   padding: 0.5em;
   margin-top: 0.5em;
 }
