@@ -79,27 +79,53 @@ export default function SignUpForm() {
       <div className={styles.termsContainer}>
         <label className={styles.label} htmlFor="agree">
           I consent to SkillEx storing my data and accept the{" "}
-          <a
-            href="/terms-services#termsOfServices"
-						className={styles.hyperlink}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						terms of service
-					</a>
-					<input type="checkbox" id="agree" onChange={handleCheck} />
-				</label>
-			</div>
-			<div className={styles.signUpButton}>
-				<button
-					text="Sign Up"
-					type="signUpFormButton"
-					disabled={!agree}
-					onClick={handleSubmit}
-				>
-					Sign Up
-				</button>
-			</div>
-		</div>
-	);
-}
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="http://localhost:3000/terms-services#termsOfServices"
+            className={styles.hyperlink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            terms of service
+          </a>
+          <input type="checkbox" id="agree" onChange={handleCheck} />
+        </label>
+      </div>
+      <div className={styles.signUpButton}>
+
+
+
+
+        <button
+          id={styles.signUPButton}
+          text="Sign Up"
+          type="signUpFormButton"
+          disabled={!agree}
+          onClick={handleSubmit}
+        >
+          Sign Up
+        </button>
+
+
+
+
+      </div>
+    </div>
+  );
+
+
+
+
+
+
+
+
+
