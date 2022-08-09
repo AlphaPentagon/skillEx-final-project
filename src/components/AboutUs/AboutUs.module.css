@@ -17,3 +17,27 @@
   padding: 0% 10% 5% 10%;
   top: 5%;
 }
+
+@media (min-width: 600px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .imageContainer {
+    margin: auto;
+  }
+  
+  .image {
+    border-radius: 0.3rem;
+  }
+  
+  .textContainer {
+    text-align: left;
+    padding: 0% 10% 5% 10%;
+    top: 5%;
+  }
+
+}

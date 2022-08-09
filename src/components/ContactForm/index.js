@@ -5,6 +5,7 @@ import styles from "./contactform.module.css";
 const ContactForm = () => {
 	return (
 		<>
+		<title>Contact us</title>
 			<Header text="Contact us" colour="terraCotta" />
 			<form className={styles.form}>
 				<div className={styles.inputContainer}>
@@ -27,19 +28,12 @@ const ContactForm = () => {
 					Message:
 					</div>
 
+					<textarea className={styles.messageInput}
+					type="text"
+					name="message"
+					placeholder="">
+				</textarea>
 
-
-					<textarea
-						className={styles.messageInput}
-						type="text"
-						name="message"
-						placeholder=""
-					/>
-
-
-
-
-				
 				</div>
 				<br></br>
 				<div className= {styles.contactFormButton}>

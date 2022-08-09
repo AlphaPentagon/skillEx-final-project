@@ -1,8 +1,12 @@
 import styles from "../styles/termsPage.module.css";
+import Head from "next/head";
 
 export default function TermsAndServices() {
   return (
     <div id="home" className={styles.container}>
+      <Head>
+      <title>Terms and Services</title>
+    </Head>
       <div id="privacy" className={styles.box}>
         <h1 className={styles.header1}>Privacy Policy</h1>
         <p>Last updated: August 02, 2022</p>

@@ -22,3 +22,33 @@
   padding: 40px;
   width: 100%;
 }
+
+
+@media (min-width: 600px) {
+
+  .containerTestimonials {
+    background-color: var(--terraCotta);
+    text-align: center;
+    padding: 20px;
+    height: 150px;
+  }
+  
+  .title {
+    font-family: var(--subTitle);
+    color: var(--cream);
+    font-size: 16px;
+  }
+  
+  .testimonials {
+    font-style: oblique;
+    color: var(--cream);
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .wholeTestimonials {
+    padding: 40px;
+    width: 100%;
+  }
+
+}
