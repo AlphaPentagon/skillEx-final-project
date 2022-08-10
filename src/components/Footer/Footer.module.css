@@ -21,3 +21,31 @@
 .socialContainer a {
 	margin: 0% 2% 0% 2%;
 }
+
+@media (min-width: 600px) {
+
+	.footerContainer {
+		display: flex;
+		flex-direction: column;
+		background-color: #c8553d;
+	}
+	
+	.sitemapContainer {
+		padding: 1.5%;
+	}
+	
+	.sitemapContainer a,
+	.otherLinksContainer a,
+	.copyrightContainer p {
+		color: white;
+	}
+	
+	.otherLinksContainer a {
+		margin: 0% 2% 0% 2%;
+	}
+	
+	.socialContainer a {
+		margin: 0% 2% 0% 2%;
+	}
+
+}

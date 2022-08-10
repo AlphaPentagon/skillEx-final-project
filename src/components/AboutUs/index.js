@@ -6,6 +6,15 @@ const AboutUs = () => {
     <div className={styles.container}>
       <div className={styles.title}>
         <h2 className="abouttitle">About Us</h2>
+        <div className={styles.textContainer}>
+        <p className="abouttext">
+          SkillEx is the place where exchanging skills and talents becomes easy.
+        </p>
+        <p className="abouttext">
+          Swap your skills, find what you are looking for. It’s all free, you
+          just “pay” with your time.
+        </p>
+      </div>
       </div>
       <div className={styles.imageContainer}>
         <Image
@@ -16,15 +25,7 @@ const AboutUs = () => {
           height={250}
         />
       </div>
-      <div className={styles.textContainer}>
-        <p className="abouttext">
-          SkillEx is the place where exchanging skills and talents becomes easy.
-        </p>
-        <p className="abouttext">
-          Swap your skills, find what you are looking for. It’s all free, you
-          just “pay” with your time.
-        </p>
-      </div>
+      
     </div>
   );
 };
