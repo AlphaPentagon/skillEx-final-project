@@ -26,7 +26,7 @@
 }
 
 .profileCardButton {
-  background-color: var(--terraCotta);
+  background-color: var(--blue);
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
   font-size: 0.6rem;
@@ -35,6 +35,9 @@
   cursor: pointer;
 }
 
+.profileCardButton:hover {
+  background-color: var(--blue);
+}
 .contactFormButton {
   background-color: var(--terraCotta);
   cursor: pointer;
