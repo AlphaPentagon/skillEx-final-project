@@ -5,7 +5,7 @@ import styles from "./EditProfile.module.css";
 import { useState } from "react";
 import { useUser } from "@auth0/nextjs-auth0";
 
-export default function EditProfile() {
+export default function EditProfile({ profile }) {
   const [agree, setAgree] = useState(false);
   const { user } = useUser();
 
