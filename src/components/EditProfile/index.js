@@ -2,11 +2,9 @@
 import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./EditProfile.module.css";
-import { useState } from "react";
 import { useUser } from "@auth0/nextjs-auth0";
 
 export default function EditProfile({ profile }) {
-  const [agree, setAgree] = useState(false);
   const { user } = useUser();
 
   async function handleSubmit(e) {
@@ -56,8 +54,11 @@ export default function EditProfile({ profile }) {
 
   return (
     <div className={styles.signUpSubContainer}>
-      <NamesAndDetails />
-      <LearnTeachChecks />
+      <NamesAndDetails profile={profile} />
+      <LearnTeachChecks
+        learnSkills={profile.learn_skills}
+        teachSkills={profile.teach_skills}
+      />
 
       <div className={styles.signUpButton}>
         <button
