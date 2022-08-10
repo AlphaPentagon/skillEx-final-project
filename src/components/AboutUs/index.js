@@ -33,13 +33,25 @@ const AboutUs = () => {
 
 animated gif:
       <div className={styles.imageContainer}>
-        <Image
+      {/* <Image
           src="/media/Powerpoint/AboutUs.gif"
           alt="diagram showing how skillswapping works"
           className={styles.image}
           width={470}
           height={250}
+        /> */}
+   
+        <Image 
+          src="/media/Powerpoint/AboutUs.gif"
+          alt="animation explaining how to use the site"
+          className={styles.image}
+          width={470}
+          height={250}
+        
+        
         />
+
+
       </div>
       
     </div>
