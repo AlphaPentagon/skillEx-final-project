@@ -25,6 +25,22 @@ const AboutUs = () => {
           height={250}
         />
       </div>
+
+
+
+
+
+
+animated gif:
+      <div className={styles.imageContainer}>
+        <Image
+          src="/media/Powerpoint/AboutUs.gif"
+          alt="diagram showing how skillswapping works"
+          className={styles.image}
+          width={470}
+          height={250}
+        />
+      </div>
       
     </div>
   );
