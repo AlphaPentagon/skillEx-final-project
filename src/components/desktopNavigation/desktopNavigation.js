@@ -19,7 +19,7 @@ export default function DesktopNavBar() {
 					</Link>
 					<Link href="/contact">
 						<a className={styles.word} title="Get in touch">
-							Contact Us
+							Contact
 						</a>
 					</Link>
 
