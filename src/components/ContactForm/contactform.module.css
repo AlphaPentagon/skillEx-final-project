@@ -70,15 +70,6 @@
 
 
 
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px 0px 26px;
-   border-radius: 5px;
-   border: solid 2px var(--terraCotta);	
-}
-
 
 .contactInfo {
 	text-align: left;
@@ -101,9 +92,6 @@
     padding-left: 14%;
 }
 
-   border-radius: 5px;
-   border: solid 2px var(--terraCotta) 
-}
 
 
 
