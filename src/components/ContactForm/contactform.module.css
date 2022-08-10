@@ -22,7 +22,9 @@
    padding: 5px 12px;
    margin: 0px 29px 0px;
    border-radius: 5px;
+
    border: solid 2px var(--terraCotta);
+
    font-family: inherit;
 }
 
@@ -39,7 +41,9 @@
    border: solid 2px var(--terraCotta);
    
    font-family: inherit;
+
    resize: none;
+
 
 }
 
@@ -55,6 +59,15 @@
    padding-right: 15px;
    padding-bottom: 5px ;
    margin: 3px 7px;
+
+}
+
+.contactFormButton {
+    padding-bottom: 5%;
+    padding-left: 14%;
+
+}
+
 
 }
 

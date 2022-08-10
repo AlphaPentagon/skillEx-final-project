@@ -4,18 +4,13 @@ import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./EditProfile.module.css";
 import { useState } from "react";
 import { useUser } from "@auth0/nextjs-auth0";
-import Button from "../Button/index"
 
 export default function EditProfile() {
   const [agree, setAgree] = useState(false);
   const { user } = useUser();
 
-  function handleCheck() {
-    setAgree(!agree);
-  }
-
   async function handleSubmit(e) {
-    //e.preventDefault();
+    e.preventDefault();
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
     let imageUrl = document.querySelector("#imageUrl").value;
@@ -30,7 +25,6 @@ export default function EditProfile() {
     teach.forEach((item) => {
       teachAll.push(item.value);
     });
-    let isApproved = document.querySelector("#agree").value;
 
     let profile = {
       profile_id: user.sub,
@@ -40,10 +34,10 @@ export default function EditProfile() {
       learn_skills: learnAll,
       bio: description,
       avatar_url: imageUrl,
-      approved: isApproved,
+      approved: true,
     };
 
-/* This will need to be changed over to a PUT/PATCH request? */
+    /* This will need to be changed over to a PUT/PATCH request? */
 
     let response = await fetch("/api/profiles", {
       method: "PUT",
@@ -57,7 +51,7 @@ export default function EditProfile() {
     let content = await response.json();
 
     console.log(profile);
-    console.log("Editting form");
+    console.log("Editing form");
   }
 
   return (
@@ -65,11 +59,17 @@ export default function EditProfile() {
       <NamesAndDetails />
       <LearnTeachChecks />
 
-      <div className= {styles.signUpButton}>
-      <Button text="Update Profile" type= "signUpFormButton" onClick={handleSubmit}>
-        Update Profile
-      </Button>
+      <div className={styles.signUpButton}>
+        <button
+          text="Update Profile"
+          type="signUpFormButton"
+          onClick={handleSubmit}
+        >
+          Update Profile
+        </button>
       </div>
     </div>
   );
 }
+
+//on landing, use id to fetch user profile and return

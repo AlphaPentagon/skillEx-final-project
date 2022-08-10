@@ -5,9 +5,10 @@
   justify-content: center;
   align-items: center;
   color: var(--darkBrown);
-  font-family: copyFont;
+  font-family: inherit;
   margin: 0 0 1rem 0;
   width: 100%;
+
 }
 
 .title {

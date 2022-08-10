@@ -33,11 +33,11 @@ export default function DesktopNavBar() {
             {user && (
               <>
                 <Link href="/profiles/edit">
-                  <a title="View your profile">My profile</a>
+                  <a className={styles.word} title="View your profile">Profile</a>
                 </Link>
 
                 <a className={styles.button} href="/api/auth/logout" title="Log out of your profile">
-                  Log-out
+                  Log-Out
                 </a>
               </>
             )}

@@ -18,12 +18,13 @@
 	position: absolute;
 	bottom: 8px;
 	left: 0px;
-	font-size: 1.4rem;
-	width: 150px;
+	font-size: 1.3rem;
+	width: 140px;
 	background-color: var(--terraCotta);
 	text-align: left;
-	padding-left: 5px;
+	padding: 5px 0px 2px 7px;
 	text-transform: uppercase;
+	border-radius: 0.2em;
 }
 
 /* .text:hover {
@@ -37,6 +38,7 @@
 	width: 100%;
 	height: 100%;
 }
+
 
 .image:hover {
 

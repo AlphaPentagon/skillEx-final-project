@@ -13,7 +13,7 @@
   width: 100%;
   border-radius: 1em;
   margin: 0.5em 0;
-  background-color: antiquewhite;
+  background-color: var(--cream);
 }
 
 .image {
@@ -29,10 +29,16 @@
 }
 
 .title {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: left;
   vertical-align: bottom;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .bioContainer {
@@ -50,18 +56,43 @@
 }
 
 .buttonContainer {
-  margin-top: -8%;
-
-}
-
-.button{
-  position: relative;
-  padding: 1%;
-  margin-left: 60%;
   
+  margin: auto;
+  background-color: var(--terraCotta);
+border-radius: 5%;
+
 }
 
-.button:hover {
+
+
+.buttonContainer:hover {
 
 background-color: #048998;
+}
+
+.button {
+  background-color: var(--terraCotta);
+}
+
+.button:hover{
+  background-color: var(--blue);
+}
+
+.teaching {
+  font-size: 1rem;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+.learning {
+  font-size: 1rem;
+  text-align: left;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }

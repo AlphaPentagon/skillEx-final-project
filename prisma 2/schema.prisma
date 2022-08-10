@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Profiles {
+  id             Int      @id @default(autoincrement())
+  profile_id     String   @db.VarChar(255)
+  full_name      String   @db.VarChar(255)
+  teach_skills   String[] @db.VarChar(64)
+  learn_skills   String[] @db.VarChar(64)
+  bio            String
+  avatar_url     String   @db.VarChar(255)
+  preferred_name String   @db.VarChar(255)
+  approved       Boolean  @default(false)
+}
