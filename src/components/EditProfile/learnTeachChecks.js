@@ -1,6 +1,8 @@
+import { useState } from "react";
 import styles from "./EditProfile.module.css";
 
 export default function LearnTeachChecks({ learnSkills, teachSkills }) {
+  const [isChecked, setIsChecked] = useState(true);
   const categories = [
     "cooking",
     "diy",
@@ -13,6 +15,10 @@ export default function LearnTeachChecks({ learnSkills, teachSkills }) {
     "martial arts",
   ];
 
+  function handleChange() {
+    setIsChecked(!isChecked);
+  }
+
   return (
     <div className={styles.containerChecks}>
       {/* headers: */}
@@ -23,37 +29,27 @@ export default function LearnTeachChecks({ learnSkills, teachSkills }) {
       </div>
 
       {categories.map((item) => {
-        function learnSkillChecked() {
-          if (learnSkills.includes(item)) {
-            return true;
-          }
-          return false;
-        }
-        function teachSkillChecked() {
-          if (teachSkills.includes(item)) {
-            return true;
-          }
-          return false;
-        }
         return (
           <div className={styles.checks}>
             <label className={styles.containerCheckbox1}>
-              {learnSkillChecked ? (
-                <input type="checkbox" name="learn" value={item} checked />
-              ) : (
-                <input type="checkbox" name="learn" value={item} />
-              )}
+              <input
+                type="checkbox"
+                name="learn"
+                value={item}
+                checked={learnSkills.includes(item) ? "checked" : ""}
+              />
               <span className={styles.teach} />
             </label>
 
             <p className={styles.skills}>{item}</p>
 
             <label className={styles.containerCheckbox1}>
-              {teachSkillChecked ? (
-                <input type="checkbox" name="teach" value={item} checked />
-              ) : (
-                <input type="checkbox" name="teach" value={item} />
-              )}
+              <input
+                type="checkbox"
+                name="teach"
+                value={item}
+                checked={teachSkills.includes(item) ? "checked" : ""}
+              />
               <span className={styles.learn} />
             </label>
           </div>

@@ -7,12 +7,25 @@ import { useUser } from "@auth0/nextjs-auth0";
 export default function EditProfile({ profile }) {
   const { user } = useUser();
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+  async function handleSubmit(e, id) {
+    console.log(profile);
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
     let imageUrl = document.querySelector("#imageUrl").value;
     let description = document.querySelector("[name='description']").value;
+    if (!document.querySelector("#fullName").value) {
+      fullName = document.querySelector("#fullName").placeholder;
+    }
+    if (!document.querySelector("#username").value) {
+      username = document.querySelector("#username").placeholder;
+    }
+    if (!document.querySelector("#imageUrl").value) {
+      imageUrl = document.querySelector("#imageUrl").placeholder;
+    }
+    if (!document.querySelector("[name='description']").value) {
+      description = document.querySelector("[name='description']").placeholder;
+    }
+
     let learnAll = [];
     let teachAll = [];
     let learn = document.querySelectorAll("input[name='learn']:checked");
@@ -25,6 +38,7 @@ export default function EditProfile({ profile }) {
     });
 
     let profile = {
+      id: id,
       profile_id: user.sub,
       full_name: fullName,
       preferred_name: username,
@@ -35,9 +49,11 @@ export default function EditProfile({ profile }) {
       approved: true,
     };
 
+    console.log(profile);
+
     /* This will need to be changed over to a PUT/PATCH request? */
 
-    let response = await fetch("/api/profiles", {
+    let response = await fetch(`/api/profiles/${profile.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -64,7 +80,7 @@ export default function EditProfile({ profile }) {
         <button
           text="Update Profile"
           type="signUpFormButton"
-          onClick={handleSubmit}
+          onClick={(e) => handleSubmit(e, profile.id)}
         >
           Update Profile
         </button>
