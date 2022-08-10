@@ -42,10 +42,13 @@ const ProfileGallery = ({ profiles }) => {
                   bio={profile.bio}
                 />
               )}
+              
             </div>
+
           );
         })}
       </div>
+     
     </div>
   );
 };
