@@ -23,15 +23,6 @@ const Discover = ({ profilesArr }) => {
         the tutors that teach that skill
       </p>
       <ProfileGallery profiles={profilesArr} />
-      <Link href="/">
-					<a aria-label="Home page">
-						<Button
-							type="backToDiscover"
-              text="Home Page"
-
-						/>
-					</a>
-				</Link>
     
       <SkillGallery />
 
