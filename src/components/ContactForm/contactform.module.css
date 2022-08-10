@@ -37,7 +37,7 @@
    border-radius: 5px;
    border: solid 2px var(--blue);
 
-   font-family: copyFont;
+   font-family: inherit;
 }
 
 
@@ -63,7 +63,7 @@
    border: solid 2px var(--blue);
    border: solid 2px var(--terraCotta);
    
-   font-family: copyFont;
+   font-family: inherit;
 
 }
 

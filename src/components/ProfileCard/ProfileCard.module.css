@@ -13,7 +13,7 @@
   width: 100%;
   border-radius: 1em;
   margin: 0.5em 0;
-  background-color: antiquewhite;
+  background-color: var(--cream);
 }
 
 .image {
