@@ -1,10 +1,30 @@
 //SignUpForm
+
+// set current state to profile object ✅
+// pass props from state ✅
+// when submitted, update state with new profile object ✅
+
+// when isEditing, set 'edit' button to 'cancel' ✅
+// update button use button component ✅
+// update button should reset isEditing to false ✅
+// add text regarding deletion to contact us page
+// remove message box from profile info ✅
+// add avatar to my profile page ✅
+
+//change link to new my profile page ✅
+
 import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./EditProfile.module.css";
 import { useUser } from "@auth0/nextjs-auth0";
+import { useState } from "react";
+import Button from "../Button";
 
-export default function EditProfile({ profile }) {
+export default function EditProfile({
+  profile,
+  setCurrentProfile,
+  setIsEditing,
+}) {
   const { user } = useUser();
 
   async function handleSubmit(e, id) {
@@ -61,8 +81,8 @@ export default function EditProfile({ profile }) {
 
       body: JSON.stringify(profile),
     });
-
-    let content = await response.json();
+    setCurrentProfile(profile);
+    setIsEditing(false);
 
     console.log(profile);
     console.log("Editing form");
@@ -77,13 +97,13 @@ export default function EditProfile({ profile }) {
       />
 
       <div className={styles.signUpButton}>
-        <button
+        <Button
           text="Update Profile"
           type="signUpFormButton"
           onClick={(e) => handleSubmit(e, profile.id)}
         >
           Update Profile
-        </button>
+        </Button>
       </div>
     </div>
   );

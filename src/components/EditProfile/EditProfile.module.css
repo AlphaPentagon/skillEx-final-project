@@ -1,5 +1,4 @@
 .signUpContainer {
- 
   width: 100%;
   padding: 0;
   margin: 0;
@@ -10,8 +9,15 @@
   align-items: center;
 }
 
-.signUpSubContainer {
+.signUpContainer > button {
+  margin-bottom: 1rem;
+}
 
+.signUpContainer a {
+  font-weight: bold;
+}
+
+.signUpSubContainer {
   width: 100%;
 
   display: flex;
@@ -22,84 +28,77 @@
 }
 
 .container {
-  
   width: 95%;
-
 
   /* display: flex;
     flex-direction: column; */
 }
 
 .inputContainer {
-
-    display:grid;
-    grid-template-columns: max-content max-content;
-    grid-gap:5px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 5px;
 }
 
 .inputField {
-   background-color: #f6f0ed;
+  background-color: #f6f0ed;
   width: 95%;
   padding-top: 5px;
   padding-left: 10px;
   padding-right: 15px;
-  padding-bottom: 5px ;
+  padding-bottom: 5px;
   margin: 3px 7px;
   border-radius: 5px;
-  border: solid 2px #c8553d }
+  border: solid 2px #c8553d;
+}
 
 .inputFieldimg {
-    background-color: #f6f0ed;
-   width: 94%;
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px 0px 9px;
-   border-radius: 5px;
-   border: solid 2px #c8553d }
+  background-color: #f6f0ed;
+  width: 94%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  margin: 3px 7px 0px 9px;
+  border-radius: 5px;
+  border: solid 2px #c8553d;
+}
 
 .inputFieldDescription {
-  
-    background-color: #f6f0ed;
-   width: 94%;
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px 0px 5px;
-   border-radius: 5px;
-   border: solid 2px #c8553d }
- 
+  background-color: #f6f0ed;
+  width: 94%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  margin: 3px 7px 0px 5px;
+  border-radius: 5px;
+  border: solid 2px #c8553d;
+}
 
 .label {
-    font-weight: bold;
-    color: #2a0800;
-    text-align: right;
-    padding: 12px;
+  font-weight: bold;
+  color: #2a0800;
+  text-align: right;
+  padding: 12px;
 }
 .descriptionContainer {
-
-
   flex-direction: row;
-  align-items:center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #description {
-
   height: 200px;
-  
   background-color: #f6f0ed;
   width: 12.7rem;
   padding-top: 15px;
   margin: 6px 3px 0px 1px;
   border-radius: 5px;
- 
 }
 
 .uploadPhotoButton {
-   background-color: red; 
+  background-color: red;
   padding: 10px 10px;
   border-radius: 10px;
   width: 70%;
@@ -109,11 +108,15 @@
 /* ///////////////////////////// */
 
 .containerChecks {
-    background-color: lightblue;
-    background-color: #c8553d; /* For browsers that do not support gradients */
-    background: linear-gradient(to right,
-    #0095a672 33%, #c8543d74 33% 65%, #c8543da5 33% 60%);
- 
+  background-color: lightblue;
+  background-color: #c8553d; /* For browsers that do not support gradients */
+  background: linear-gradient(
+    to right,
+    #0095a672 33%,
+    #c8543d74 33% 65%,
+    #c8543da5 33% 60%
+  );
+
   padding-bottom: 20px;
   width: 100%;
   border-radius: 20px;
@@ -126,11 +129,9 @@
 .checks {
   /* background-color: rgb(240, 170, 170); */
   width: 100%;
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 33%);
   justify-content: center;
-
-  
 }
 
 /* ////   customising checkboxes:   /////////////// */
@@ -161,7 +162,6 @@
   height: 0;
   width: 0;
   color: green;
-
 }
 
 /* on hover: */
@@ -226,7 +226,7 @@ END
 .learn {
   height: 25px;
   width: 25px;
-  background-color:#f6f0ed;
+  background-color: #f6f0ed;
   border: solid 2px #048998;
   border-radius: 5px;
 }
@@ -235,7 +235,7 @@ END
   height: 25px;
   width: 25px;
   background-color: #f6f0ed;
-  border: solid 2px #c8553d ;
+  border: solid 2px #c8553d;
   border-radius: 5px;
 }
 
@@ -243,7 +243,7 @@ END
 
 .learnHeader {
   font-weight: bolder;
-  color:  #c8553d;
+  color: #c8553d;
   font-family: mainLogo;
   font-size: 1.7em;
 }
@@ -255,30 +255,28 @@ END
   font-size: 1.7em;
 }
 
-.termsContainer{
-    padding-bottom: 5%;
-
+.termsContainer {
+  padding-bottom: 1rem;
 }
 
-.signUpButton{
-    padding-bottom: 5%;
+.signUpButton {
+  padding-bottom: 1rem;
 }
 
 .skills {
-    font-weight: bold;
-    color: #2a0800;
-    text-align: center;
+  font-weight: bold;
+  color: #2a0800;
+  text-align: center;
 }
 
-.hyperlink{
-    color: blue;
-    text-decoration: underline;
+.hyperlink {
+  color: blue;
+  text-decoration: underline;
 }
 
 .hyperlink :hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 /* highlighting colums: */
 /* .checks:nth-child(1) { */
@@ -290,143 +288,137 @@ END
 
 */
 
-
 @media (min-width: 600px) {
-
   .signUpContainer {
- 
     width: 100%;
     padding: 0;
     margin: 0;
-  
+
     display: flex;
     flex-direction: column;
-  
+
     align-items: center;
   }
-  
+
   .signUpSubContainer {
-  
     width: 100%;
-  
+
     display: flex;
     flex-direction: column;
-  
+
     align-items: center;
     justify-content: center;
   }
-  
+
   .container {
-    
     width: 95%;
-  
-  
+
     /* display: flex;
       flex-direction: column; */
   }
-  
+
   .inputContainer {
-  
-      display:grid;
-      grid-template-columns: max-content max-content;
-      grid-gap:5px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 5px;
   }
-  
+
   .inputField {
-     background-color: #f6f0ed;
+    background-color: #f6f0ed;
     width: 95%;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 15px;
-    padding-bottom: 5px ;
+    padding-bottom: 5px;
     margin: 3px 7px;
     border-radius: 5px;
-    border: solid 2px #c8553d }
-  
+    border: solid 2px #c8553d;
+  }
+
   .inputFieldimg {
-      background-color: #f6f0ed;
-     width: 94%;
-     padding-top: 5px;
-     padding-left: 10px;
-     padding-right: 15px;
-     padding-bottom: 5px ;
-     margin: 3px 7px 0px 9px;
-     border-radius: 5px;
-     border: solid 2px #c8553d }
-  
+    background-color: #f6f0ed;
+    width: 94%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    margin: 3px 7px 0px 9px;
+    border-radius: 5px;
+    border: solid 2px #c8553d;
+  }
+
   .inputFieldDescription {
-    
-      background-color: #f6f0ed;
-     width: 94%;
-     padding-top: 5px;
-     padding-left: 10px;
-     padding-right: 15px;
-     padding-bottom: 5px ;
-     margin: 3px 7px 0px 5px;
-     border-radius: 5px;
-     border: solid 2px #c8553d }
-   
-  
+    background-color: #f6f0ed;
+    width: 94%;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    margin: 3px 7px 0px 5px;
+    border-radius: 5px;
+    border: solid 2px #c8553d;
+  }
+
   .label {
-      font-weight: bold;
-      color: #2a0800;
-      text-align: right;
-      padding: 12px;
+    font-weight: bold;
+    color: #2a0800;
+    text-align: right;
+    padding: 12px;
   }
   .descriptionContainer {
-  
     flex-direction: row;
-    align-items:center;
-      justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
-  
+
   #description {
-  
-    height: 100px;
-    
     background-color: #f6f0ed;
-    width: 12.7rem;
+    width: 12.2rem;
     padding-top: 15px;
     margin: 6px 3px 0px 1px;
     border-radius: 5px;
-   
+    resize: none;
   }
-  
+
   .uploadPhotoButton {
-     background-color: red; 
+    background-color: red;
     padding: 10px 10px;
     border-radius: 10px;
     width: 70%;
     margin-left: 28%;
   }
-  
+
   /* ///////////////////////////// */
-  
+
   .containerChecks {
-      background-color: lightblue;
-      background-color: #c8553d; /* For browsers that do not support gradients */
-      background: linear-gradient(to right,
-      #0095a672 33%, #c8543d74 33% 65%, #c8543da5 33% 60%);
-   
+    background-color: lightblue;
+    background-color: #c8553d; /* For browsers that do not support gradients */
+    background: linear-gradient(
+      to right,
+      #0095a672 33%,
+      #c8543d74 33% 65%,
+      #c8543da5 33% 60%
+    );
+
     padding-bottom: 20px;
     width: 100%;
     border-radius: 10%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 2rem;
   }
-  
+
   .checks {
     /* background-color: rgb(240, 170, 170); */
     width: 100%;
-      display: grid;
+    display: grid;
     grid-template-columns: repeat(3, 33%);
     justify-content: center;
   }
-  
+
   /* ////   customising checkboxes:   /////////////// */
-  
+
   .containerCheckbox1 {
     /* background-color: rgb(250, 53, 53); */
     /* display: block; */
@@ -434,18 +426,18 @@ END
     align-items: center;
     justify-content: center;
     /* position: relative; */
-  
+
     /* padding-left: 35px; */
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 22px;
-  
+
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
-  
+
   .containerCheckbox1 input {
     position: absolute;
     opacity: 0;
@@ -453,31 +445,30 @@ END
     height: 0;
     width: 0;
     color: green;
-  
   }
-  
+
   /* on hover: */
   .containerCheckbox1:hover input ~ .checkmark,
   .containerCheckbox1:hover input ~ .teach,
   .containerCheckbox1:hover input ~ .learn {
     background-color: #ccc;
   }
-  
+
   /* differentaite highl;ighted checkboxes: */
   .containerCheckbox1 input:checked ~ .checkmark,
   .containerCheckbox1 input:checked ~ .teach {
     background-color: #864100;
   }
-  
+
   .containerCheckbox1 input:checked ~ .learn {
     background-color: #05b2be;
   }
-  
+
   /* differentaite highl;ighted checkboxes:
   END
   
   */
-  
+
   .checkmark:after,
   .teach:after,
   .learn:after {
@@ -485,11 +476,11 @@ END
     position: absolute;
     display: none;
   }
-  
+
   /* .containerCheckbox1 input:checked ~ .checkmark::after {
       /* display: block; */
   /* } */
-  
+
   .containerCheckbox1 .checkmark::after,
   .containerCheckbox1 .teach::after,
   .containerCheckbox1 .learn::after {
@@ -503,7 +494,7 @@ END
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  
+
   .checkmark {
     /* position: absolute;
       top: 0;
@@ -511,64 +502,62 @@ END
     height: 25px;
     width: 25px;
     background-color: #f6f0ed;
-  
+
     border-radius: 5px;
   }
-  
+
   .learn {
     height: 25px;
     width: 25px;
-    background-color:#f6f0ed;
+    background-color: #f6f0ed;
     border: solid 2px #048998;
     border-radius: 5px;
   }
-  
+
   .teach {
     height: 25px;
     width: 25px;
     background-color: #f6f0ed;
-    border: solid 2px #c8553d ;
+    border: solid 2px #c8553d;
     border-radius: 5px;
   }
-  
+
   /* end of checkmark customising */
-  
+
   .learnHeader {
     font-weight: bolder;
-    color:  #c8553d;
+    color: #c8553d;
     font-family: mainLogo;
     font-size: 1.7em;
   }
-  
+
   .teachHeader {
     font-weight: bolder;
     color: #048998;
     font-family: mainLogo;
     font-size: 1.7em;
   }
-  
-  .termsContainer{
-      padding-bottom: 5%;
-  
-  }
-  
-  .signUpButton{
-      padding-bottom: 5%;
-  }
-  
-  .skills {
-      font-weight: bold;
-      color: #2a0800;
-      text-align: center;
-  }
-  
-  .hyperlink{
-      color: blue;
-      text-decoration: underline;
-  }
-  
-  .hyperlink :hover {
-      cursor: pointer;
+
+  .termsContainer {
+    padding-bottom: 1rem;
   }
 
+  .signUpButton {
+    padding-bottom: 1rem;
+  }
+
+  .skills {
+    font-weight: bold;
+    color: #2a0800;
+    text-align: center;
+  }
+
+  .hyperlink {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .hyperlink :hover {
+    cursor: pointer;
+  }
 }

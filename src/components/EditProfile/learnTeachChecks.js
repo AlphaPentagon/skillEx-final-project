@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./EditProfile.module.css";
 
 export default function LearnTeachChecks({ learnSkills, teachSkills }) {
-  const [isChecked, setIsChecked] = useState(true);
   const categories = [
     "cooking",
     "diy",
@@ -14,10 +13,6 @@ export default function LearnTeachChecks({ learnSkills, teachSkills }) {
     "it",
     "martial arts",
   ];
-
-  function handleChange() {
-    setIsChecked(!isChecked);
-  }
 
   return (
     <div className={styles.containerChecks}>
@@ -36,7 +31,7 @@ export default function LearnTeachChecks({ learnSkills, teachSkills }) {
                 type="checkbox"
                 name="learn"
                 value={item}
-                checked={learnSkills.includes(item) ? "checked" : ""}
+                defaultChecked={learnSkills.includes(item) ? "checked" : ""}
               />
               <span className={styles.teach} />
             </label>
@@ -48,7 +43,7 @@ export default function LearnTeachChecks({ learnSkills, teachSkills }) {
                 type="checkbox"
                 name="teach"
                 value={item}
-                checked={teachSkills.includes(item) ? "checked" : ""}
+                defaultChecked={teachSkills.includes(item) ? "checked" : ""}
               />
               <span className={styles.learn} />
             </label>

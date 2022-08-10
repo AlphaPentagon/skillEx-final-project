@@ -3,13 +3,16 @@ import Head from "next/head";
 import { useState } from "react";
 import EditProfile from "../../src/components/EditProfile";
 import prisma from "../../prisma/client";
-
+import Header from "../../src/components/Header";
+import Link from "next/link";
 import ProfileInfo from "../../src/components/ProfileInfo";
+import Avatar from "../../src/components/Avatar";
 import styles from "../../src/components/EditProfile/EditProfile.module.css";
 import Button from "../../src/components/Button";
 
 export default withPageAuthRequired(function MyProfile({ profile }) {
   const [isEditing, setIsEditing] = useState(false);
+  const [currentProfile, setCurrentProfile] = useState(profile);
 
   function handleClick() {
     setIsEditing(!isEditing);
@@ -20,15 +23,36 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
       <Head>
         <title>My Profile </title>
       </Head>
+      <Header
+        text={`${currentProfile.preferred_name}'s Profile`}
+        colour="terraCotta"
+      />
+      <Avatar
+        name={currentProfile.preferred_name}
+        imageUrl={currentProfile.avatar_url}
+      />
 
-      <h1>{profile.preferred_name}'s Profile</h1>
-      <Button onClick={handleClick} text="Edit" type="blue" />
       <br></br>
       {isEditing ? (
-        <EditProfile profile={profile} />
+        <EditProfile
+          profile={currentProfile}
+          setCurrentProfile={setCurrentProfile}
+          setIsEditing={setIsEditing}
+        />
       ) : (
-        <ProfileInfo profile={profile} />
+        <ProfileInfo profile={currentProfile} />
       )}
+      <Button
+        onClick={handleClick}
+        text={isEditing ? "Cancel" : "Edit"}
+        type="blue"
+      />
+      <p>
+        To delete your profile, please{" "}
+        <Link href="/contact">
+          <a>contact us</a>
+        </Link>
+      </p>
     </div>
   );
 });

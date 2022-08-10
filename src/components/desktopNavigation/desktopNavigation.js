@@ -8,13 +8,19 @@ export default function DesktopNavBar() {
       <div className={styles.navigationMenu}>
         <ul className={styles.navBar}>
           <Link href="/">
-            <a className={styles.word} title="Go to home page">Home</a>
+            <a className={styles.word} title="Go to home page">
+              Home
+            </a>
           </Link>
           <Link href="/discover">
-            <a className={styles.word} title="Discover skills">Discover</a>
+            <a className={styles.word} title="Discover skills">
+              Discover
+            </a>
           </Link>
           <Link href="/contact">
-            <a className={styles.word} title="Get in touch">ContactUs</a>
+            <a className={styles.word} title="Get in touch">
+              ContactUs
+            </a>
           </Link>
 
           <br />
@@ -22,21 +28,33 @@ export default function DesktopNavBar() {
           <ul className={styles.buttons}>
             {!user && (
               <>
-                <a href="/api/auth/signup" className={styles.button} title="Sign up">
+                <a
+                  href="/api/auth/signup"
+                  className={styles.button}
+                  title="Sign up"
+                >
                   SignUp
                 </a>
-                <a href="/api/auth/login" className={styles.button} title="Log in">
+                <a
+                  href="/api/auth/login"
+                  className={styles.button}
+                  title="Log in"
+                >
                   Login
                 </a>
               </>
             )}
             {user && (
               <>
-                <Link href="/profiles/edit">
+                <Link href="/profiles/my-profile">
                   <a title="View your profile">My profile</a>
                 </Link>
 
-                <a className={styles.button} href="/api/auth/logout" title="Log out of your profile">
+                <a
+                  className={styles.button}
+                  href="/api/auth/logout"
+                  title="Log out of your profile"
+                >
                   Log-out
                 </a>
               </>
