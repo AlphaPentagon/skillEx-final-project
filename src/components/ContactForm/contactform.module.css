@@ -83,9 +83,18 @@
    padding-right: 15px;
    padding-bottom: 5px ;
    margin: 3px 7px;
+
+
+
+}
+
+.contactFormButton {
+    padding-bottom: 5%;
+    padding-left: 14%;
    border-radius: 5px;
    border: solid 2px var(--terraCotta) 
 }
+
 
 
 

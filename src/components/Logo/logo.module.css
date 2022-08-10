@@ -1,10 +1,18 @@
 .logoContainer {
   /* background-color: rgb(252, 227, 227); */
 
-  width: 25%;
+  width: 45%;
 
-  /* 
-    background-image: url('/media/icons/LogoMain.svg');
-    background-repeat: no-repeat;
-    background-size: 100%; */
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  .logoContainer {
+    width: 25%;
+  }
+
+
+
+
 }
