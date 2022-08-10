@@ -4,37 +4,21 @@ import Searchbar from "../../src/components/SearchBar";
 import SkillGallery from "../../src/components/SkillGallery/index";
 import styles from "./discover.module.css";
 import prisma from "../../prisma/client";
-import stylesHome from "../../styles/Home.module.css"
-import Head from "next/head";
-import Link from "next/link";
-import Button from "../../src/components/Button";
-
+import stylesHome from "../../styles/Home.module.css";
 
 const Discover = ({ profilesArr }) => {
   console.log(profilesArr);
   return (
     <>
-    <Head>
-      <title>Discover</title>
-    </Head>
       <Header text="Discover" />
       <p className={stylesHome.sloganText}>
         Teach and Learn at the same time, all you need to search and find all
         the tutors that teach that skill
       </p>
       <ProfileGallery profiles={profilesArr} />
-      <Link href="/">
-					<a aria-label="Home page">
-						<Button
-							type="backToDiscover"
-              text="Home Page"
 
-						/>
-					</a>
-				</Link>
-    
+      <Searchbar />
       <SkillGallery />
-
     </>
   );
 };
