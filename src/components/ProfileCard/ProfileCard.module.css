@@ -1,98 +1,93 @@
 .profileCard {
-  position: relative;
-  background-color: var(--cream);
-  border-radius: 1em;
-  height: 350px;
-  width: 260px;
-  padding: 0.5em;
-  margin-top: 0.5em;
+	position: relative;
+	background-color: var(--cream);
+	border-radius: 1em;
+	height: 350px;
+	width: 260px;
+	padding: 0.5em;
+	margin-top: 0.5em;
 }
 
 .imageContainer {
-  height: 43%;
-  width: 100%;
-  border-radius: 1em;
-  margin: 0.5em 0;
-  background-color: antiquewhite;
+	height: 43%;
+	width: 100%;
+	border-radius: 1em;
+	margin: 0.5em 0;
+	margin-bottom: 10%;
 }
 
 .image {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
- 
-  border-radius: 7%;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	border-radius: 7%;
 }
 
 .titlesContainer {
-  margin: auto;
+	margin: auto;
 }
 
 .title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: left;
-  vertical-align: bottom;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1; /* number of lines to show */
-  -webkit-box-orient: vertical;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: bottom;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1; /* number of lines to show */
+	-webkit-box-orient: vertical;
 }
 
 .bioContainer {
-  height: 25%;
+	height: 25%;
 }
 
 .bio {
-  font-size: 0.7rem;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* number of lines to show */
-  -webkit-box-orient: vertical;
+	font-size: 0.7rem;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* number of lines to show */
+	-webkit-box-orient: vertical;
 }
 
 .buttonContainer {
-  
-  margin: auto;
-  background-color: var(--terraCotta);
-border-radius: 5%;
-
+	margin: auto;
+	background-color: var(--terraCotta);
+	border-radius: 5%;
 }
 
-
-
 .buttonContainer:hover {
-
-background-color: #048998;
+	background-color: #048998;
 }
 
 .button {
-  background-color: var(--terraCotta);
+	background-color: var(--terraCotta);
 }
 
-.button:hover{
-  background-color: var(--blue);
+.button:hover {
+	background-color: var(--blue);
 }
 
 .teaching {
-  font-size: 1rem;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1; /* number of lines to show */
-  -webkit-box-orient: vertical;
+	font-size: 1rem;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1; /* number of lines to show */
+	-webkit-box-orient: vertical;
 }
 .learning {
-  font-size: 1rem;
-  text-align: left;
-  overflow: hidden;
-  text-overflow:ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1; /* number of lines to show */
-  -webkit-box-orient: vertical;
+	font-size: 1rem;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1; /* number of lines to show */
+	-webkit-box-orient: vertical;
 }
