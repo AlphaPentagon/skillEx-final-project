@@ -35,6 +35,7 @@
     display:grid;
     grid-template-columns: max-content max-content;
     grid-gap:5px;
+    resize: none;
 }
 
 .inputField {
@@ -46,7 +47,10 @@
   padding-bottom: 5px ;
   margin: 3px 7px;
   border-radius: 5px;
-  border: solid 2px #c8553d }
+  border: solid 2px #c8553d;
+  resize: none;
+}
+
 
 .inputFieldimg {
     background-color: #f6f0ed;
@@ -67,6 +71,7 @@
     color: #2a0800;
     text-align: right;
     padding: 12px;
+    resize: none;
 }
 .descriptionContainer {
 
@@ -74,6 +79,7 @@
   flex-direction: row;
   align-items:center;
     justify-content: center;
+    resize: none;
 }
 
 
@@ -94,13 +100,27 @@
 
   padding: 15px 14px;
 
-  margin: 6px 3px 0px 1px;
+  margin: 6px 15px 0px 1px;
   border-radius: 5px;
-  border: solid 2px #c8553d
+  border: solid 2px #c8553d;
+  resize: none;
 }
 
 
+@media (min-width: 600px) {
 
+  #description {
+  box-sizing: border-box;
+  height: 200px;
+  background-color: #f6f0ed;
+  width: 100%;
+  padding: 15px 14px;
+  margin: 6px 0.3rem 0px 1px;
+  border-radius: 5px;
+  border: solid 2px #c8553d;
+  resize: none;
+}
+}
 
 
 

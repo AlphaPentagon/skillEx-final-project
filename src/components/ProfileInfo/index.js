@@ -42,13 +42,9 @@ const ProfileInfo = ({ profile }) => {
         </div>
       </div>
       <div className={styles.messageContainer}>
-        {/* <h3 className={styles.title}>Please get in contact.</h3>
-        <p>
-          If you would like to get in contact with {profile.full_name}, in
-          regards to a skill you would like to help learn or teach. Please use
-          the email address provided below.
-        </p>
-        <p>{user.name}</p> */}
+
+        <h3 className={styles.title}>Please get in contact.</h3>
+
         <form className={styles.profileInfoForm} onSubmit={handleSend}>
           <textarea
             onChange={handleChange}

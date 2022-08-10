@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	background-color: #c8553d;
+	font-size: large;
 }
 
 .sitemapContainer {
@@ -13,8 +14,8 @@
 .sitemapContainer a,
 .otherLinksContainer a,
 .copyrightContainer p {
-	color: white;
 	font-size: 1.1rem;
+	color: var(--cream);
 }
 
 .otherLinksContainer a {
@@ -35,6 +36,7 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #c8553d;
+		font-size: inherit;
 	}
 
 	.sitemapContainer {
@@ -44,7 +46,7 @@
 	.sitemapContainer a,
 	.otherLinksContainer a,
 	.copyrightContainer p {
-		color: white;
+		color: var(--cream);
 	}
 
 	.otherLinksContainer a {

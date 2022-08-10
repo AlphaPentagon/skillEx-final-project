@@ -15,3 +15,7 @@
   width: 100%;
   text-transform: capitalize;
 }
+
+.heading > text {
+  color: var(--cream)
+}
