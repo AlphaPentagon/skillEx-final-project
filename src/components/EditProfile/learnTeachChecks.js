@@ -13,6 +13,10 @@ export default function LearnTeachChecks() {
     "Martial Arts",
   ];
 
+
+
+
+
   return (
     <div className={styles.containerChecks}>
       {/* headers: */}
@@ -25,6 +29,7 @@ export default function LearnTeachChecks() {
       {categories.map((item) => {
         return (
           <div className={styles.checks}>
+            
             <label className={styles.containerCheckbox1}>
               <input type="checkbox" name="learn" value={item} />
               <span className={styles.teach} />
