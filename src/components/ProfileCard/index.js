@@ -27,7 +27,8 @@ const ProfileCard = ({
       </div>
       <Link href={`/profiles/${id}`}>
         <div className={styles.buttonContainer}>
-          <Button className={styles.button} text="Get in touch" type="profileCardButton" />
+        Get in Touch
+          {/* <Button className={styles.button} text="Get in touch" type="profileCardButton" /> */}
         </div>
       </Link>
     </div>

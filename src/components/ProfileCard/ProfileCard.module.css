@@ -60,6 +60,8 @@
   margin: auto;
   background-color: var(--terraCotta);
 border-radius: 5%;
+color:var(--cream);
+padding: 2%;
 
 }
 

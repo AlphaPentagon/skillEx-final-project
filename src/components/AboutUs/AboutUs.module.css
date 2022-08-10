@@ -29,6 +29,7 @@
   align-items: center;  
 }
 
+
 .discoverButtonLayout{
   align-items: center; 
 }
@@ -65,6 +66,10 @@
     font-weight: normal;
     cursor: pointer;
     align-items: center;  
+  }
+
+  .discoverbutton:hover {
+    background-color: var(--blue);
   }
   
   .discoverButtonLayout{
