@@ -35,6 +35,7 @@
   font-size: 1rem;
   background-color: var(--cream);
   margin-bottom: 1rem;
+  resize: none;
 }
 
 .skillsContent {

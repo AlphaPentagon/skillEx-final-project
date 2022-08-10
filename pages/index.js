@@ -23,12 +23,11 @@ export default function Home() {
       <p className={styles.sloganText}>
         Exchanging skills and knowhow made easy for FREE!
       </p>
-
-      <h2 className={styles.discoverHeading}>Discover Categories:</h2>
-      <SearchBar />
-      <SkillGallery />
+      {/* <SearchBar /> */}
       <AboutUs />
       <WhyChooseUs />
+      <h2 className={styles.discoverHeading}>Discover Categories:</h2>
+      <SkillGallery />
       <SimpleSlider />
     </>
   );
