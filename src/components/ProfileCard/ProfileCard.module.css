@@ -31,7 +31,6 @@
 .title {
 	font-size: 1.2rem;
 	font-weight: bold;
-	text-align: left;
 	vertical-align: bottom;
 	text-align: left;
 	overflow: hidden;
@@ -56,9 +55,11 @@
 }
 
 .buttonContainer {
-	margin: auto;
-	background-color: var(--terraCotta);
-	border-radius: 5%;
+  margin: auto;
+  background-color: var(--terraCotta);
+  border-radius: 5%;
+  color:var(--cream);
+  padding: 2%;
 }
 
 .buttonContainer:hover {
