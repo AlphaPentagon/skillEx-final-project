@@ -19,6 +19,10 @@ const Footer = () => {
 				<Link href="/contact">
 					<a title="Get in touch">Contact us</a>
 				</Link>
+				<br />
+				<Link href="/faq">
+					<a title="frequently asked questions">FAQ</a>
+				</Link>
 			</div>
 			<div className={styles.socialContainer}>
 				<Link href="https://facebook.com">
