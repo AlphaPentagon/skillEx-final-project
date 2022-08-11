@@ -16,6 +16,7 @@ const nextConfig = {
 			"sketchmob.com",
 			"google.com",
 			"www.google.com",
+			"upload.wikimedia.org",
 		],
 	},
 };
