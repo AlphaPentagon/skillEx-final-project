@@ -30,6 +30,7 @@ const AboutUs = () => {
           Browse through our categories, select a skill you would like to learn or teach, choose a user that suites you and drop them a message. 
           <p className={styles.startYourJourney}>Start your journey below by visiting our discover page.</p>
         </h3>
+        <div className={styles.bothButtons}>
         <div className={styles.discoverButtonLayout}>
           <Link href={"/discover/"}><a>
         <Button className={styles.discoverButton} text="Discover">
@@ -43,6 +44,7 @@ const AboutUs = () => {
         </Button>
         </a>
         </Link>
+        </div>
         </div>
         </div>
         </div>
