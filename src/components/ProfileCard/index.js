@@ -1,4 +1,5 @@
 import styles from "./ProfileCard.module.css";
+
 import Image from "next/image";
 import Link from "next/link";
 //import Avatar from "../Avatar/index.js";
@@ -23,7 +24,7 @@ const ProfileCard = ({
 		<div className={styles.profileCard}>
 			<div className={styles.imageContainer}>
 				<ImageWithFallback
-					className={styles.image}
+					className={styles.avatar}
 					width={150}
 					height={150}
 					src={imageurl}
@@ -41,14 +42,14 @@ const ProfileCard = ({
 			<div className={styles.bioContainer}>
 				<p className={styles.bio}>{bio}</p>
 			</div>
-      <Link href={`/profiles/${id}`}>
-        <div className={styles.buttonContainer}>
-        Get in Touch
-          {/* <Button className={styles.button} text="Get in touch" type="profileCardButton" /> */}
-        </div>
-      </Link>
-    </div>
-  );
+			<Link href={`/profiles/${id}`}>
+				<div className={styles.buttonContainer}>
+					Get in Touch
+					{/* <Button className={styles.button} text="Get in touch" type="profileCardButton" /> */}
+				</div>
+			</Link>
+		</div>
+	);
 };
 
 export default ProfileCard;

@@ -15,7 +15,6 @@ export default function Menu() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    console.log("menu button clicked");
   };
 
   return (

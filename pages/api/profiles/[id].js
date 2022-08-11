@@ -37,6 +37,5 @@ export default async (req, res) => {
       },
     });
     res.json(result);
-    console.log(result);
   }
 };
