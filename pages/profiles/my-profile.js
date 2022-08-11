@@ -20,7 +20,9 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
 		setIsEditing(!isEditing);
 	}
 	let imageurl = "/media/images/default-profile.png";
-	if (currentProfile.avatar_url.startsWith("http")) {
+	if (currentProfile.avatar_url == null) {
+		imageurl = "/media/images/default-profile.png";
+	} else if (currentProfile.avatar_url.startsWith("http")) {
 		imageurl = `${currentProfile.avatar_url}`;
 	} else {
 		imageurl = "/media/images/default-profile.png";
@@ -69,14 +71,12 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
 });
 
 export const getServerSideProps = withPageAuthRequired({
-
-  async getServerSideProps(context) {
-    const session = getSession(context.req, context.res);
-    const profileId = session.user.sub;
-    const data = await prisma.profiles.findMany({
-      where: { profile_id: profileId },
-    });
-
+	async getServerSideProps(context) {
+		const session = getSession(context.req, context.res);
+		const profileId = session.user.sub;
+		const data = await prisma.profiles.findMany({
+			where: { profile_id: profileId },
+		});
 
 		return {
 			props: { profile: { ...data[0] } },
