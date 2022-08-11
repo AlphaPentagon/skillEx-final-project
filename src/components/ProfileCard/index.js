@@ -15,10 +15,10 @@ const ProfileCard = ({
 	image,
 }) => {
 	let imageurl = "/media/images/default-profile.png";
-	if (currentProfile.avatar_url == null) {
+	if (image == null) {
 		imageurl = "/media/images/default-profile.png";
-	} else if (currentProfile.avatar_url.startsWith("http")) {
-		imageurl = `${currentProfile.avatar_url}`;
+	} else if (image.startsWith("http")) {
+		imageurl = `${image}`;
 	} else {
 		imageurl = "/media/images/default-profile.png";
 	}
