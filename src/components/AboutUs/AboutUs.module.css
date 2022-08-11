@@ -13,7 +13,7 @@
 }
 
 .textContainer {
-  text-align: center;
+  text-align: left;
   padding: 0% 10% 5% 10%;
   top: 5%;
 }
@@ -28,34 +28,94 @@
   cursor: pointer;
   align-items: center;  
 }
-
+.aboutText {
+ 
+  text-align: center;
+  font-size: 1.1rem;
+}
+.aboutUs {
+  
+  text-align: left;
+  font-size: 1rem;
+   }
 
 .discoverButtonLayout{
-  align-items: center; 
+ margin-left: 30%;
+ padding: 1%;
+
 }
 
+.startYourJourney{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.signUpButtonLayout {
+  margin-left: 30%;
+  padding: 1%;
+ 
+}
 @media (min-width: 600px) {
 
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+   
   }
   
   .imageContainer {
     margin: auto;
+    width: 1000px;
   }
   
   .image {
     border-radius: 0.3rem;
+    width: 1000px;
   }
   
   .textContainer {
     text-align: center;
     padding: 0% 10% 5% 10%;
     top: 5%;
+   
+  
   }
 
+  .aboutText{
+  
+  font-size: 1.5rem;
+    margin-left: 30%;
+    font-weight: bold;
+  }
+
+  .aboutUs {
+ margin-top: 20%;
+ background-color: var(--terraCotta);
+ padding: 5%;
+ border-radius: 7%;
+ 
+  }
+
+ 
+
+  .sectionContainer{
+   
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+  }
+
+  .aboutUs{
+    color: var(--cream);
+  }
+
+  .aboutUsContainer {
+    
+  margin-top: -5%;
+   width: 60vw;
+  
+  }
 
   .discoverbutton{
     background-color: var(--terraCotta);
@@ -66,6 +126,7 @@
     font-weight: normal;
     cursor: pointer;
     align-items: center;  
+   
   }
 
   .discoverbutton:hover {
@@ -75,5 +136,31 @@
   .discoverButtonLayout{
     align-items: center; 
     
+  }
+  .signUpButtonLayout {
+    margin-left: 60%;
+    
+   
+  }
+  .discoverButtonLayout{
+    margin-left: 60%;
+    
+   }
+   .aboutUs {
+    text-align: left;
+    font-size: 1.3rem;
+     }
+  
+ 
+  
+  .startYourJourney{
+    font-weight: bold;
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutUs {
+    display: none;
   }
 }

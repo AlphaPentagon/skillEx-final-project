@@ -64,6 +64,11 @@
 .backToDiscover {
   background-color: var(--terraCotta);
 }
+
+.signUpBorderButton{
+  
+  background-color: var(--blue);
+}
 @media (min-width: 600px) {
 
   .default {
