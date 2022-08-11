@@ -86,13 +86,15 @@ export default withPageAuthRequired(function Profile({ profile }) {
 // }
 
 export async function getServerSideProps(context) {
-	const { params } = context;
-	const data = await prisma.profiles.findUnique({
-		where: { id: Number(params.profileId) },
-	});
 
-	// console.log("profile: ", data);
-	return {
-		props: { profile: { ...data } },
-	};
+  const { params } = context;
+  const data = await prisma.profiles.findUnique({
+    where: { id: Number(params.profileId) },
+  });
+
+
+  return {
+    props: { profile: { ...data } },
+  };
+
 }

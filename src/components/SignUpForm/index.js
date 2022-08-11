@@ -13,6 +13,7 @@ export default function SignUpForm() {
   }
 
   async function handleSubmit(e) {
+
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
     let imageUrl = document.querySelector("#imageUrl").value;
@@ -40,8 +41,6 @@ export default function SignUpForm() {
       approved: isApproved,
     };
 
-    console.log(profile);
-    console.log("Submitting form");
 
     let response = await fetch("/api/profiles", {
       method: "POST",
@@ -52,7 +51,9 @@ export default function SignUpForm() {
       body: JSON.stringify(profile),
     });
 
+
     window.location.href = "/profiles/my-profile";
+
   }
 
   return (

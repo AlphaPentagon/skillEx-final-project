@@ -69,14 +69,14 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
 });
 
 export const getServerSideProps = withPageAuthRequired({
-	async getServerSideProps(context) {
-		const session = getSession(context.req, context.res);
-		console.log(session);
-		const profileId = session.user.sub;
-		const data = await prisma.profiles.findMany({
-			where: { profile_id: profileId },
-		});
-		console.log(data);
+
+  async getServerSideProps(context) {
+    const session = getSession(context.req, context.res);
+    const profileId = session.user.sub;
+    const data = await prisma.profiles.findMany({
+      where: { profile_id: profileId },
+    });
+
 
 		return {
 			props: { profile: { ...data[0] } },

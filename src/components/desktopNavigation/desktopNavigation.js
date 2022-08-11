@@ -4,68 +4,67 @@ import styles from "./desktopNavBar.module.css";
 export default function DesktopNavBar() {
   const { user } = useUser();
   return (
-    <nav className={styles.navigationMenu}>
-      <ul className={styles.navBar}>
-        <li>
+
+    <div className={styles.navigation}>
+      <div className={styles.navigationMenu}>
+        <ul className={styles.navBar}>
           <Link href="/">
-            <a className={styles.link} title="Go to home page">
+            <a className={styles.word} title="Go to home page">
               Home
             </a>
           </Link>
-        </li>
-        <li>
           <Link href="/discover">
-            <a className={styles.link} title="Discover skills">
+            <a className={styles.word} title="Discover skills">
               Discover
             </a>
           </Link>
-        </li>
-
-        <li>
           <Link href="/contact">
-            <a className={styles.link} title="Get in touch">
+            <a className={styles.word} title="Get in touch">
               Contact
             </a>
           </Link>
-        </li>
 
-        {!user && (
-          <>
-            <li>
-              <Link href="/api/auth/signup">
-                <a className={styles.button} title="Sign up">
+          <br />
+
+          <ul className={styles.buttons}>
+            {!user && (
+              <>
+                <a
+                  href="/api/auth/signup"
+                  className={styles.button}
+                  title="Sign up"
+                >
                   SignUp
                 </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/api/auth/login">
-                <a className={styles.button} title="Log in">
+                <a
+                  href="/api/auth/login"
+                  className={styles.button}
+                  title="Log in"
+                >
                   Login
                 </a>
-              </Link>
-            </li>
-          </>
-        )}
-        {user && (
-          <>
-            <li>
-              <Link href="/profiles/my-profile">
-                <a className={styles.link} title="View your profile">
-                  Profile
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/api/auth/logout">
-                <a className={styles.button} title="Log out of your profile">
+              </>
+            )}
+            {user && (
+              <>
+                <Link href="/profiles/my-profile">
+                  <a className={styles.word} title="View your profile">
+                    Profile
+                  </a>
+                </Link>
+
+                <a
+                  className={styles.button}
+                  href="/api/auth/logout"
+                  title="Log out of your profile"
+                >
                   Log-Out
                 </a>
-              </Link>
-            </li>
-          </>
-        )}
-      </ul>
-    </nav>
+              </>
+            )}
+          </ul>
+        </ul>
+      </div>
+    </div>
   );
 }
