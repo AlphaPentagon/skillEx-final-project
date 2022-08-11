@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./AboutUs.module.css";
 import Button from "../Button/index";
 import Link from "next/link";
+import { useUser } from "@auth0/nextjs-auth0";
 
 const AboutUs = () => {
   return (
@@ -50,6 +51,7 @@ const AboutUs = () => {
                     </a>
                   </Link>
                 </div>
+                {!user && (
                 <div className={styles.signUpButtonLayout}>
                   <Link href={"/profiles/sign-up"}>
                     <a>
@@ -61,6 +63,7 @@ const AboutUs = () => {
                     </a>
                   </Link>
                 </div>
+                )}
               </div>
             </div>
           </div>
