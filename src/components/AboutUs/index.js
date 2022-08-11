@@ -51,6 +51,7 @@ const AboutUs = () => {
 											<Button
 												className={styles.discoverButton}
 												text="Discover"
+                        type="discoverButton"
 											></Button>
 										</a>
 									</Link>
