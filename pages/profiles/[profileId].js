@@ -3,32 +3,48 @@ import ProfileInfo from "../../src/components/ProfileInfo";
 import Header from "../../src/components/Header/index";
 import Avatar from "../../src/components/Avatar/index";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
-
+import styles from "../../src/components/Avatar/avatar.module.css";
 import ProfileMessage from "../../src/components/ProfileMessage";
+import ImageWithFallback from "../../src/components/ImageWithFallBack";
 
 import Link from "next/link";
 import Button from "../../src/components/Button";
 
-
 export default withPageAuthRequired(function Profile({ profile }) {
-  // console.log("current profile: ", profile);
+	// console.log("current profile: ", profile);
 
-  return (
-    <>
-      <Avatar name="Jenna" imageUrl={profile.avatar_url} />
-      <Header text={profile.full_name} colour="blue" />
-      <ProfileInfo profile={profile} />
+	let imageurl = "/media/images/default-profile.png";
+	if (profile.avatar_url.startsWith("http")) {
+		imageurl = `${profile.avatar_url}`;
+	} else {
+		imageurl = "/media/images/default-profile.png";
+	}
 
-      <ProfileMessage profile={profile} />
+	return (
+		<>
+			<ImageWithFallback
+				className={styles.avatar}
+				name={profile.full_name}
+				width={150}
+				height={150}
+				src={imageurl}
+				fallbackSrc={`/media/images/default-profile.png`}
+				alt="profile picture"
+			/>
+			<Header text={profile.full_name} colour="blue" />
+			<ProfileInfo profile={profile} />
 
-      <Link href="/discover">
-					<a aria-label="discover">
-          <p style={{textDecoration:"underline"}} >Back to Search tutors</p>
-					</a>
-				</Link>
+			<ProfileMessage profile={profile} />
 
-    </>
-  );
+			<Link href="/discover">
+				<a aria-label="discover">
+					<p style={{ textDecoration: "underline" }}>
+						Back to Search tutors
+					</p>
+				</a>
+			</Link>
+		</>
+	);
 });
 
 // /* needed for data fetching before rendering - creates static versions of each page/path
@@ -70,6 +86,7 @@ export default withPageAuthRequired(function Profile({ profile }) {
 // }
 
 export async function getServerSideProps(context) {
+
   const { params } = context;
   const data = await prisma.profiles.findUnique({
     where: { id: Number(params.profileId) },
@@ -79,4 +96,5 @@ export async function getServerSideProps(context) {
   return {
     props: { profile: { ...data } },
   };
+
 }

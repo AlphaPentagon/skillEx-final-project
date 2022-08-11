@@ -1,23 +1,7 @@
-//SignUpForm
-
-// set current state to profile object ✅
-// pass props from state ✅
-// when submitted, update state with new profile object ✅
-
-// when isEditing, set 'edit' button to 'cancel' ✅
-// update button use button component ✅
-// update button should reset isEditing to false ✅
-// add text regarding deletion to contact us page
-// remove message box from profile info ✅
-// add avatar to my profile page ✅
-
-//change link to new my profile page ✅
-
 import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./EditProfile.module.css";
 import { useUser } from "@auth0/nextjs-auth0";
-import { useState } from "react";
 import Button from "../Button";
 
 export default function EditProfile({
@@ -67,8 +51,6 @@ export default function EditProfile({
       avatar_url: imageUrl,
       approved: true,
     };
-
-    /* This will need to be changed over to a PUT/PATCH request? */
 
     let response = await fetch(`/api/profiles/${profile.id}`, {
       method: "PUT",

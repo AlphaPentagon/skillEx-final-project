@@ -4,6 +4,7 @@ import styles from "./desktopNavBar.module.css";
 export default function DesktopNavBar() {
   const { user } = useUser();
   return (
+
     <div className={styles.navigation}>
       <div className={styles.navigationMenu}>
         <ul className={styles.navBar}>

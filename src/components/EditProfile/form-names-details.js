@@ -1,75 +1,53 @@
 import styles from "./EditProfile.module.css";
 
-export default function NamesAndDetails({ profile }) {
+export default function NamesAndDetails() {
   return (
-    <form>
-      <div className={styles.container}>
-        <div className={styles.inputContainer}>
-          <label className={styles.label} for="fullName">
-            Full Name:
-          </label>
-          <input
-            type="text"
-            id="fullName"
-            name="fullName"
-            className={styles.inputField}
-            placeholder={profile.full_name}
-          />
-        </div>
+    <form className={styles.container}>
+      <label className={styles.label} for="fullName">
+        Full Name:
+      </label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        className={styles.inputField}
+        placeholder="e.g. Jane Smith"
+      />
 
-        <div className={styles.inputContainer}>
-          <label className={styles.label} for="username">
-            Username:
-          </label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            className={styles.inputField}
-            placeholder={profile.preferred_name}
-          />
-        </div>
+      <label className={styles.label} for="username">
+        Preffered name:
+      </label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        className={styles.inputField}
+        placeholder="e.g. Jane"
+      />
 
-        {/* <div className={styles.inputContainer}>
-          <label for="email">Email:</label>
-          <input
-            value={email}
-            type="text"
-            id="email"
-            name="email"
-            className={styles.inputField}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div> */}
+      <label className={styles.label} for="imageUrl">
+        Profile picture link:
+      </label>
+      <input
+        type="text"
+        id="imageUrl"
+        name="imageUrl"
+        className={styles.inputField}
+        placeholder="e.g. https://www.github.com/githubprofile.png"
+      />
 
-        <div className={styles.inputContainer}>
-          <label className={styles.label} for="imageUrl">
-            Image Url:
-          </label>
-          <input
-            type="text"
-            id="imageUrl"
-            name="imageUrl"
-            className={styles.inputFieldimg}
-            placeholder={profile.avatar_url}
-          />
-        </div>
+      <label className={styles.label} id={styles.descLabel} for="description">
+        Description:
+      </label>
+      <textarea
+        className={styles.inputField}
+        type="text"
+        name="description"
+        id={styles.description}
+        placeholder="Please introduce yourself to the Skillex community here."
+      />
 
-        <div className={styles.inputContainer}>
-          <label className={styles.label} for="description">
-            Description:
-          </label>
-          <textarea
-            type="text"
-            name="description"
-            className={styles.inputFieldDescription}
-            id={styles.description}
-            placeholder={profile.bio}
-          />
-        </div>
-
-        {/* <button className={styles.uploadPhotoButton}>Upload Photo</button> */}
-      </div>
+      {/* <button className={styles.uploadPhotoButton}>Upload Photo</button> */}
     </form>
   );
 }

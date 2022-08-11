@@ -1,13 +1,8 @@
-//SignUpForm
 import NamesAndDetails from "./form-names-details";
 import LearnTeachChecks from "./learnTeachChecks";
 import styles from "./signUpForm.module.css";
 import { useState } from "react";
-
 import { useUser } from "@auth0/nextjs-auth0";
-import Link from "next/link";
-
-import Button from "../Button/index";
 
 export default function SignUpForm() {
   const [agree, setAgree] = useState(false);
@@ -18,7 +13,7 @@ export default function SignUpForm() {
   }
 
   async function handleSubmit(e) {
-    //e.preventDefault();
+
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
     let imageUrl = document.querySelector("#imageUrl").value;
@@ -46,6 +41,7 @@ export default function SignUpForm() {
       approved: isApproved,
     };
 
+
     let response = await fetch("/api/profiles", {
       method: "POST",
       headers: {
@@ -55,16 +51,9 @@ export default function SignUpForm() {
       body: JSON.stringify(profile),
     });
 
-    let content = await response.json();
 
-    // Show alert "Your profile has now been created, go to Discover to search. You can edit your profile from the My Profile page"
-    // redirect to Discover page
-    alert(
-      "Congratulations! Your profile has now been created.\r\n\r\nPlease go to the Discover page to search for educators and learners.\r\n\r\nIf you would like to view or edit your profile, please visit the My Profile page from the navigation menu"
-    );
+    window.location.href = "/profiles/my-profile";
 
-    //redirect on submission
-    window.location.href = "/discover";
   }
 
   return (
@@ -72,7 +61,7 @@ export default function SignUpForm() {
       <NamesAndDetails />
       <LearnTeachChecks />
       <div className={styles.termsContainer}>
-        <label className={styles.label} htmlFor="agree">
+        <label className={styles.label} id={styles.termsLabel} htmlFor="agree">
           I consent to SkillEx storing my data and accept the{" "}
           <a
             href="http://localhost:3000/terms-services#termsOfServices"
@@ -87,7 +76,7 @@ export default function SignUpForm() {
       </div>
       <div className={styles.signUpButton}>
         <button
-          id={styles.signUPButton}
+          id={styles.signUpButton}
           text="Sign Up"
           type="signUpFormButton"
           disabled={!agree}
