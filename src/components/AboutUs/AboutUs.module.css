@@ -28,6 +28,9 @@
   cursor: pointer;
   align-items: center;  
 }
+.discoverbutton:hover{
+  background-color: var(--blue);
+}
 .aboutText {
  
   text-align: center;
@@ -54,6 +57,10 @@
  
   padding: 1%;
  
+}
+
+.signUpButton:hover{
+  background-color: var(--terraCotta);
 }
 
 .bothButtons {
@@ -148,10 +155,7 @@
     
    
   }
-  .discoverButtonLayout{
-    margin-left: 20%;
-    
-   }
+  
    .aboutUs {
     text-align: left;
     font-size: 1.3rem;

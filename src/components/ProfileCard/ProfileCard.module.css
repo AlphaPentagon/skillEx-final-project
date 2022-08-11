@@ -67,6 +67,7 @@
 }
 
 .buttonContainer:hover {
+  cursor: pointer;
 	background-color: #048998;
 }
 

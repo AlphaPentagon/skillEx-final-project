@@ -66,9 +66,22 @@
 }
 
 .signUpBorderButton{
-  
+  border: 2px solid var(--terraCotta);
   background-color: var(--blue);
 }
+
+.signUpBorderButton:hover{
+  background-color: var(--terraCotta);
+}
+.discoverButton{
+  background-color: var(--blue);
+}
+
+.discoverButton:hover{
+  background-color: var(--terraCotta);
+}
+
+
 @media (min-width: 600px) {
 
   .default {
@@ -117,4 +130,19 @@
     background-color: var(--terraCotta);
   }
 
+  .signUpBorderButton{
+  border: 3px solid var(--cream);
+  background-color: var(--blue);
+}
+
+.signUpBorderButton:hover{
+  background-color: var(--terraCotta);
+}
+.discoverButton{
+  background-color: var(--blue);
+}
+
+.discoverButton:hover{
+  background-color: var(--terraCotta);
+}
 }
