@@ -41,3 +41,20 @@
 .image:hover {
   filter: blur(3px);
 }
+
+@media (min-width: 900px) {
+  .skillCard {
+    position: relative;
+    border-radius: 1em;
+    height: 250px;
+    width: 260px;
+    border: 3px solid var(--terraCotta);
+    margin-bottom: 2%;
+    padding: 0;
+  }
+  
+  .skillCard:hover {
+    border: 3px solid var(--blue);
+  }
+
+}

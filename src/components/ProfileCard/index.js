@@ -27,8 +27,8 @@ const ProfileCard = ({
 			<div className={styles.imageContainer}>
 				<ImageWithFallback
 					className={styles.avatar}
-					width={150}
-					height={150}
+					width={165}
+					height={165}
 					src={imageurl}
 					fallbackSrc={`/media/images/default-profile.png`}
 					alt="profile picture"
