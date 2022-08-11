@@ -44,7 +44,7 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
       )}
       <Button
         onClick={handleClick}
-        text={isEditing ? "Cancel" : "Edit"}
+        text={isEditing ? "Cancel" : "Edit Profile"}
         type="blue"
       />
       <p>
