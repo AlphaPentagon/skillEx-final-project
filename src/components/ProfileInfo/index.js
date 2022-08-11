@@ -30,8 +30,3 @@ const ProfileInfo = ({ profile }) => {
 };
 
 export default ProfileInfo;
-
-//ProfileInfo
-// creat profile css
-// import module
-// create profile info component

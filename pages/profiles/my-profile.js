@@ -24,16 +24,16 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
 	} else {
 		imageurl = "/media/images/default-profile.png";
 	}
-	return (
-		<div className={styles.signUpContainer}>
-			<Head>
-				<title>My Profile </title>
-			</Head>
-			<Header
-				text={`${currentProfile.preferred_name}'s Profile`}
-				colour="terraCotta"
-			/>
-			<ImageWithFallBack
+  return (
+    <div className={styles.signUpContainer}>
+      <Head>
+        <title>My Profile </title>
+      </Head>
+      <Header
+        text={`${currentProfile.preferred_name}'s Profile`}
+        colour="terraCotta"
+      />
+      <ImageWithFallBack
 				className={styles.image}
 				width={150}
 				height={150}
@@ -42,30 +42,35 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
 				name={currentProfile.preferred_name}
 				alt="profile picture"
 			/>
+      <Avatar
+        name={currentProfile.preferred_name}
+        imageUrl={currentProfile.avatar_url}
+      />
 
-			<br></br>
-			{isEditing ? (
-				<EditProfile
-					profile={currentProfile}
-					setCurrentProfile={setCurrentProfile}
-					setIsEditing={setIsEditing}
-				/>
-			) : (
-				<ProfileInfo profile={currentProfile} />
-			)}
-			<Button
-				onClick={handleClick}
-				text={isEditing ? "Cancel" : "Edit"}
-				type="blue"
-			/>
-			<p>
-				To delete your profile, please{" "}
-				<Link href="/contact">
-					<a>contact us</a>
-				</Link>
-			</p>
-		</div>
-	);
+      <br></br>
+      {isEditing ? (
+        <EditProfile
+          profile={currentProfile}
+          setCurrentProfile={setCurrentProfile}
+          setIsEditing={setIsEditing}
+        />
+      ) : (
+        <ProfileInfo profile={currentProfile} />
+      )}
+      <Button
+        onClick={handleClick}
+        text={isEditing ? "Cancel" : "Edit Profile"}
+        type="blue"
+      />
+      <p>
+        To delete your profile, please{" "}
+        <Link href="/contact">
+          <a>contact us</a>
+        </Link>
+      </p>
+    </div>
+  );
+
 });
 
 export const getServerSideProps = withPageAuthRequired({
