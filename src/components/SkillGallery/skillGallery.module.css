@@ -6,3 +6,20 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 30%;
+    justify-content: space-evenly;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+  }
+
+  .skillCard {
+    flex: 30%;
+  }
+}

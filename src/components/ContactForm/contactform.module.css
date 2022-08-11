@@ -6,6 +6,7 @@
 	text-align: center;
 }
 
+
 .label {
 	padding: 10px;
 	text-align: left;
@@ -15,34 +16,35 @@
 	
 }
 
+.emailInput {
+	width: 63%;
+	text-align: left;
+   padding: 5px 12px;
+   margin: 0px 29px 0px;
+   border-radius: 5px;
+
+   border: solid 2px var(--terraCotta);
+
+   font-family: inherit;
+}
+
 .messageInput {
 	height: 150px;
 	width: 75%;
 	text-align: left;
-	margin-left: 20px;
 
-	padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px;
+   padding: 5px 15px;
+   margin: 0px 10px;
+
    border-radius: 5px;
-   border: solid 2px var(--blue);
-}
+   border: solid 2px var(--terraCotta);
+   border: solid 2px var(--terraCotta);
+   
+   font-family: inherit;
 
-.emailInput {
-	width: 68.5%;
-	margin-left: 40px;
+   resize: none;
 
-	background-color: #f6f0ed;
 
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px 0px 26px;
-   border-radius: 5px;
-   border: solid 2px var(--blue);	
 }
 
 .contactInfo {
@@ -57,13 +59,17 @@
    padding-right: 15px;
    padding-bottom: 5px ;
    margin: 3px 7px;
-   border-radius: 5px;
-   border: solid 2px var(--blue) 
+
 }
 
-.contactFormButton{
+.contactFormButton {
     padding-bottom: 5%;
+    padding-left: 14%;
+
 }
+
+
+
 
 .inputField {
 	background-color: #f6f0ed;
@@ -74,7 +80,7 @@
    padding-bottom: 5px ;
    margin: 3px 7px;
    border-radius: 5px;
-   border: solid 2px var(--blue) 
+   border: solid 2px var(--terraCotta) 
 }
  
 .inputContainer {
@@ -85,4 +91,93 @@
 
 .padding {
 	padding-top: 10px;
+}
+
+.contactButton {
+
+   margin-left: 40px;
+ }
+
+@media (min-width: 600px) {
+
+   .form {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      text-align: center;
+   }
+   
+   
+   .label {
+      padding: 10px;
+      text-align: left;
+      font-weight: bold;
+      font-size: larger;
+      font-size: 16px;
+      
+   }
+   
+   .emailInput {
+      width: 63%;
+      text-align: left;
+      padding: 5px 15px 0px 25px;
+      margin: 0px 25px 0px 29px;
+      border-radius: 5px;
+      border: solid 2px var(--terraCotta);
+      font-family: inherit;
+   }
+   
+   .messageInput {
+      height: 150px;
+      width: 75%;
+      text-align: left;
+      padding: 5px 15px;
+      margin: 0px 10px;
+      border-radius: 5px;
+      border: solid 2px var(--terraCotta);
+      border: solid 2px var(--terraCotta);
+      font-family: inherit;
+      resize: none;
+   
+   }
+   
+   .contactInfo {
+      text-align: left;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+   
+      padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 15px;
+      padding-bottom: 5px ;
+      margin: 3px 7px;
+
+   }
+   
+   
+   .inputField {
+      background-color: #f6f0ed;
+      width: 95%;
+      padding-top: 5px;
+      padding-left: 10px;
+      padding-right: 15px;
+      padding-bottom: 5px ;
+      margin: 3px 7px;
+      border-radius: 5px;
+      border: solid 2px var(--terraCotta) 
+   }
+    
+   .inputContainer {
+       display:grid;
+       grid-template-columns: max-content max-content;
+       grid-gap:5px;
+   }
+   
+   .padding {
+      padding-top: 10px;
+   }
+   
 }

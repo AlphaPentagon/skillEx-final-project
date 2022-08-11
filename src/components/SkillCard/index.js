@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SkillCard = ({ image, title, description }) => {
 	return (
-		<div className={styles.skillCard}>
+		<div className={styles.skillCard} id={"skill-card-" + title}>
 			<Link href={"/discover/" + title}>
 				<a aria-label={title}>
 					<Image

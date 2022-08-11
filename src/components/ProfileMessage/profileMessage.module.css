@@ -1,0 +1,15 @@
+.profileInfoForm > textarea {
+  width: 90%;
+  height: 10rem;
+  border-radius: 0.5rem;
+  border: solid 2px var(--blue);
+  font-family: inherit;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.messageContainer {
+  margin-bottom: 2rem;
+}

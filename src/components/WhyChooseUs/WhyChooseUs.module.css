@@ -13,9 +13,22 @@
   gap: 2rem;
 }
 
-/* @media (min-width: 400px) {
+@media (min-width: 1000px) {
   .featureCardContainer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    gap: 1rem;
   }
-} */
+
+  .whyChooseUsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .whyChooseUsSection:hover {
+    transform: scale(1.2);
+  }
+}

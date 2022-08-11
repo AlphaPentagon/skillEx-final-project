@@ -6,6 +6,7 @@ const FeatureCard = ({ icon, desc }) => {
       <img className={styles.icon} src={icon} alt="" />
       <p className={styles.description}>{desc}</p>
     </div>
+    
   );
 };
 

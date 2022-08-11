@@ -7,38 +7,40 @@ const Searchbar = () => {
 
   const handleChange = (event) => {
     setText(event.target.value);
-    console.log(text);
   };
 
-
-
-
   const handleClick = () => {
-    const learn = document.querySelector(`input[value="learn"]:checked`)? true:false ;
-    const teach = document.querySelector(`input[value="teach"]:checked`)? true:false;
-
-    console.log('teach radio: ',teach)
-    console.log('learn radio: ',learn)
-
-
-    console.log("submitted:", text); /* include search logic (get request etc)*/
+    const learn = document.querySelector(`input[value="learn"]:checked`)
+      ? true
+      : false;
+    const teach = document.querySelector(`input[value="teach"]:checked`)
+      ? true
+      : false;
+    /* include search logic (get request etc)*/
     setText("");
   };
 
-
-
-
   return (
     <div className={styles.container}>
+      <label for="Teach">
+        Teach
+        <input
+          className={styles.radio}
+          type="radio"
+          name="switch"
+          value="teach"
+        />
+      </label>
 
-
-      <label for="Teach">Teach
-      <input className={styles.radio} type="radio" name="switch" value="teach"/></label>
-
-      <label for="Learn">Learn
-      <input className={styles.radio} type="radio" name="switch" value="learn"/></label>
-
-
+      <label for="Learn">
+        Learn
+        <input
+          className={styles.radio}
+          type="radio"
+          name="switch"
+          value="learn"
+        />
+      </label>
 
       <input
         value={text}

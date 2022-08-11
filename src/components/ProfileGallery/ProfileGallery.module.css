@@ -10,46 +10,92 @@
 
 .iconLeftArrow {
   color: var(--terraCotta);
-  font-size: 40px;
+  font-size: 45px;
   padding-top: 0.2rem;
- 
- 
 }
 
-.iconLeftArrow :hover{
-  color:var(--blue);
-}
-
-
-
-.iconRightArrow {
-  color: var(--terraCotta);
-  font-size: 40px;
-  padding-top: 0.2rem;
- 
-}
-
-
-.iconRightArrow :hover{
+.iconLeftArrow :hover {
+  cursor: pointer;
   color: var(--blue);
 }
 
-.subHeading{
-  color:var(--darkBrown);
-  font-weight: bold;
-  font-size: 95%;
-  padding:5%;
-
+.iconRightArrow {
+  color: var(--terraCotta);
+  font-size: 45px;
+  padding-top: 0.2rem;
 }
 
-.searchResult{
-  color:var(--darkBrown);
-  font-weight: bold;
-  font-size: 95%;
-  padding-top:2%;
+.iconRightArrow :hover {
+  cursor: pointer;
+  color: var(--blue);
 }
 
-.profileGallery{
+.subHeading {
+  color: var(--darkBrown);
+  font-weight: bold;
+  font-size: 95%;
+  padding: 5%;
+}
+
+.searchResult {
+  color: var(--darkBrown);
+  font-weight: bold;
+  font-size: 95%;
+  padding-top: 2%;
+}
+
+.profileGallery {
   margin-left: 40%;
   margin-right: 40%;
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+  }
+  
+  .iconLeftArrow {
+    color: var(--terraCotta);
+    font-size: 70px;
+    padding-top: 0.2rem;
+  }
+  
+  .iconLeftArrow :hover {
+    color: var(--blue);
+  }
+  
+  .iconRightArrow {
+    color: var(--terraCotta);
+    font-size: 70px;
+    padding-top: 0.2rem;
+  }
+  
+  .iconRightArrow :hover {
+    color: var(--blue);
+  }
+  
+  .subHeading {
+    color: var(--darkBrown);
+    font-weight: bold;
+    font-size: 95%;
+    padding: 5%;
+  }
+  
+  .searchResult {
+    color: var(--darkBrown);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 2%;
+  }
+  
+  .profileGallery {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
 }

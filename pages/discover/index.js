@@ -1,26 +1,29 @@
 import Header from "../../src/components/Header";
 import ProfileGallery from "../../src/components/ProfileGallery";
-import Searchbar from "../../src/components/SearchBar";
+// import Searchbar from "../../src/components/SearchBar";
 import SkillGallery from "../../src/components/SkillGallery/index";
-import styles from "./discover.module.css";
+
 import prisma from "../../prisma/client";
 import stylesHome from "../../styles/Home.module.css";
+import Head from "next/head";
+
 
 const Discover = ({ profilesArr }) => {
-  console.log(profilesArr);
-  return (
-    <>
-      <Header text="Discover" />
-      <p className={stylesHome.sloganText}>
-        Teach and Learn at the same time, all you need to search and find all
-        the tutors that teach that skill
-      </p>
-      <ProfileGallery profiles={profilesArr} />
+	return (
+		<>
+			<Head>
+				<title>Discover</title>
+			</Head>
+			<Header text="Discover" />
+			<p className={stylesHome.sloganText}>
+				Teach and Learn at the same time, all you need to search and find
+				all the tutors that teach that skill
+			</p>
+			<ProfileGallery profiles={profilesArr} />
 
-      <Searchbar />
-      <SkillGallery />
-    </>
-  );
+			<SkillGallery />
+		</>
+	);
 };
 
 export default Discover;
@@ -41,8 +44,8 @@ export default Discover;
   do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
 
 export async function getServerSideProps() {
-  const data = await prisma.profiles.findMany();
-  return {
-    props: { profilesArr: data },
-  };
+	const data = await prisma.profiles.findMany();
+	return {
+		props: { profilesArr: data },
+	};
 }

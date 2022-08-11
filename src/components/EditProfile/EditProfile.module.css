@@ -1,5 +1,4 @@
 .signUpContainer {
- 
   width: 100%;
   padding: 0;
   margin: 0;
@@ -10,8 +9,15 @@
   align-items: center;
 }
 
-.signUpSubContainer {
+.signUpContainer > button {
+  margin-bottom: 1rem;
+}
 
+.signUpContainer a {
+  font-weight: bold;
+}
+
+.signUpSubContainer {
   width: 100%;
 
   display: flex;
@@ -22,84 +28,91 @@
 }
 
 .container {
-  
-  width: 95%;
-
-
-  /* display: flex;
-    flex-direction: column; */
+  width: 85%;
+  display: grid;
+  grid-template-columns: 2fr 3.5fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 4fr;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0rem;
 }
 
 .inputContainer {
-
-    display:grid;
-    grid-template-columns: max-content max-content;
-    grid-gap:5px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 5px;
 }
 
 .inputField {
-   background-color: #f6f0ed;
-  width: 95%;
+  background-color: #f6f0ed;
+  border-radius: 5px;
+  border: solid 2px #c8553d;
+  resize: none;
+  padding: 0.5rem;
+  font-family: copyFont;
+  font-size: 1rem;
+}
+
+.inputFieldimg {
+  background-color: #f6f0ed;
+  width: 94%;
   padding-top: 5px;
   padding-left: 10px;
   padding-right: 15px;
-  padding-bottom: 5px ;
-  margin: 3px 7px;
+  padding-bottom: 5px;
+  margin: 3px 7px 0px 9px;
   border-radius: 5px;
-  border: solid 2px #c8553d }
-
-.inputFieldimg {
-    background-color: #f6f0ed;
-   width: 94%;
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px 0px 9px;
-   border-radius: 5px;
-   border: solid 2px #c8553d }
+  border: solid 2px #c8553d;
+}
 
 .inputFieldDescription {
-  
-    background-color: #f6f0ed;
-   width: 94%;
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 7px 0px 5px;
-   border-radius: 5px;
-   border: solid 2px #c8553d }
- 
+  background-color: #f6f0ed;
+  width: 94%;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  margin: 3px 7px 0px 5px;
+  border-radius: 5px;
+  border: solid 2px #c8553d;
+}
 
 .label {
-    font-weight: bold;
-    color: #2a0800;
-    text-align: right;
-    padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+  color: #2a0800;
+  text-align: left;
+  resize: none;
+  font-family: copyFont;
+}
+
+#descLabel {
+  align-items: flex-start;
+}
+
+#termsLabel {
+  display: block;
+  text-align: center;
 }
 .descriptionContainer {
-
-  display: flex;
   flex-direction: row;
-  align-items:center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #description {
-
+  box-sizing: border-box;
   height: 200px;
-  
   background-color: #f6f0ed;
-  width: 100%;
-  padding-top: 15px;
-  margin: 6px 3px 0px 1px;
   border-radius: 5px;
- 
+  border: solid 2px #c8553d;
+  resize: none;
+  font-family: copyFont;
 }
 
 .uploadPhotoButton {
-   background-color: red; 
+  background-color: red;
   padding: 10px 10px;
   border-radius: 10px;
   width: 70%;
@@ -107,26 +120,25 @@
 }
 
 /* ///////////////////////////// */
-
 .containerChecks {
-    background-color: lightblue;
-    background-color: #c8553d; /* For browsers that do not support gradients */
-    background: linear-gradient(to right,
-    #0095a672 33%, #c8543d74 33% 65%, #c8543da5 33% 60%);
- 
-  padding-bottom: 20px;
+  background-color: lightblue;
+  background-color: #c8553d; /* For browsers that do not support gradients */
+  background: linear-gradient(
+    to right,
+    #0095a672 33%,
+    #c8543d74 33% 65%,
+    #c8543da5 33% 60%
+  );
   width: 100%;
-  border-radius: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 2%;
-  margin-bottom: 10%;
+  border-radius: 20px;
+  padding-bottom: 1.25rem;
+  margin-block: 2rem;
 }
 
 .checks {
   /* background-color: rgb(240, 170, 170); */
   width: 100%;
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 33%);
   justify-content: center;
 }
@@ -159,7 +171,6 @@
   height: 0;
   width: 0;
   color: green;
-
 }
 
 /* on hover: */
@@ -203,7 +214,7 @@ END
   top: 5px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid var(--cream);
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -224,7 +235,7 @@ END
 .learn {
   height: 25px;
   width: 25px;
-  background-color:#f6f0ed;
+  background-color: #f6f0ed;
   border: solid 2px #048998;
   border-radius: 5px;
 }
@@ -233,7 +244,7 @@ END
   height: 25px;
   width: 25px;
   background-color: #f6f0ed;
-  border: solid 2px #c8553d ;
+  border: solid 2px #c8553d;
   border-radius: 5px;
 }
 
@@ -241,7 +252,7 @@ END
 
 .learnHeader {
   font-weight: bolder;
-  color:  #c8553d;
+  color: #c8553d;
   font-family: mainLogo;
   font-size: 1.7em;
 }
@@ -253,30 +264,28 @@ END
   font-size: 1.7em;
 }
 
-.termsContainer{
-    padding-bottom: 5%;
-
+.termsContainer {
+  padding-bottom: 1rem;
 }
 
-.signUpButton{
-    padding-bottom: 5%;
+.signUpButton {
+  padding-bottom: 1rem;
 }
 
 .skills {
-    font-weight: bold;
-    color: #2a0800;
-    text-align: center;
+  font-weight: bold;
+  color: #2a0800;
+  text-align: center;
 }
 
-.hyperlink{
-    color: blue;
-    text-decoration: underline;
+.hyperlink {
+  color: blue;
+  text-decoration: underline;
 }
 
 .hyperlink :hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 /* highlighting colums: */
 /* .checks:nth-child(1) { */
@@ -287,3 +296,22 @@ END
 END
 
 */
+
+@media (min-width: 600px) {
+  .signUpSubContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    margin-top: 1rem;
+    width: min(100%, 600px);
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 4fr;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0rem;
+  }
+}

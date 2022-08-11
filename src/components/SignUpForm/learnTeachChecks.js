@@ -2,15 +2,18 @@ import styles from "./signUpForm.module.css";
 
 export default function LearnTeachChecks() {
   const categories = [
-    "Cooking",
-    "DIY",
-    "Languages",
-    "Business",
-    "Gardening",
-    "Construction",
-    "Craft",
-    "IT",
-    "Martial Arts",
+    "accounting",
+    "business",
+    "construction",
+    "cooking",
+    "craft",
+    "diy",
+    "english",
+    "gardening",
+    "it",
+    "languages",
+    "martial arts",
+    "maths",
   ];
 
   return (
