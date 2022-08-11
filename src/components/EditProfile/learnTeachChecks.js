@@ -3,15 +3,18 @@ import styles from "./EditProfile.module.css";
 
 export default function LearnTeachChecks({ learnSkills, teachSkills }) {
   const categories = [
-    "cooking",
-    "diy",
-    "languages",
+    "accounting",
     "business",
-    "gardening",
     "construction",
+    "cooking",
     "craft",
+    "diy",
+    "english",
+    "gardening",
     "it",
+    "languages",
     "martial arts",
+    "maths",
   ];
 
   return (
