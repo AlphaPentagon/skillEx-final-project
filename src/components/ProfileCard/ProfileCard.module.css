@@ -55,11 +55,15 @@
 }
 
 .buttonContainer {
-	margin: auto;
-	background-color: var(--terraCotta);
-	border-radius: 5%;
-	color: var(--cream);
-	padding: 2%;
+
+  margin-top: -10%;
+  background-color: var(--terraCotta);
+  border-radius: 2px;
+  color:var(--cream);
+  padding: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+
 }
 
 .buttonContainer:hover {

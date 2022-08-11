@@ -1,13 +1,12 @@
 import Header from "../../src/components/Header";
 import ProfileGallery from "../../src/components/ProfileGallery";
-import Searchbar from "../../src/components/SearchBar";
+// import Searchbar from "../../src/components/SearchBar";
 import SkillGallery from "../../src/components/SkillGallery/index";
-//import styles from "./discover.module.css";
+
 import prisma from "../../prisma/client";
 import stylesHome from "../../styles/Home.module.css";
 import Head from "next/head";
-//import Link from "next/link";
-//import Button from "../../src/components/Button";
+
 
 const Discover = ({ profilesArr }) => {
 	return (
