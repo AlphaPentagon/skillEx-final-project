@@ -3,7 +3,12 @@ import ProfileInfo from "../../src/components/ProfileInfo";
 import Header from "../../src/components/Header/index";
 import Avatar from "../../src/components/Avatar/index";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
+
 import ProfileMessage from "../../src/components/ProfileMessage";
+
+import Link from "next/link";
+import Button from "../../src/components/Button";
+
 
 export default withPageAuthRequired(function Profile({ profile }) {
   // console.log("current profile: ", profile);
@@ -13,7 +18,15 @@ export default withPageAuthRequired(function Profile({ profile }) {
       <Avatar name="Jenna" imageUrl={profile.avatar_url} />
       <Header text={profile.full_name} colour="blue" />
       <ProfileInfo profile={profile} />
+
       <ProfileMessage profile={profile} />
+
+      <Link href="/discover">
+					<a aria-label="discover">
+          <p style={{textDecoration:"underline"}} >Back to Search tutors</p>
+					</a>
+				</Link>
+
     </>
   );
 });

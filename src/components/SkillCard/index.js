@@ -6,6 +6,7 @@ const SkillCard = ({ image, title, description }) => {
 	return (
 		<div className={styles.skillCard}>
 			<Link href={"/discover/" + title}>
+				
 				<a aria-label={title}>
 					<Image
 						className={styles.image}
@@ -14,6 +15,7 @@ const SkillCard = ({ image, title, description }) => {
 						layout="fill"
 					/>
 				</a>
+				
 			</Link>
 			<a
 				className={styles.text}
@@ -23,6 +25,7 @@ const SkillCard = ({ image, title, description }) => {
 				{title}
 			</a>
 		</div>
+		
 	);
 };
 

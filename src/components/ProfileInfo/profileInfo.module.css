@@ -5,9 +5,10 @@
   justify-content: center;
   align-items: center;
   color: var(--darkBrown);
-  font-family: copyFont;
+  font-family: inherit;
   margin: 0 0 1rem 0;
   width: 100%;
+
 }
 
 .title {
@@ -24,6 +25,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 1fr;
 }
+
 
 .skillsContent {
   text-transform: capitalize;
