@@ -4,7 +4,6 @@ import prisma from "../../../prisma/client.js";
 
 export default async function handle(req, res) {
   const { searchString, mode } = req.query;
-  console.log(searchString, mode);
 
   if (mode === "teach") {
     const result = await prisma.profiles.findMany({

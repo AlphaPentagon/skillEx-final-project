@@ -28,7 +28,6 @@ export default function EditProfile({
   const { user } = useUser();
 
   async function handleSubmit(e, id) {
-    console.log(profile);
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
     let imageUrl = document.querySelector("#imageUrl").value;
@@ -69,8 +68,6 @@ export default function EditProfile({
       approved: true,
     };
 
-    console.log(profile);
-
     /* This will need to be changed over to a PUT/PATCH request? */
 
     let response = await fetch(`/api/profiles/${profile.id}`, {
@@ -83,9 +80,6 @@ export default function EditProfile({
     });
     setCurrentProfile(profile);
     setIsEditing(false);
-
-    console.log(profile);
-    console.log("Editing form");
   }
 
   return (

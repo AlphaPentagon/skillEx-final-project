@@ -75,7 +75,7 @@ export async function getServerSideProps(context) {
     where: { id: Number(params.profileId) },
   });
 
-  // console.log("profile: ", data);
+
   return {
     props: { profile: { ...data } },
   };

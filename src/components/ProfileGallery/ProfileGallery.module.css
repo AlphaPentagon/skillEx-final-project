@@ -12,44 +12,37 @@
   color: var(--terraCotta);
   font-size: 40px;
   padding-top: 0.2rem;
- 
- 
 }
 
-.iconLeftArrow :hover{
-  color:var(--blue);
+.iconLeftArrow :hover {
+  color: var(--blue);
 }
-
-
 
 .iconRightArrow {
   color: var(--terraCotta);
   font-size: 40px;
   padding-top: 0.2rem;
- 
 }
 
-
-.iconRightArrow :hover{
+.iconRightArrow :hover {
   color: var(--blue);
 }
 
-.subHeading{
-  color:var(--darkBrown);
+.subHeading {
+  color: var(--darkBrown);
   font-weight: bold;
   font-size: 95%;
-  padding:5%;
-
+  padding: 5%;
 }
 
-.searchResult{
-  color:var(--darkBrown);
+.searchResult {
+  color: var(--darkBrown);
   font-weight: bold;
   font-size: 95%;
-  padding-top:2%;
+  padding-top: 2%;
 }
 
-.profileGallery{
+.profileGallery {
   margin-left: 40%;
   margin-right: 40%;
 }

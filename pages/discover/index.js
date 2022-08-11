@@ -10,7 +10,6 @@ import Head from "next/head";
 //import Button from "../../src/components/Button";
 
 const Discover = ({ profilesArr }) => {
-	console.log(profilesArr);
 	return (
 		<>
 			<Head>

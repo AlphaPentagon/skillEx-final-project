@@ -27,11 +27,9 @@ const profiles = [
 const load = async () => {
   try {
     await prisma.profiles.deleteMany();
-    console.log("Deleted records in profiles table");
     await prisma.profiles.createMany({
       data: profiles,
     });
-    console.log("Added profile data");
   } catch (e) {
     console.error(e);
     process.exit(1);
