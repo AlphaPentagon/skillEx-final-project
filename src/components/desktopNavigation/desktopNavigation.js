@@ -2,6 +2,7 @@ import { useUser } from "@auth0/nextjs-auth0";
 import Link from "next/link";
 import styles from "./desktopNavBar.module.css";
 export default function DesktopNavBar() {
+
 	const { user } = useUser();
 	return (
 		<div className={styles.navigation}>
@@ -23,7 +24,9 @@ export default function DesktopNavBar() {
 						</a>
 					</Link>
 
+
 					<br />
+
 
 					<ul className={styles.buttons}>
 						{!user && (
@@ -46,7 +49,7 @@ export default function DesktopNavBar() {
 						)}
 						{user && (
 							<>
-								<Link href="/profiles/edit">
+								<Link href="/profiles/my-profile">
 									<a className={styles.word} title="View your profile">
 										Profile
 									</a>
@@ -66,4 +69,5 @@ export default function DesktopNavBar() {
 			</div>
 		</div>
 	);
+
 }

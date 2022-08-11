@@ -1,16 +1,17 @@
+import { useState } from "react";
 import styles from "./EditProfile.module.css";
 
-export default function LearnTeachChecks() {
+export default function LearnTeachChecks({ learnSkills, teachSkills }) {
   const categories = [
-    "Cooking",
-    "DIY",
-    "Languages",
-    "Business",
-    "Gardening",
-    "Construction",
-    "Craft",
-    "IT",
-    "Martial Arts",
+    "cooking",
+    "diy",
+    "languages",
+    "business",
+    "gardening",
+    "construction",
+    "craft",
+    "it",
+    "martial arts",
   ];
 
   return (
@@ -26,14 +27,24 @@ export default function LearnTeachChecks() {
         return (
           <div className={styles.checks}>
             <label className={styles.containerCheckbox1}>
-              <input type="checkbox" name="learn" value={item} />
+              <input
+                type="checkbox"
+                name="learn"
+                value={item}
+                defaultChecked={learnSkills.includes(item) ? "checked" : ""}
+              />
               <span className={styles.teach} />
             </label>
 
             <p className={styles.skills}>{item}</p>
 
             <label className={styles.containerCheckbox1}>
-              <input type="checkbox" name="teach" value={item} />
+              <input
+                type="checkbox"
+                name="teach"
+                value={item}
+                defaultChecked={teachSkills.includes(item) ? "checked" : ""}
+              />
               <span className={styles.learn} />
             </label>
           </div>

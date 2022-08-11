@@ -1,22 +1,6 @@
 import styles from "./profileInfo.module.css";
-import Button from "../Button/index";
-import { useState } from "react";
-// import { useUser } from "@auth0/nextjs-auth0";
 
 const ProfileInfo = ({ profile }) => {
-  const [text, setText] = useState("");
-  // const { user } = useUser();
-
-  const handleSend = (event) => {
-    event.preventDefault();
-    console.log(text);
-    setText("");
-  };
-
-  const handleChange = (event) => {
-    setText(event.target.value);
-  };
-
   return (
     <section className={styles.profileSection}>
       <div className={styles.profileInfoContainer}>
@@ -40,19 +24,6 @@ const ProfileInfo = ({ profile }) => {
             <p className={styles.skillsContent}>{skill}</p>
           ))}
         </div>
-      </div>
-      <div className={styles.messageContainer}>
-
-        <h3 className={styles.title}>Please get in contact.</h3>
-
-        <form className={styles.profileInfoForm} onSubmit={handleSend}>
-          <textarea
-            onChange={handleChange}
-            placeholder="Type your message here..."
-            value={text}
-          ></textarea>
-          <Button type="profileInfoButton" text="Send" />
-        </form>
       </div>
     </section>
   );
