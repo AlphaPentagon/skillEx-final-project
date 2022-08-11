@@ -9,15 +9,21 @@ import ProfileInfo from "../../src/components/ProfileInfo";
 import Avatar from "../../src/components/Avatar";
 import styles from "../../src/components/EditProfile/EditProfile.module.css";
 import Button from "../../src/components/Button";
+import ImageWithFallBack from "../../src/components/ImageWithFallBack";
 
 export default withPageAuthRequired(function MyProfile({ profile }) {
-  const [isEditing, setIsEditing] = useState(false);
-  const [currentProfile, setCurrentProfile] = useState(profile);
+	const [isEditing, setIsEditing] = useState(false);
+	const [currentProfile, setCurrentProfile] = useState(profile);
 
-  function handleClick() {
-    setIsEditing(!isEditing);
-  }
-
+	function handleClick() {
+		setIsEditing(!isEditing);
+	}
+	let imageurl = "/media/images/default-profile.png";
+	if (currentProfile.avatar_url.startsWith("http")) {
+		imageurl = `${currentProfile.avatar_url}`;
+	} else {
+		imageurl = "/media/images/default-profile.png";
+	}
   return (
     <div className={styles.signUpContainer}>
       <Head>
@@ -27,6 +33,15 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
         text={`${currentProfile.preferred_name}'s Profile`}
         colour="terraCotta"
       />
+      <ImageWithFallBack
+				className={styles.image}
+				width={150}
+				height={150}
+				src={imageurl}
+				fallbackSrc={`/media/images/default-profile.png`}
+				name={currentProfile.preferred_name}
+				alt="profile picture"
+			/>
       <Avatar
         name={currentProfile.preferred_name}
         imageUrl={currentProfile.avatar_url}
@@ -55,22 +70,23 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
       </p>
     </div>
   );
+
 });
 
 export const getServerSideProps = withPageAuthRequired({
-  async getServerSideProps(context) {
-    const session = getSession(context.req, context.res);
-    console.log(session);
-    const profileId = session.user.sub;
-    const data = await prisma.profiles.findMany({
-      where: { profile_id: profileId },
-    });
-    console.log(data);
+	async getServerSideProps(context) {
+		const session = getSession(context.req, context.res);
+		console.log(session);
+		const profileId = session.user.sub;
+		const data = await prisma.profiles.findMany({
+			where: { profile_id: profileId },
+		});
+		console.log(data);
 
-    return {
-      props: { profile: { ...data[0] } },
-    };
-  },
+		return {
+			props: { profile: { ...data[0] } },
+		};
+	},
 });
 
 // # My Profile page
