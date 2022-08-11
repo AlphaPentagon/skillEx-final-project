@@ -1,5 +1,5 @@
 import styles from "./ProfileGallery.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProfileCard from "../ProfileCard/index.js";
 // import profiles from "../../libs/profiles";
 import {
@@ -9,6 +9,10 @@ import {
 
 const ProfileGallery = ({ profiles }) => {
   const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    setCurrent(0);
+  }, [profiles]);
 
   function nextSlide() {
     setCurrent(current === profiles.length - 1 ? 0 : current + 1);
@@ -42,13 +46,10 @@ const ProfileGallery = ({ profiles }) => {
                   bio={profile.bio}
                 />
               )}
-              
             </div>
-
           );
         })}
       </div>
-     
     </div>
   );
 };
