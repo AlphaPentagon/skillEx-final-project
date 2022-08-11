@@ -1,139 +1,75 @@
 .signUpContainer {
- 
   width: 100%;
   padding: 0;
   margin: 0;
-
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  justify-content: center;
 }
 
 .signUpSubContainer {
-
   width: 100%;
-
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
 }
 
 .container {
-  
-  width: 95%;
-
-
-  /* display: flex;
-    flex-direction: column; */
-}
-
-.inputContainer {
-
-    display:grid;
-    grid-template-columns: max-content max-content;
-    grid-gap:5px;
-    resize: none;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 2fr 3.5fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 4fr;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0rem;
 }
 
 .inputField {
-   background-color: #f6f0ed;
-  width: 95%;
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 15px;
-  padding-bottom: 5px ;
-  margin: 3px 7px;
+  background-color: #f6f0ed;
   border-radius: 5px;
   border: solid 2px #c8553d;
   resize: none;
+  padding: 0.5rem;
 }
-
-
-.inputFieldimg {
-    background-color: #f6f0ed;
-   width: 95%;
-   padding-top: 5px;
-   padding-left: 10px;
-   padding-right: 15px;
-   padding-bottom: 5px ;
-   margin: 3px 5px 0px 9px;
-   border-radius: 5px;
-   border: solid 2px #c8553d }
-   
-
- 
 
 .label {
-    font-weight: bold;
-    color: #2a0800;
-    text-align: right;
-    padding: 12px;
-    resize: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+  color: #2a0800;
+  text-align: left;
+  resize: none;
+}
+
+#descLabel {
+  align-items: flex-start;
+}
+
+#termsLabel {
+  display: block;
+  text-align: center;
 }
 .descriptionContainer {
-
-  display: flex;
-  flex-direction: row;
-  align-items:center;
-    justify-content: center;
-    resize: none;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  resize: none;
 }
-
-
-
-
-
-
-
-
 
 #description {
   box-sizing: border-box;
-
   height: 200px;
-  
   background-color: #f6f0ed;
-  width: 100%;
-
-  padding: 15px 14px;
-
-  margin: 6px 15px 0px 1px;
   border-radius: 5px;
   border: solid 2px #c8553d;
   resize: none;
+  font-family: copyFont;
 }
-
-
-@media (min-width: 600px) {
-
-  #description {
-  box-sizing: border-box;
-  height: 200px;
-  background-color: #f6f0ed;
-  width: 100%;
-  padding: 15px 14px;
-  margin: 6px 0.3rem 0px 1px;
-  border-radius: 5px;
-  border: solid 2px #c8553d;
-  resize: none;
-}
-}
-
-
-
-
-
-
-
-
-
-
 
 .uploadPhotoButton {
-   background-color: red; 
+  background-color: red;
   padding: 10px 10px;
   border-radius: 10px;
   width: 70%;
@@ -143,28 +79,33 @@
 /* ///////////////////////////// */
 
 .containerChecks {
-    background-color: lightblue;
-    background-color: #c8553d; /* For browsers that do not support gradients */
-    background: linear-gradient(to right,
-    #0095a672 33%, #c8543d74 33% 65%, #c8543da5 33% 60%);
- 
-  padding-bottom: 20px;
+  background-color: lightblue;
+  background-color: #c8553d; /* For browsers that do not support gradients */
+  background: linear-gradient(
+    to right,
+    #0095a672 33%,
+    #c8543d74 33% 65%,
+    #c8543da5 33% 60%
+  );
   width: 100%;
   border-radius: 20px;
+  padding-bottom: 1.25rem;
+  margin-block: 2rem;
+  /* 
+  
+  
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 10%; */
 }
 
 .checks {
   /* background-color: rgb(240, 170, 170); */
   width: 100%;
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 33%);
   justify-content: center;
-
-  
 }
 
 /* ////   customising checkboxes:   /////////////// */
@@ -195,7 +136,6 @@
   height: 0;
   width: 0;
   color: green;
-
 }
 
 /* on hover: */
@@ -260,7 +200,7 @@ END
 .learn {
   height: 25px;
   width: 25px;
-  background-color:#f6f0ed;
+  background-color: #f6f0ed;
   border: solid 2px #048998;
   border-radius: 5px;
 }
@@ -269,7 +209,7 @@ END
   height: 25px;
   width: 25px;
   background-color: #f6f0ed;
-  border: solid 2px #c8553d ;
+  border: solid 2px #c8553d;
   border-radius: 5px;
 }
 
@@ -277,7 +217,7 @@ END
 
 .learnHeader {
   font-weight: bolder;
-  color:  #c8553d;
+  color: #c8553d;
   font-family: mainLogo;
   font-size: 1.7em;
 }
@@ -289,30 +229,29 @@ END
   font-size: 1.7em;
 }
 
-.termsContainer{
-    padding-bottom: 5%;
-
+.termsContainer {
+  padding-bottom: 1rem;
+  width: 80%;
 }
 
-.signUpButton{
-    padding-bottom: 5%;
+.signUpButton {
+  padding-bottom: 1rem;
 }
 
 .skills {
-    font-weight: bold;
-    color: #2a0800;
-    text-align: center;
+  font-weight: bold;
+  color: #2a0800;
+  text-align: center;
 }
 
-.hyperlink{
-    color: blue;
-    text-decoration: underline;
+.hyperlink {
+  color: blue;
+  text-decoration: underline;
 }
 
 .hyperlink :hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 /* highlighting colums: */
 /* .checks:nth-child(1) { */
@@ -324,18 +263,47 @@ END
 
 */
 
-
-
-
-#signUPButton {
-  background-color:  var(--terraCotta);
+#signUpButton {
+  font-family: copyFont;
+  background-color: var(--blue);
   border: 0;
-  color: var(--cream) ;
+  color: var(--cream);
   font-size: 1.7em;
   font-weight: 600;
   border-radius: 10px;
-  
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+}
 
-  padding: 15px 25px;
+#signUpButton:hover {
+  cursor: pointer;
+  background-color: var(--terraCotta);
+}
 
+#signUpButton:disabled {
+  opacity: 0.5;
+}
+
+#signUpButton:disabled:hover {
+  cursor: default;
+  background-color: var(--blue);
+}
+
+@media (min-width: 600px) {
+  .signUpSubContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    margin-top: 1rem;
+    width: min(100%, 600px);
+    display: grid;
+    grid-template-columns: 1.5fr 5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 4fr;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 0rem;
+  }
 }
