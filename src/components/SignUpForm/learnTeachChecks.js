@@ -29,14 +29,28 @@ export default function LearnTeachChecks() {
         return (
           <div className={styles.checks}>
             <label className={styles.containerCheckbox1}>
-              <input type="checkbox" name="learn" value={item} />
+              <input
+                type="checkbox"
+                name="learn"
+                value={item}
+                onClick={() => {
+                  setIsSkills(true);
+                }}
+              />
               <span className={styles.teach} />
             </label>
 
             <p className={styles.skills}>{item}</p>
 
             <label className={styles.containerCheckbox1}>
-              <input type="checkbox" name="teach" value={item} />
+              <input
+                type="checkbox"
+                name="teach"
+                value={item}
+                onClick={() => {
+                  setIsSkills(true);
+                }}
+              />
               <span className={styles.learn} />
             </label>
           </div>
