@@ -13,7 +13,6 @@ export default function SignUpForm() {
   }
 
   async function handleSubmit(e) {
-
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
     let imageUrl = document.querySelector("#imageUrl").value;
@@ -41,7 +40,6 @@ export default function SignUpForm() {
       approved: isApproved,
     };
 
-
     let response = await fetch("/api/profiles", {
       method: "POST",
       headers: {
@@ -50,14 +48,10 @@ export default function SignUpForm() {
 
       body: JSON.stringify(profile),
     });
-
-
-    window.location.href = "/profiles/my-profile";
-
   }
 
   return (
-    <div className={styles.signUpSubContainer}>
+    <form className={styles.signUpSubContainer} action="/profiles/my-profile">
       <NamesAndDetails />
       <LearnTeachChecks />
       <div className={styles.termsContainer}>
@@ -76,15 +70,15 @@ export default function SignUpForm() {
       </div>
       <div className={styles.signUpButton}>
         <button
+          type="submit"
           id={styles.signUpButton}
           text="Sign Up"
-          type="signUpFormButton"
           disabled={!agree}
           onClick={handleSubmit}
         >
           Sign Up
         </button>
       </div>
-    </div>
+    </form>
   );
 }
