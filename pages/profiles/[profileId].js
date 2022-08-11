@@ -9,26 +9,26 @@ import ProfileMessage from "../../src/components/ProfileMessage";
 import Link from "next/link";
 import Button from "../../src/components/Button";
 
-
 export default withPageAuthRequired(function Profile({ profile }) {
-  // console.log("current profile: ", profile);
+	// console.log("current profile: ", profile);
 
-  return (
-    <>
-      <Avatar name="Jenna" imageUrl={profile.avatar_url} />
-      <Header text={profile.full_name} colour="blue" />
-      <ProfileInfo profile={profile} />
+	return (
+		<>
+			<Avatar name={profile.full_name} imageUrl={profile.avatar_url} />
+			<Header text={profile.full_name} colour="blue" />
+			<ProfileInfo profile={profile} />
 
-      <ProfileMessage profile={profile} />
+			<ProfileMessage profile={profile} />
 
-      <Link href="/discover">
-					<a aria-label="discover">
-          <p style={{textDecoration:"underline"}} >Back to Search tutors</p>
-					</a>
-				</Link>
-
-    </>
-  );
+			<Link href="/discover">
+				<a aria-label="discover">
+					<p style={{ textDecoration: "underline" }}>
+						Back to Search tutors
+					</p>
+				</a>
+			</Link>
+		</>
+	);
 });
 
 // /* needed for data fetching before rendering - creates static versions of each page/path
@@ -70,13 +70,13 @@ export default withPageAuthRequired(function Profile({ profile }) {
 // }
 
 export async function getServerSideProps(context) {
-  const { params } = context;
-  const data = await prisma.profiles.findUnique({
-    where: { id: Number(params.profileId) },
-  });
+	const { params } = context;
+	const data = await prisma.profiles.findUnique({
+		where: { id: Number(params.profileId) },
+	});
 
-  // console.log("profile: ", data);
-  return {
-    props: { profile: { ...data } },
-  };
+	// console.log("profile: ", data);
+	return {
+		props: { profile: { ...data } },
+	};
 }
