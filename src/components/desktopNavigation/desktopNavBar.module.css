@@ -1,88 +1,44 @@
-/* .navigation {
-  height: 60px;
-  width: 100%;
+.navBar {
   display: flex;
-  align-items: center;
-  position: relative;
-  padding: 0.5rem 1rem;
-  background-color: var(--cream);
- 
-  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-
-} */
-
-
-.navigationMenu ul {
-  display: flex;
- justify-content:center;
+  justify-content: center;
   padding: 0;
-  
   width: 100%;
-
-  position: relative;
-
+  gap: 1.5rem;
+  margin-right: 1rem;
 }
 
-.word {
-
-  font-size: 25px;
-  margin-right: -10%;
-  padding: 10%;
-  margin-top: 5%;
-
+.navBar > li {
+  list-style: none;
 }
 
-.buttons {
-
-  
-  margin: auto;
-  display: flex;
-  margin-right: -37%;
-
- 
- 
+.link {
+  font-size: 1.5rem;
 }
 
-
-a.button {
+.button {
   background-color: var(--blue);
   font-size: 1.5rem;
   color: var(--cream);
-  padding-inline: 1.8rem;
-  padding-block: 0.5rem;
   font-family: inherit;
   border: none;
   border-radius: 0.6rem;
   font-weight: bold;
   cursor: pointer;
-  margin-left: 20%;
-  
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
 }
 
-a.button:hover {
-
-    background-color: var(--terraCotta);
-    }
-    
+.button:hover {
+  background-color: var(--terraCotta);
+}
 
 /* .word {
     color: var(--darkBrown);
-}
-.word:after {
-    content: '';
-    position: absolute;
-    background-color: var(--blue);
-    height:4px;
-    width:100%;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
+	@@ -80,9 +60,7 @@ a.button:hover {
 }
 */
 
-.word:hover {
-    color: var(--blue);
-    cursor: pointer;
-} 
-
-
+.link:hover {
+  color: var(--blue);
+  cursor: pointer;
+}

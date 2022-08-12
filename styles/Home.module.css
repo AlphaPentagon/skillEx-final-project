@@ -8,6 +8,18 @@
 }
 
 .discoverHeading {
-  color: var(--blue);
+  color: var(--terraCotta);
   margin: 1rem 0 0.5rem 0;
+}
+@media only screen and (min-width: 800px) {
+  .sloganText {
+    background-color: var(--terraCotta);
+    font-size: 1.7rem;
+    color: var(--cream);
+    width: 100%;
+    padding-inline: 3rem;
+    padding-block: 0.5rem;
+    margin: 0.1rem 0 0 0;
+    margin-bottom: 0.8rem;
+  }
 }

@@ -8,7 +8,7 @@ export default function SimpleSlider() {
 	const settings = {
 		autoplay: true,
 		accessibility: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 4000,
 		dots: true,
 		infinite: true,
 		slidesToShow: 1,
