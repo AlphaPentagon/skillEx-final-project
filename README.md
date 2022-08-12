@@ -8,11 +8,6 @@ Our skill sharing platform, SkillEx, provides an opportunity for people to upski
 
 The 1:1 delivery model will improve learning outcomes and learner engagement when compared with passive learning resources (e.g. YouTube) while enabling human connection and interaction for those who are socially isolated.
 
-## Screenshots
-
-**TODO**
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 ## Features
 
 - Create new user & edit existing user profile
@@ -23,10 +18,7 @@ The 1:1 delivery model will improve learning outcomes and learner engagement whe
 - 3rd party authentication & authorisation
 - Unit tests & end-to-end testing suites
 
-## Demo
-
-**TODO**
-Insert gif or link to demo
+![App Screenshot](public\media\images\screenshot.png)
 
 ## Roadmap
 
@@ -112,12 +104,19 @@ To run tests, run the following command
 
 ## Environment Variables
 
-**TODO**
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables from Heroku & Auth0, in the following format:
 
-`API_KEY`
+**.env**
 
-`ANOTHER_API_KEY`
+DATABASE_URL= `DATABASE URI`
+
+**.env.local**
+
+AUTH0_SECRET= `AUTH0 SECRET`  
+AUTH0_BASE_URL= `AUTH0_BASE_URL`  
+AUTH0_ISSUER_BASE_URL= `AUTH0_ISSUER_BASE_URL`  
+AUTH0_CLIENT_ID= `AUTH0_CLIENT_ID`  
+AUTH0_CLIENT_SECRET= `AUTH0_CLIENT_SECRET`
 
 ## Deployment
 
@@ -140,4 +139,4 @@ https://nextjs.org/learn/basics/deploying-nextjs-app/deploy
 
 ## Feedback
 
-If you have any feedback, please reach out to us at feedback@skillex-soc.com
+If you have any feedback, please reach out to us at skillexsite@gmail.com
