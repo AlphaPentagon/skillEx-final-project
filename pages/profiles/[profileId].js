@@ -7,6 +7,7 @@ import styles from "../../styles/profileId.module.css";
 import ProfileMessage from "../../src/components/ProfileMessage";
 import ImageWithFallback from "../../src/components/ImageWithFallBack";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default withPageAuthRequired(function Profile({ profile }) {
   // console.log("current profile: ", profile);
@@ -24,11 +25,14 @@ export default withPageAuthRequired(function Profile({ profile }) {
 
   return (
     <>
+      <Head>
+        <title>SkillEx | {profile.preferred_name}'s Profile</title>
+      </Head>
       <a
         aria-roledescription="Back to search results"
         className={styles.backButton}
         onClick={() => {
-          router.back();
+          router.push(localStorage.getItem("path"));
         }}
       >
         Back to search results

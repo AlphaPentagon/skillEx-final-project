@@ -2,14 +2,29 @@
 	--blue: #048998;
 	--terraCotta: #bb4430;
 
+
 	--cream: #f6f0ed;
 	--darkBrown: #2a0800;
 }
 
 /* Accessible colours
+--options 
+
+option 1 
 --blue: #1d5378;
 --terraCotta: #892f1f;
+
+option 2 
+ --blue:#2D525D;
+  --terraCotta:#93252A;
+
+option 3
+  --blue: #1d4e89;
+  --terraCotta: #8F2429;
+
 */
+
+
 
 /* sample link: */
 /* 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/blob/master/FILE' 
@@ -19,18 +34,22 @@
 */
 
 @font-face {
-	font-family: "mainLogo";
-	src: url("/Fonts/FrederickatheGreat-Regular.ttf");
+  font-family: "mainLogo";
+  src: url("/Fonts/FrederickatheGreat-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "subTitle";
-	src: url("/Fonts/Hyperjump ExtraBold.otf");
+  font-family: "subTitle";
+  src: url("/Fonts/Hyperjump ExtraBold.otf");
+  font-display: swap;
 }
 
 @font-face {
-	font-family: "copyFont";
-	src: url("/Fonts/Hyperjump Regular.otf");
+  font-family: "copyFont";
+  src: url("/Fonts/Hyperjump Regular.otf");
+  font-display: swap;
+
 }
 
 body {

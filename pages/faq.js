@@ -5,11 +5,12 @@ export default function FAQS() {
   return (
     <div id="home" className={styles.container}>
       <Head>
-        <title>FAQS</title>
+
+
+        <title>SkillEx | FAQS</title>
       </Head>
 
       <h1 className={styles.header1}>FAQS</h1>
-      <p></p>
       <div id="q1" className={styles.box}>
         <h1 className={styles.header1}>How does SkillEx work?</h1>
         <p className={styles.answer}>

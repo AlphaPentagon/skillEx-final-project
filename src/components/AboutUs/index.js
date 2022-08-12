@@ -12,6 +12,7 @@ const AboutUs = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
+
         <h3 className={styles.aboutText}>
           SkillEx is the place where exchanging skills and talents becomes easy.
         </h3>
@@ -37,7 +38,7 @@ const AboutUs = () => {
               Browse through our categories and simply find a member that suits
               your needs and send them a message.
               <p className={styles.startYourJourney}>
-                Start your journey below by visiting our discover
+                Start your journey below by visiting our discover page.
               </p>
             </h3>
             <div className={styles.bothButtons}>
@@ -55,6 +56,7 @@ const AboutUs = () => {
               {!user && (
                 <div className={styles.signUpButtonLayout}>
                   <Link href={"/api/auth/signup"}>
+
                     <a>
                       <Button
                         className={styles.signUpButton}
