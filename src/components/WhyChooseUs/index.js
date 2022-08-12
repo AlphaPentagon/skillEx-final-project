@@ -8,11 +8,14 @@ const WhyChooseUs = () => {
       <h2 className={styles.title}>Why Choose Us?</h2>
       <div className={styles.featureCardContainer}>
         {FeatureData.map((data) => (
+          <div className={styles.featureCard}>
           <FeatureCard
             key={data.feature_id}
             icon={data.icon}
             desc={data.desc}
+            
           />
+          </div>
         ))}
       </div>
     </section>

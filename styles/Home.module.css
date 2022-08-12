@@ -8,8 +8,16 @@
 }
 
 .discoverHeading {
-  color: var(--terraCotta);
+  color: var(--darkBrown);
   margin: 1rem 0 0.5rem 0;
+  padding-top: 1.4rem;
+}
+
+.aboutText {
+ 
+  text-align: center;
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
 }
 @media only screen and (min-width: 800px) {
   .sloganText {

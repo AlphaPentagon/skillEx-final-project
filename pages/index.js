@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../src/components/Header";
-import SearchBar from "../src/components/SearchBar";
+// import SearchBar from "../src/components/SearchBar";
 import WhyChooseUs from "../src/components/WhyChooseUs";
 import AboutUs from "../src/components/AboutUs";
 import SkillGallery from "../src/components/SkillGallery";
@@ -29,6 +29,7 @@ export default function Home() {
       <WhyChooseUs />
       <SimpleSlider />
       <h2 className={styles.discoverHeading}>Discover Categories:</h2>
+      <p className={styles.aboutText}> Simply select that category that you want to teach or learn</p>
       <SkillGallery />
     </>
   );

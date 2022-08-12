@@ -16,8 +16,7 @@ const Discover = ({ profilesArr }) => {
 			</Head>
 			<Header text="Discover" />
 			<p className={stylesHome.sloganText}>
-				Teach and Learn at the same time, all you need to search and find
-				all the tutors that teach that skill
+			Teach and Learn at the same time, If you are a learner you can search all tutors that teach the skill and if you are a tutor you can find students that want to learn your skill!
 			</p>
 			<ProfileGallery profiles={profilesArr} />
 
