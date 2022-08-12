@@ -10,7 +10,7 @@ const Discover = ({ profilesArr }) => {
   return (
     <>
       <Head>
-        <title>Discover</title>
+        <title>SkillEx | Discover</title>
       </Head>
       <Header text="Discover" />
       <p className={stylesHome.sloganText}>

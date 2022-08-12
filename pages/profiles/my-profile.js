@@ -29,7 +29,7 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
   return (
     <div className={styles.signUpContainer}>
       <Head>
-        <title>My Profile </title>
+        <title>SkillEx | My Profile </title>
       </Head>
       <Header
         text={`${currentProfile.preferred_name}'s Profile`}
