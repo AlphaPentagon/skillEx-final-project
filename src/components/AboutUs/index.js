@@ -27,12 +27,11 @@ const AboutUs = () => {
 					</div>
 					<div className={styles.aboutUsContainer}>
 						<h3 className={styles.aboutUs}>
-							Have you ever wanted to learn a new skill? Or Perhaps you
-							have a hidden talent that you would like to share with
-							others?
+							Have you ever wanted to learn a new skill? Perhaps you have
+							a hidden talent that you would like to share with others?
 							<p>
 								SkillEx is a community of volunteer teachers and keen
-								learners, We have a simple and easy to use platform
+								learners. We have a simple and easy to use platform
 								which allows you to share skills and knowhow!
 							</p>
 							Browse through our categories and simply find a member that
