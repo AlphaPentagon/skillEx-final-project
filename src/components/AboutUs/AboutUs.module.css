@@ -1,12 +1,13 @@
 .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionContainer {
   display: grid;
   grid-template-columns: 1fr;
-  width: 90%;
-  margin-inline: auto;
   align-items: center;
   justify-content: center;
 }
@@ -17,6 +18,11 @@
   color: var(--cream);
   padding: 1rem;
   border-radius: 0.5rem;
+  text-align: center;
+}
+
+.aboutUsContainer {
+  padding: 0.5rem;
 }
 
 .imageContainer {
@@ -24,6 +30,12 @@
   justify-self: center;
   border-radius: 0.5rem;
 }
+
+
+.image {
+  max-width: 100%;
+}
+
 
 
 .textContainer {
@@ -49,10 +61,6 @@
   text-align: center;
   font-size: 1.1rem;
 }
-.aboutUs {
-  text-align: left;
-  font-size: 1rem;
-}
 
 .startYourJourney {
   font-weight: bold;
@@ -60,9 +68,6 @@
 
 .signUpButton:hover {
   background-color: var(--terraCotta);
-}
-.aboutUs {
-  text-align: center;
 }
 
 .bothButtons {
@@ -74,17 +79,26 @@
 @media (min-width: 800px) {
   .sectionContainer {
     grid-template-columns: 1fr 1fr;
-    width: 80%;
     gap: 2rem;
     padding-block: 2rem;
   }
   .imageContainer {
-    width: min(100%, 400px);
+    width: min(100%, 500px);
     justify-self: center;
     border-radius: 0.5rem;
+    margin-left: 2rem;
   }
   .aboutUs {
     font-size: 1.3rem;
+  }
+  .aboutUsContainer {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .imageContainer {
+    margin-left: 0px;
   }
 }
 /* .container {
