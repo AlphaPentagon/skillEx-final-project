@@ -59,7 +59,7 @@ export default function DesktopNavBar() {
             <li>
               <Link href="/api/auth/logout">
                 <a className={styles.button} title="Log out of your profile">
-                  Log-Out
+                  Log Out
                 </a>
               </Link>
             </li>
