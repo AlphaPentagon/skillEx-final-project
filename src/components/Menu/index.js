@@ -34,7 +34,7 @@ export default function Menu() {
 			{!menuOpen && (
 				<div className={styles.menu} onClick={toggleMenu}>
 					<Image
-						className="menuopenimage"
+						className={styles.menuOpenImage}
 						src="/media/icons/menuIcon.png"
 						alt="open menu icon"
 						width={100}
@@ -46,7 +46,7 @@ export default function Menu() {
 				<div className={styles.modal} onClick={toggleMenu}>
 					<div className={styles.menuClose}>
 						<Image
-							className="menucloseimage"
+							className={styles.menuCloseImage}
 							src="/media/icons/menuClose.png"
 							alt="close menu icon"
 							width={60}

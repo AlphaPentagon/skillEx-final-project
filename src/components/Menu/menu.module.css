@@ -4,12 +4,12 @@
 	cursor: pointer;
 }
 
-.menuopenimage {
+.menuOpenImage {
 	width: 60px;
 	height: 60px;
 }
 
-.menucloseimage {
+.menuCloseImage {
 	width: 100px;
 	height: 100px;
 }
