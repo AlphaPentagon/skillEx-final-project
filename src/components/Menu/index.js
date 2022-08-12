@@ -53,6 +53,7 @@ export default function Menu() {
 							height={60}
 						/>
 					</div>
+					{/*
 					{user && (
 						<>
 							<img
@@ -64,6 +65,7 @@ export default function Menu() {
 							<p>Hi {user.name}!</p>
 						</>
 					)}
+					*/}
 
 					<ul className={styles.pageLinks}>
 						<Link href="/">
@@ -79,36 +81,34 @@ export default function Menu() {
 
 					<br />
 
-
-          <ul className={styles.userLinks}>
-            {!user && (
-              <>
-                <a
-                  href="/api/auth/signup"
-                  title="Sign up"
-                  onClick={() => {
-                    toggleMenu();
-                  }}
-                >
-                  Sign up
-                </a>
-                <a
-                  href="/api/auth/login"
-                  title="Log in"
-                  onClick={() => {
-                    toggleMenu();
-                  }}
-                >
-                  Login
-                </a>
-              </>
-            )}
-            {user && (
-              <>
-                <Link href="/profiles/my-profile">
-                  <a title="View your profile">My profile</a>
-                </Link>
-
+					<ul className={styles.userLinks}>
+						{!user && (
+							<>
+								<a
+									href="/api/auth/signup"
+									title="Sign up"
+									onClick={() => {
+										toggleMenu();
+									}}
+								>
+									Sign up
+								</a>
+								<a
+									href="/api/auth/login"
+									title="Log in"
+									onClick={() => {
+										toggleMenu();
+									}}
+								>
+									Login
+								</a>
+							</>
+						)}
+						{user && (
+							<>
+								<Link href="/profiles/my-profile">
+									<a title="View your profile">My profile</a>
+								</Link>
 
 								<a
 									href="/api/auth/logout"
