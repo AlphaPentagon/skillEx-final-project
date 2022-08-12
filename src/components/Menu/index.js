@@ -2,20 +2,34 @@
 //Burger menu visible on mobile
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./menu.module.css";
 import { useUser } from "@auth0/nextjs-auth0";
-
+import { getSession, withPageAuthRequired } from "@auth0/nextjs-auth0";
 export default function Menu() {
 	//Menu state
 	const [menuOpen, setMenuOpen] = useState(false);
-
+	const [currentProfile, setCurrentProfile] = useState({});
+	console.log(currentProfile);
 	// Auth0
 	const { user } = useUser();
 
 	const toggleMenu = () => {
 		setMenuOpen(!menuOpen);
 	};
+
+	useEffect(() => {
+		const getUserID = async () => {
+			const response = await fetch("/api/auth/me");
+			const data = await response.json();
+			const profileId = data.sub;
+			const url = `/api/profiles/getUser/${profileId}`;
+			const profileData = await fetch(url);
+			console.log(profileData);
+		};
+		const profileData = getUserID();
+		setCurrentProfile(profileData);
+	}, []);
 
 	return (
 		//Menu visibility
@@ -53,7 +67,6 @@ export default function Menu() {
 							height={60}
 						/>
 					</div>
-					{/*
 					{user && (
 						<>
 							<img
@@ -65,7 +78,6 @@ export default function Menu() {
 							<p>Hi {user.name}!</p>
 						</>
 					)}
-					*/}
 
 					<ul className={styles.pageLinks}>
 						<Link href="/">
@@ -127,3 +139,17 @@ export default function Menu() {
 		</>
 	);
 }
+
+// export const getServerSideProps = withPageAuthRequired({
+// 	async getServerSideProps(context) {
+// 		const session = getSession(context.req, context.res);
+// 		const profileId = session.user.sub;
+// 		const data = await prisma.profiles.findMany({
+// 			where: { profile_id: profileId },
+// 		});
+// 		console.log()
+// 		return {
+// 			props: { profile: { ...data[0] } },
+// 		};
+// 	},
+// });

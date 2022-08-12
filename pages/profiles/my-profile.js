@@ -30,7 +30,7 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
 		<div className={styles.signUpContainer}>
 			<Head>
 				<title>SkillEx | My Profile </title>
-				<meta name="description" content="SkillEx log in page." />
+				<meta name="description" content="SkillEx edit my profile page." />
 			</Head>
 			<Header
 				text={`${currentProfile.preferred_name}'s Profile`}
