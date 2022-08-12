@@ -2,23 +2,37 @@
   display: grid;
 }
 
-.imageContainer {
-  margin: auto;
-  padding: 5%;
+.sectionContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .image {
-  border-radius: 0.3rem;
-  min-width: 470px;
-} */
+
+.aboutUs {
+  background-color: var(--terraCotta);
+  color: var(--cream);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.imageContainer {
+  width: min(100%, 300px);
+  justify-self: center;
+  border-radius: 0.5rem;
+}
+
 
 .textContainer {
-  text-align: left;
-  padding: 0% 10% 5% 10%;
-  top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 
-.discoverbutton{
+.discoverbutton {
   background-color: var(--terraCotta);
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
@@ -26,111 +40,92 @@
   white-space: nowrap;
   font-weight: normal;
   cursor: pointer;
-  align-items: center;  
+  align-items: center;
 }
-.discoverbutton:hover{
+.discoverbutton:hover {
   background-color: var(--blue);
 }
 .aboutText {
- 
   text-align: center;
   font-size: 1.1rem;
 }
 .aboutUs {
-  
   text-align: left;
   font-size: 1rem;
-   }
-
-.discoverButtonLayout{
-
- padding: 1%;
-
 }
 
-.startYourJourney{
+.startYourJourney {
   font-weight: bold;
-  font-size: 1.1rem;
 }
 
-.signUpButtonLayout {
- 
-  padding: 1%;
- 
-}
-
-.signUpButton:hover{
+.signUpButton:hover {
   background-color: var(--terraCotta);
+}
+.aboutUs {
+  text-align: center;
 }
 
 .bothButtons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
-@media (min-width: 600px) {
-
-  .container {
+@media (min-width: 800px) {
+  .sectionContainer {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    gap: 2rem;
+    padding-block: 2rem;
+  }
+  .imageContainer {
+    width: min(100%, 400px);
+    justify-self: center;
+    border-radius: 0.5rem;
+  }
+  .aboutUs {
+    font-size: 1.3rem;
+  }
+}
+/* .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-   
   }
-  
+
   .imageContainer {
     margin: auto;
     width: 1000px;
   }
-  
+
   .image {
     border-radius: 0.3rem;
     width: 500px;
   }
-  
-  .textContainer {
-    text-align: center;
-    padding: 0% 10% 5% 10%;
-    top: 5%;
-   
-  
-  }
 
-  .aboutText{
-  
-  font-size: 1.5rem;
+  .aboutText {
+    font-size: 1.5rem;
     margin-left: 30%;
     font-weight: bold;
   }
 
   .aboutUs {
- margin-top: 20%;
- background-color: var(--terraCotta);
- padding: 5%;
- border-radius: 7%;
- 
+    margin-top: 20%;
+    background-color: var(--terraCotta);
+    padding: 5%;
+    border-radius: 7%;
   }
 
- 
-
-  .sectionContainer{
-   
-    display: flex;
-    flex-direction: row;
-    width: 80vw;
-  }
-
-  .aboutUs{
+  .aboutUs {
     color: var(--cream);
   }
 
   .aboutUsContainer {
-    
-  margin-top: -5%;
-   width: 60vw;
-  
+    margin-top: -5%;
+    width: 60vw;
   }
 
-  .discoverbutton{
+  .discoverbutton {
     background-color: var(--terraCotta);
     padding-inline: 0.75rem;
     padding-block: 0.5rem;
@@ -138,39 +133,26 @@
     white-space: nowrap;
     font-weight: normal;
     cursor: pointer;
-    align-items: center;  
-   
+    align-items: center;
   }
 
   .discoverbutton:hover {
     background-color: var(--blue);
   }
-  
-  .discoverButtonLayout{
-    align-items: center; 
-    
+
+  .discoverButtonLayout {
+    align-items: center;
   }
   .signUpButtonLayout {
     margin-left: 2%;
-    
-   
   }
-  
-   .aboutUs {
+
+  .aboutUs {
     text-align: left;
     font-size: 1.3rem;
-     }
-  
- 
-  
-  .startYourJourney{
+  }
+
+  .startYourJourney {
     font-weight: bold;
     font-size: 1.35rem;
-  }
-}
-
-/* @media (max-width: 600px) {
-  .aboutUs {
-
-  }
-} */
+  } */

@@ -12,63 +12,61 @@ const AboutUs = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <h2 className="abouttitle"></h2>
-        <div className={styles.textContainer}>
-          <h3 className={styles.aboutText}>
-            SkillEx is the place where exchanging skills and talents becomes
-            easy.
-          </h3>
-          <div className={styles.sectionContainer}>
-            <div className={styles.imageContainer}>
-              <video
-                src="/media/images/AboutUsNew.mp4"
-                alt="diagram showing how skillswapping works"
-                className={styles.image}
-                width={380}
-                height={250}
-              controls />
-            </div>
-            <div className={styles.aboutUsContainer}>
-              <h3 className={styles.aboutUs}>
-                Have you ever wanted to learn a new skill? Or maybe you want to
-                share your skills with others?
-                <p>
-                  SkillEx lets you search our community of volunteer mentors and
-                  keen students, make contact and organise 1-2-1 sessions to
-                  share skills and knowhow.
-                </p>
-                Browse through our categories, find a member that suits your
-                needs and drop them a message.
-                <p className={styles.startYourJourney}>
-                  Start your journey below by visiting our discover page.
-                </p>
-              </h3>
-              <div className={styles.bothButtons}>
-                <div className={styles.discoverButtonLayout}>
-                  <Link href={"/discover/"}>
+
+        <h3 className={styles.aboutText}>
+          SkillEx is the place where exchanging skills and talents becomes easy.
+        </h3>
+        <div className={styles.sectionContainer}>
+          <div className={styles.imageContainer}>
+            <Image
+              src="/media/images/skillswapping.png"
+              alt="diagram showing how skillswapping works"
+              className={styles.image}
+              width={770}
+              height={550}
+            />
+          </div>
+          <div className={styles.aboutUsContainer}>
+            <h3 className={styles.aboutUs}>
+              Have you ever wanted to learn a new skill? Or Perhaps you have a
+              hidden talent that you would like to share with others?
+              <p>
+                SkillEx is a community of volunteer teachers and keen learners,
+                We have a simple and easy to use platform which allows you to
+                share skills and knowhow!
+              </p>
+              Browse through our categories and simply find a member that suits
+              your needs and send them a message.
+              <p className={styles.startYourJourney}>
+                Start your journey below by visiting our discover page.
+              </p>
+            </h3>
+            <div className={styles.bothButtons}>
+              <div className={styles.discoverButtonLayout}>
+                <Link href={"/discover/"}>
+                  <a>
+                    <Button
+                      className={styles.discoverButton}
+                      text="Discover"
+                      type="discoverButton"
+                    ></Button>
+                  </a>
+                </Link>
+              </div>
+              {!user && (
+                <div className={styles.signUpButtonLayout}>
+                  <Link href={"/api/auth/signup"}>
+
                     <a>
                       <Button
-                        className={styles.discoverButton}
-                        text="Discover"
-                        type="discoverButton"
+                        className={styles.signUpButton}
+                        text="Sign Up"
+                        type="signUpBorderButton"
                       ></Button>
                     </a>
                   </Link>
                 </div>
-                {!user && (
-                  <div className={styles.signUpButtonLayout}>
-                    <Link href={"/api/auth/signup"}>
-                      <a>
-                        <Button
-                          className={styles.signUpButton}
-                          text="Sign Up"
-                          type="signUpBorderButton"
-                        ></Button>
-                      </a>
-                    </Link>
-                  </div>
-                )}
-              </div>
+              )}
             </div>
           </div>
         </div>
