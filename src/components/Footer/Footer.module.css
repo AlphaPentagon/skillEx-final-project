@@ -1,7 +1,7 @@
 .footerContainer {
 	display: flex;
 	flex-direction: column;
-	background-color: #c8553d;
+	background-color: var(--terraCotta);
 	font-size: large;
 }
 
@@ -35,7 +35,7 @@
 	.footerContainer {
 		display: flex;
 		flex-direction: column;
-		background-color: #c8553d;
+		background-color: var(--terraCotta);
 		font-size: inherit;
 	}
 

@@ -1,0 +1,51 @@
+.container {
+    text-align: left;
+    padding: 0 5vw
+
+}
+
+
+.header1 {
+    background-color: var(--terraCotta);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    /* position: sticky; */
+    top: 0;
+
+    
+
+
+}
+
+.answer {
+    font-size: 1.2rem;
+}
+
+.box {
+    padding: 5px 20px 20px 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    /* background-color: rgba(250, 158, 158, 0.5); */
+    height: 200px;
+    position: relative;
+    border: 2px solid var(--terraCotta);
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

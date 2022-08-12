@@ -6,7 +6,7 @@ import prisma from "../../prisma/client";
 import Header from "../../src/components/Header";
 import Link from "next/link";
 import ProfileInfo from "../../src/components/ProfileInfo";
-import styles from "../../src/components/EditProfile/EditProfile.module.css";
+import styles from "../../styles/myProfile.module.css";
 import Button from "../../src/components/Button";
 import ImageWithFallBack from "../../src/components/ImageWithFallBack";
 import avatarStyles from "../../src/components/Avatar/avatar.module.css";
@@ -35,6 +35,7 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
         text={`${currentProfile.preferred_name}'s Profile`}
         colour="terraCotta"
       />
+      <div className={styles.padding}></div>
       <ImageWithFallBack
         className={avatarStyles.avatar}
         width={150}
@@ -44,6 +45,7 @@ export default withPageAuthRequired(function MyProfile({ profile }) {
         name={currentProfile.preferred_name}
         alt="profile picture"
       />
+
       <br></br>
       {isEditing ? (
         <EditProfile
@@ -82,17 +84,3 @@ export const getServerSideProps = withPageAuthRequired({
     };
   },
 });
-
-// # My Profile page
-// ## useState (isEditing = false)
-// Use logged in user id to render profile info
-//     - fetch profile from db where id = logged in user id
-//     - EDIT button toggles state to true
-// ## useState isEditing = true
-// Use logged in user id to render current profile info as placeholder text
-//     - fetch profile from db where id = logged in user id
-//     - SUBMIT button stores edited form data in object and send PUT request on submit
-//     - CANCEL toggles state to false and renders My Profile
-//     - DELETE button?
-//         - fetch DELETE method where id = logged in user id
-//         - prompt "are you sure you want to delete?"

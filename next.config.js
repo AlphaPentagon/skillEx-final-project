@@ -17,6 +17,8 @@ const nextConfig = {
 			"google.com",
 			"www.google.com",
 			"upload.wikimedia.org",
+			"d1csarkz8obe9u.cloudfront.net",
+			"www.playbookux.com",
 		],
 	},
 };
