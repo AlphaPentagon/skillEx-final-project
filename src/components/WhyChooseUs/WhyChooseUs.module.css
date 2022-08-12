@@ -1,34 +1,39 @@
 .whyChooseUsSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.75rem;
 }
 
 .featureCardContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr;
-  gap: 2rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr, 1fr, 1fr;
+	gap: 2rem;
+}
+
+.featureCardContainer.icon {
+	width: 700px;
+	height: 70px;
 }
 
 @media (min-width: 1000px) {
-  .featureCardContainer {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1rem;
-  }
+	.featureCardContainer {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 1rem;
+	}
 
-  .whyChooseUsSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0rem;
-  }
+	.whyChooseUsSection {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 0rem;
+	}
 
-  .whyChooseUsSection:hover {
-    transform: scale(1.2);
-  }
+	.whyChooseUsSection:hover {
+		transform: scale(1.2);
+	}
 }

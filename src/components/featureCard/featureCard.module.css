@@ -1,46 +1,45 @@
 .featureCard {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
 
 .icon {
-  width: min(25%, 70px);
+	width: min(25%, 90px);
+	height: auto;
 }
 
 .description {
-  background-color: var(--terraCotta);
-  color: var(--cream);
-  border-radius: 0.2rem;
-  padding-block: 0.8rem;
-  padding-inline: 0.5rem;
-  width: 40%;
+	background-color: var(--terraCotta);
+	color: var(--cream);
+	border-radius: 0.2rem;
+	padding-block: 0.8rem;
+	padding-inline: 0.5rem;
+	width: 40%;
 }
 
-
 @media (min-width: 600px) {
+	.featureCard {
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		align-items: center;
+		gap: 0rem;
+	}
 
-  .featureCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    gap: 0rem;
-  }
-  
-  .icon {
-    width: min(25%, 70px);
-  }
-  
-  .description {
-    background-color: var(--terraCotta);
-    color: var(--cream);
-    border-radius: 0.2rem;
-    padding-block: 0.8rem;
-    padding-inline: 0.5rem;
-    width: 35%;
-  }
+	.icon {
+		width: min(25%, 90px);
+		height: auto;
+	}
 
+	.description {
+		background-color: var(--terraCotta);
+		color: var(--cream);
+		border-radius: 0.2rem;
+		padding-block: 0.8rem;
+		padding-inline: 0.5rem;
+		width: 35%;
+	}
 }
