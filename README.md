@@ -18,7 +18,7 @@ The 1:1 delivery model will improve learning outcomes and learner engagement whe
 - 3rd party authentication & authorisation
 - Unit tests & end-to-end testing suites
 
-![App Screenshot](public\media\images\screenshot.png)
+<img src="https://github.com/SchoolOfCode/final-project_front-end-2b-2b/blob/dev/public/media/images/screenshot.png" alt="screenshot" width="200"/>
 
 ## Roadmap
 
