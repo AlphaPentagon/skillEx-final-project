@@ -1,6 +1,8 @@
 ![Logo](https://skill-ex.vercel.app/media/icons/LogoMain.svg)
 
-# Project Title
+## School of Code Bootcamp 12
+
+### 2b || !2b Final Project
 
 Our skill sharing platform, SkillEx, provides an opportunity for people to upskill and raise their employability levels without a financial burden. By making access free, the opportunity to learn is available to everyone including marginalised groups who may be priced out of using similar paid-for services.
 
@@ -12,10 +14,13 @@ The 1:1 delivery model will improve learning outcomes and learner engagement whe
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- Create new user & edit existing user profile
+- Browse by category
+- Searchable user network
+- Contact form
+- Responsive design for mobile & desktop
+- 3rd party authentication & authorisation
+- Unit tests & end-to-end testing suites
 
 ## Demo
 
@@ -23,24 +28,54 @@ Insert gif or link to demo
 
 ## Tech Stack
 
-- React
-- Next.js
-- CSS
+**Authentication**
+
 - Auth0
+
+**Database**
+
 - Postgres
 - Prisma
+
+**Deployment**
+
+- Heroku
+- Vercel
+
+**Front End & API**
+
+- Next.js
+- CSS
+
+**Testing**
+
 - Cypress
 - Jest
 - React Testing Library
 - Postman
-- Heroku
-- Vercel
 
 ## Roadmap
 
 - Additional browser support
 
 - Add more integrations
+
+## API Reference
+
+| Method | Path           | Additional Info | Result                                      |
+| ------ | -------------- | --------------- | ------------------------------------------- |
+| GET    | /profiles      | API key         | all profiles                                |
+| GET    | /profiles/[id] |                 | profile with a particular id (if it exists) |
+| POST   | /profiles      | { body }        | create a new profile                        |
+| PUT    | /profiles/[id] | { body }        | updated profile                             |
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
 
 ## Run Locally
 
@@ -67,56 +102,6 @@ Start the server
 ```bash
   npm run start
 ```
-
-## API Reference
-
-#### Get all profiles
-
-```http
-  GET /api/profiles
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get profile by ID
-
-```http
-  GET /api/profiles/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### Post new user profile
-
-```http
-  POST /api/profiles/
-```
-
-| Parameter | Type     | Body     | Description |
-| :-------- | :------- | :------- | :---------- |
-| `id`      | `string` | `object` |             |
-
-#### Edit user profile
-
-```http
-  PUT /api/profiles/${id}
-```
-
-| Parameter | Type     | Body     | Description |
-| :-------- | :------- | :------- | :---------- |
-| `id`      | `string` | `object` |             |
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
 
 ## Deployment
 
@@ -149,4 +134,4 @@ To run tests, run the following command
 
 ## Feedback
 
-If you have any feedback, please reach out to us at fake@fake.com
+If you have any feedback, please reach out to us at feedback@skillex-soc.com
