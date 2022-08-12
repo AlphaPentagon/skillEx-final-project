@@ -121,7 +121,9 @@ To run this project, you will need to add the following environment variables to
 
 ## Deployment
 
-To deploy this project we recommend using Vercel for its compatibility with Next.js.
+To deploy this project we recommend using the Vercel platform, developed by the creators of Next.js
+
+https://nextjs.org/learn/basics/deploying-nextjs-app/deploy
 
 ## License
 
