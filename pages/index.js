@@ -29,9 +29,11 @@ export default function Home() {
       <WhyChooseUs />
       <SimpleSlider />
       <h2 className={styles.discoverHeading}>Discover Categories:</h2>
-      <p className={styles.aboutText}> Simply select that category that you want to teach or learn</p>
+      <p className={styles.aboutText}>
+        {" "}
+        Simply select that category that you want to teach or learn
+      </p>
       <SkillGallery />
     </>
   );
 }
-  
