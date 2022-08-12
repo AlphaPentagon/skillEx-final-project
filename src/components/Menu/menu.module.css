@@ -1,8 +1,17 @@
-
 .menu {
 	height: auto;
 	width: 20%;
 	cursor: pointer;
+}
+
+.menuopenimage {
+	width: 60px;
+	height: 60px;
+}
+
+.menucloseimage {
+	width: 100px;
+	height: 100px;
 }
 
 .menuClose {
@@ -58,4 +67,3 @@
 	font-size: 1rem;
 	padding: 0;
 }
-
