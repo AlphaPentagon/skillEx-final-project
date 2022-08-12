@@ -37,7 +37,7 @@ const AboutUs = () => {
               Browse through our categories and simply find a member that suits
               your needs and send them a message.
               <p className={styles.startYourJourney}>
-                Start your journey below by visiting our discover
+                Start your journey below by visiting our discover page.
               </p>
             </h3>
             <div className={styles.bothButtons}>
