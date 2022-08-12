@@ -1,7 +1,7 @@
 :root {
-	--blue: #048998;
-	--terraCotta: #bb4430;
-
+	/* Option 3 */
+	--blue: #1d4e89;
+	--terraCotta: #8f2429;
 
 	--cream: #f6f0ed;
 	--darkBrown: #2a0800;
@@ -15,16 +15,14 @@ option 1
 --terraCotta: #892f1f;
 
 option 2 
- --blue:#2D525D;
-  --terraCotta:#93252A;
+--blue:#2D525D;
+--terraCotta:#93252A;
 
-option 3
-  --blue: #1d4e89;
-  --terraCotta: #8F2429;
+Original colour palette
+--blue: #048998;
+--terraCotta: #bb4430;
 
 */
-
-
 
 /* sample link: */
 /* 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/blob/master/FILE' 
@@ -34,22 +32,21 @@ option 3
 */
 
 @font-face {
-  font-family: "mainLogo";
-  src: url("/Fonts/FrederickatheGreat-Regular.ttf");
-  font-display: swap;
+	font-family: "mainLogo";
+	src: url("/Fonts/FrederickatheGreat-Regular.ttf");
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "subTitle";
-  src: url("/Fonts/Hyperjump ExtraBold.otf");
-  font-display: swap;
+	font-family: "subTitle";
+	src: url("/Fonts/Hyperjump ExtraBold.otf");
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "copyFont";
-  src: url("/Fonts/Hyperjump Regular.otf");
-  font-display: swap;
-
+	font-family: "copyFont";
+	src: url("/Fonts/Hyperjump Regular.otf");
+	font-display: swap;
 }
 
 body {
