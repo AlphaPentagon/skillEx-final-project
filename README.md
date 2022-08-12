@@ -26,6 +26,17 @@ The 1:1 delivery model will improve learning outcomes and learner engagement whe
 
 Insert gif or link to demo
 
+## Roadmap
+
+- Email validation
+- Delete Profile function
+- Search Bar functionality
+- User dashboard
+- Messaging service
+- Increased categorisation
+- Upload Photo to profile & image hosting
+- Increased test coverage
+
 ## Tech Stack
 
 **Authentication**
@@ -54,12 +65,6 @@ Insert gif or link to demo
 - React Testing Library
 - Postman
 
-## Roadmap
-
-- Additional browser support
-
-- Add more integrations
-
 ## API Reference
 
 | Method | Path           | Additional Info | Result                                      |
@@ -68,14 +73,6 @@ Insert gif or link to demo
 | GET    | /profiles/[id] |                 | profile with a particular id (if it exists) |
 | POST   | /profiles      | { body }        | create a new profile                        |
 | PUT    | /profiles/[id] | { body }        | updated profile                             |
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
 
 ## Run Locally
 
@@ -103,13 +100,17 @@ Start the server
   npm run start
 ```
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
+
 ## Deployment
 
-To deploy this project run
-
-```bash
-  npm run deploy
-```
+To deploy this project we recommend using Vercel for its compatibility with Next.js.
 
 ## Running Tests
 
