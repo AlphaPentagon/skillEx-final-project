@@ -23,7 +23,7 @@ const AboutUs = () => {
               <video
                 src="/media/images/AboutUsNew.mp4"
                 alt="diagram showing how skillswapping works"
-                // className={styles.image}
+                className={styles.image}
                 width={380}
                 height={250}
               controls />
