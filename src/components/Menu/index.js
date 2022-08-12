@@ -9,41 +9,30 @@ import { getSession, withPageAuthRequired } from "@auth0/nextjs-auth0";
 export default function Menu() {
 	//Menu state
 	const [menuOpen, setMenuOpen] = useState(false);
-	const [currentProfile, setCurrentProfile] = useState({});
-	console.log(currentProfile);
-	// Auth0
 	const { user } = useUser();
 
 	const toggleMenu = () => {
 		setMenuOpen(!menuOpen);
 	};
 
+	const [currentProfile, setCurrentProfile] = useState({});
 	useEffect(() => {
 		const getUserID = async () => {
 			const response = await fetch("/api/auth/me");
 			const data = await response.json();
 			const profileId = data.sub;
 			const url = `/api/profiles/getUser/${profileId}`;
-			const profileData = await fetch(url);
-			console.log(profileData);
+
+			fetch(url)
+				.then((res) => res.json())
+				.then((data) => {
+					setCurrentProfile(data);
+				});
 		};
-		const profileData = getUserID();
-		setCurrentProfile(profileData);
+		getUserID();
 	}, []);
 
 	return (
-		//Menu visibility
-		//If menuOpen state is false:
-		// - call toggleMenu function when menu icon is clicked to show menu and set menuOpen to true
-		//If menuOpen state is true:
-		// - call toggleMenu function when close icon is clicked to hide menu and set menuOpen to false
-		//
-		//Log in/out link visibility
-		//If logIn state is false:
-		// - call toggleLogIn function when 'Log In' link is clicked to show 'Log Out' link and set logIn to true
-		//If logIn state is true:
-		// - call toggleLogIn function when 'Log Out' link is clicked to show 'Log In' link and set logIn to false
-		//
 		<>
 			{!menuOpen && (
 				<div className={styles.menu} onClick={toggleMenu}>
@@ -70,12 +59,12 @@ export default function Menu() {
 					{user && (
 						<>
 							<img
-								src={user.picture}
-								alt={user.name}
+								src={currentProfile[0].avatar_url}
+								alt={currentProfile[0].preferred_name}
 								height={50}
 								width={50}
 							/>
-							<p>Hi {user.name}!</p>
+							<p>Hi {currentProfile[0].preferred_name}!</p>
 						</>
 					)}
 
@@ -139,17 +128,3 @@ export default function Menu() {
 		</>
 	);
 }
-
-// export const getServerSideProps = withPageAuthRequired({
-// 	async getServerSideProps(context) {
-// 		const session = getSession(context.req, context.res);
-// 		const profileId = session.user.sub;
-// 		const data = await prisma.profiles.findMany({
-// 			where: { profile_id: profileId },
-// 		});
-// 		console.log()
-// 		return {
-// 			props: { profile: { ...data[0] } },
-// 		};
-// 	},
-// });
