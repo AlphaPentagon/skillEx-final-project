@@ -10,6 +10,7 @@ The 1:1 delivery model will improve learning outcomes and learner engagement whe
 
 ## Screenshots
 
+**TODO**
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Features
@@ -24,6 +25,7 @@ The 1:1 delivery model will improve learning outcomes and learner engagement whe
 
 ## Demo
 
+**TODO**
 Insert gif or link to demo
 
 ## Roadmap
@@ -100,8 +102,17 @@ Start the server
   npm run start
 ```
 
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
 ## Environment Variables
 
+**TODO**
 To run this project, you will need to add the following environment variables to your .env file
 
 `API_KEY`
@@ -111,14 +122,6 @@ To run this project, you will need to add the following environment variables to
 ## Deployment
 
 To deploy this project we recommend using Vercel for its compatibility with Next.js.
-
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  npm run test
-```
 
 ## License
 
