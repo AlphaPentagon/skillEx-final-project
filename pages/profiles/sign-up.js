@@ -6,7 +6,7 @@ export default function SignUp() {
   return (
     <div className={styles.signUpContainer}>
       <Head>
-        <title>Sign Up Form </title>
+        <title>SkillEx | Sign Up</title>
       </Head>
       <Header text="Sign Up" colour="terraCotta" /> <SignUpForm />
     </div>

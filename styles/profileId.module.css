@@ -1,0 +1,13 @@
+.backButton {
+  text-decoration: underline;
+  color: var(--darkBrown);
+  padding-block: 1rem;
+}
+
+.backButton:hover {
+  cursor: pointer;
+}
+
+.padding {
+  height: 1rem;
+}

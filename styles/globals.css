@@ -1,9 +1,28 @@
 :root {
-  --blue: #048998;
-  --terraCotta: #bb4430;
-  --cream: #f6f0ed;
-  --darkBrown: #2a0800;
+	/* Option 3 */
+	--blue: #1d4e89;
+	--terraCotta: #8f2429;
+
+	--cream: #f6f0ed;
+	--darkBrown: #2a0800;
 }
+
+/* Accessible colours
+--options 
+
+option 1 
+--blue: #1d5378;
+--terraCotta: #892f1f;
+
+option 2 
+--blue:#2D525D;
+--terraCotta:#93252A;
+
+Original colour palette
+--blue: #048998;
+--terraCotta: #bb4430;
+
+*/
 
 /* sample link: */
 /* 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/blob/master/FILE' 
@@ -13,66 +32,69 @@
 */
 
 @font-face {
-  font-family: "mainLogo";
-  src: url("/Fonts/FrederickatheGreat-Regular.ttf");
+	font-family: "mainLogo";
+	src: url("/Fonts/FrederickatheGreat-Regular.ttf");
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "subTitle";
-  src: url("/Fonts/Hyperjump ExtraBold.otf");
+	font-family: "subTitle";
+	src: url("/Fonts/Hyperjump ExtraBold.otf");
+	font-display: swap;
 }
 
 @font-face {
-  font-family: "copyFont";
-  src: url("/Fonts/Hyperjump Regular.otf");
+	font-family: "copyFont";
+	src: url("/Fonts/Hyperjump Regular.otf");
+	font-display: swap;
 }
 
 body {
-  width: 100%;
-  background-image: url("/media/Backgrounds/main4.jpg");
+	width: 100%;
+	background-image: url("/media/Backgrounds/main4.webp");
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: copyFont;
-  font-size: 16px;
-  text-align: center;
-  color: var(--darkBrown);
+	padding: 0;
+	margin: 0;
+	font-family: copyFont;
+	font-size: 16px;
+	text-align: center;
+	color: var(--darkBrown);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 h1 {
-  color: var(--cream);
-  background-color: var(--terraCotta);
-  width: 100%;
+	color: var(--cream);
+	background-color: var(--terraCotta);
+	width: 100%;
 }
 
 .logo {
-  font-family: mainLogo;
-  font-size: 3em;
-  color: var(--terraCotta);
-  padding: 0;
-  margin: 0;
+	font-family: mainLogo;
+	font-size: 3em;
+	color: var(--terraCotta);
+	padding: 0;
+	margin: 0;
 }
 
 .tagLine {
-  font-size: 1em;
-  padding: 0;
-  margin: 0;
-  color: var(--terraCotta);
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+	color: var(--terraCotta);
 }
 
 h2 {
-  font-size: 2em;
-  font-family: subTitle;
+	font-size: 2em;
+	font-family: subTitle;
 }
