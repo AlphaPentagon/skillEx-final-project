@@ -17,12 +17,11 @@ const AboutUs = () => {
         </h3>
         <div className={styles.sectionContainer}>
           <div className={styles.imageContainer}>
-            <Image
-              src="/media/images/skillswapping.png"
+            <video
+              src="/media/videos/AboutUsNew.mp4"
               alt="diagram showing how skillswapping works"
               className={styles.image}
-              width={770}
-              height={550}
+              controls
             />
           </div>
           <div className={styles.aboutUsContainer}>
