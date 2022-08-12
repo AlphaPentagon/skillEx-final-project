@@ -26,7 +26,7 @@ export default function Menu() {
 			fetch(url)
 				.then((res) => res.json())
 				.then((data) => {
-					setCurrentProfile(data);
+					setCurrentProfile(data[0]);
 				});
 		};
 		getUserID();
@@ -34,14 +34,25 @@ export default function Menu() {
 
 	return (
 		<>
-			{!menuOpen && (
+			{!menuOpen && !user && (
 				<div className={styles.menu} onClick={toggleMenu}>
 					<Image
 						className={styles.menuOpenImage}
 						src="/media/icons/menuIcon.png"
 						alt="open menu icon"
-						width={100}
-						height={100}
+						width={90}
+						height={90}
+					/>
+				</div>
+			)}
+			{!menuOpen && user && (
+				<div className={styles.menu} onClick={toggleMenu}>
+					<Image
+						className={styles.menuProfileImage}
+						src={currentProfile.avatar_url}
+						alt="open menu icon"
+						width={90}
+						height={90}
 					/>
 				</div>
 			)}
@@ -58,13 +69,16 @@ export default function Menu() {
 					</div>
 					{user && (
 						<>
+							<p className={styles.pageLinks}>
+								Hi, {currentProfile.preferred_name}!
+							</p>
 							<img
-								src={currentProfile[0].avatar_url}
-								alt={currentProfile[0].preferred_name}
+								className={styles.menuProfileImage}
+								src={currentProfile.avatar_url}
+								alt={currentProfile.preferred_name}
 								height={50}
 								width={50}
 							/>
-							<p>Hi {currentProfile[0].preferred_name}!</p>
 						</>
 					)}
 

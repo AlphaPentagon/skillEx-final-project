@@ -14,6 +14,13 @@
 	height: 100px;
 }
 
+.menuProfileImage {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 6px solid var(--blue);
+}
+
 .menuClose {
 	padding: 20px;
 	position: absolute;
@@ -44,6 +51,15 @@
 	color: var(--cream);
 	font-size: 3rem;
 	padding-inline-start: 0px;
+}
+
+.modal p {
+	line-height: 2.5rem;
+	color: var(--cream);
+	font-size: 3rem;
+	padding-inline-start: 0px;
+	padding-bottom: 10px;
+	font-style: italic;
 }
 
 .modal a {
