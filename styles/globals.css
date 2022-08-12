@@ -1,9 +1,15 @@
 :root {
 	--blue: #048998;
 	--terraCotta: #bb4430;
+
 	--cream: #f6f0ed;
 	--darkBrown: #2a0800;
 }
+
+/* Accessible colours
+--blue: #1d5378;
+--terraCotta: #892f1f;
+*/
 
 /* sample link: */
 /* 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/blob/master/FILE' 

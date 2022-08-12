@@ -6,11 +6,10 @@ import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0";
 
 const AboutUs = () => {
-  // Auth0
-  const { user } = useUser();
+	// Auth0
+	const { user } = useUser();
 
-
-	return (
+return (
 		<div className={styles.container}>
 			<div className={styles.title}>
 				<h2 className="abouttitle"></h2>
@@ -52,7 +51,8 @@ Start your journey now by visiting our Discover Page
 												className={styles.discoverButton}
 												text="Discover"
                         type="discoverButton"
-											></Button>
+											>
+                      </Button>
 										</a>
 									</Link>
 								</div>
