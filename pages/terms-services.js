@@ -7,6 +7,8 @@ export default function TermsAndServices() {
       <Head>
       <title>Terms and Services</title>
     </Head>
+
+    <h1 className={styles.header1}>Terms of Service</h1>
       <div id="privacy" className={styles.box}>
         <h1 className={styles.header1}>Privacy Policy</h1>
         <p>Last updated: August 02, 2022</p>

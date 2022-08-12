@@ -34,6 +34,9 @@
 		height: auto;
 	}
 
+
+
+
 	.description {
 		background-color: var(--terraCotta);
 		color: var(--cream);
@@ -43,3 +46,4 @@
 		width: 35%;
 	}
 }
+
