@@ -7,7 +7,6 @@ import { useUser } from "@auth0/nextjs-auth0";
 
 const AboutUs = () => {
   // Auth0
-  // Auth0
   const { user } = useUser();
 
   return (
