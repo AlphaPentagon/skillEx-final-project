@@ -7,22 +7,26 @@ import stylesHome from "../../styles/Home.module.css";
 import Head from "next/head";
 
 const Discover = ({ profilesArr }) => {
-  return (
-    <>
-      <Head>
-        <title>SkillEx | Discover</title>
-      </Head>
-      <Header text="Discover" />
-      <p className={stylesHome.sloganText}>
-        Teach and Learn at the same time, If you are a learner you can search
-        all tutors that teach the skill and if you are a tutor you can find
-        students that want to learn your skill!
-      </p>
-      <ProfileGallery profiles={profilesArr} />
+	return (
+		<>
+			<Head>
+				<title>SkillEx | Discover</title>
+				<meta
+					name="description"
+					content="SkillEx discover page to find people to share your interests with."
+				/>
+			</Head>
+			<Header text="Discover" />
+			<p className={stylesHome.sloganText}>
+				Teach and Learn at the same time, If you are a learner you can
+				search all tutors that teach the skill and if you are a tutor you
+				can find students that want to learn your skill!
+			</p>
+			<ProfileGallery profiles={profilesArr} />
 
-      <SkillGallery />
-    </>
-  );
+			<SkillGallery />
+		</>
+	);
 };
 
 export default Discover;
@@ -43,8 +47,8 @@ export default Discover;
   do NOT use fetch requests, as explained in this article here - https://stackoverflow.com/questions/61452675/econnrefused-during-next-build-works-fine-with-next-dev */
 
 export async function getServerSideProps() {
-  const data = await prisma.profiles.findMany();
-  return {
-    props: { profilesArr: data },
-  };
+	const data = await prisma.profiles.findMany();
+	return {
+		props: { profilesArr: data },
+	};
 }

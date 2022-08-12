@@ -8,32 +8,32 @@ import SkillGallery from "../src/components/SkillGallery";
 import SimpleSlider from "../src/components/Testimonials1";
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>SkillEx</title>
-        <meta
-          name="SkillEx - The knowhow exchange where people swap skills."
-          content="SkillEx "
-        />
-        <link rel="icon" href="/LightBulbFAVICON.ico" />
-      </Head>
+	return (
+		<>
+			<Head>
+				<title>SkillEx</title>
+				<meta
+					name="description"
+					content="SkillEx is a free platform for people to share their skills in exchange for developing the skills of others."
+				/>
+				<link rel="icon" href="/LightBulbFAVICON.ico" />
+			</Head>
 
-      <Header text="Exchanging skills and knowhow made easy for FREE!" />
-      {/* <p className={styles.sloganText}>
+			<Header text="Exchanging skills and knowhow made easy for FREE!" />
+			{/* <p className={styles.sloganText}>
         Exchanging skills and knowhow made easy for FREE!
       </p> */}
 
-      {/* <SearchBar /> */}
-      <AboutUs />
-      <WhyChooseUs />
-      <SimpleSlider />
-      <h2 className={styles.discoverHeading}>Discover Categories:</h2>
-      <p className={styles.aboutText}>
-        {" "}
-        Simply select that category that you want to teach or learn
-      </p>
-      <SkillGallery />
-    </>
-  );
+			{/* <SearchBar /> */}
+			<AboutUs />
+			<WhyChooseUs />
+			<SimpleSlider />
+			<h2 className={styles.discoverHeading}>Discover Categories:</h2>
+			<p className={styles.aboutText}>
+				{" "}
+				Simply select that category that you want to teach or learn
+			</p>
+			<SkillGallery />
+		</>
+	);
 }
