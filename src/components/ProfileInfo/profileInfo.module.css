@@ -1,9 +1,9 @@
 .profileSection {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: var(--darkBrown);
   font-family: inherit;
   margin: 0 0 1rem 0;
@@ -23,9 +23,10 @@
 .profileInfoContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 1fr;
+  grid-auto-rows: 0.5fr 1fr;
   justify-items: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .skillsContent {
@@ -34,16 +35,22 @@
 }
 
 .skillsContainer {
-  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bio {
   margin: 0;
+  padding-inline: 0.5rem;
 }
 
 @media (min-width: 600px) {
   .profileSection {
     width: min(100%, 800px);
+    padding-top: 2rem;
   }
 
   .title {
@@ -51,5 +58,8 @@
     padding-inline: 2rem;
     padding-block: 0.2rem;
     border-radius: 0.2rem;
+  }
+  .bio {
+    width: 50%;
   }
 }

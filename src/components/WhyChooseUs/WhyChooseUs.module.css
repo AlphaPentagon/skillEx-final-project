@@ -33,7 +33,7 @@
 		gap: 0rem;
 	}
 
-	.whyChooseUsSection:hover {
-		transform: scale(1.2);
-	}
+  /* .whyChooseUsSection:hover {
+    transform: scale(1.2);
+  } */
 }

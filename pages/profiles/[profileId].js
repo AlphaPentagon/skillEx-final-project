@@ -1,52 +1,55 @@
 import prisma from "../../prisma/client";
 import ProfileInfo from "../../src/components/ProfileInfo";
 import Header from "../../src/components/Header/index";
-import Avatar from "../../src/components/Avatar/index";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0";
-import styles from "../../src/components/Avatar/avatar.module.css";
+import avatarStyles from "../../src/components/Avatar/avatar.module.css";
+import styles from "../../styles/profileId.module.css";
 import ProfileMessage from "../../src/components/ProfileMessage";
 import ImageWithFallback from "../../src/components/ImageWithFallBack";
-
-import Link from "next/link";
-import Button from "../../src/components/Button";
+import { useRouter } from "next/router";
 
 export default withPageAuthRequired(function Profile({ profile }) {
-	// console.log("current profile: ", profile);
+  // console.log("current profile: ", profile);
 
-	let imageurl = "/media/images/default-profile.png";
-	if (profile.avatar_url == null) {
-		imageurl = "/media/images/default-profile.png";
-	} else if (profile.avatar_url.startsWith("http")) {
-		imageurl = `${profile.avatar_url}`;
-	} else {
-		imageurl = "/media/images/default-profile.png";
-	}
+  let imageurl = "/media/images/default-profile.png";
+  if (profile.avatar_url == null) {
+    imageurl = "/media/images/default-profile.png";
+  } else if (profile.avatar_url.startsWith("http")) {
+    imageurl = `${profile.avatar_url}`;
+  } else {
+    imageurl = "/media/images/default-profile.png";
+  }
 
-	return (
-		<>
-			<ImageWithFallback
-				className={styles.avatar}
-				name={profile.full_name}
-				width={150}
-				height={150}
-				src={imageurl}
-				fallbackSrc={`/media/images/default-profile.png`}
-				alt="profile picture"
-			/>
-			<Header text={profile.full_name} colour="blue" />
-			<ProfileInfo profile={profile} />
+  const router = useRouter();
 
-			<ProfileMessage profile={profile} />
+  return (
+    <>
+      <a
+        aria-roledescription="Back to search results"
+        className={styles.backButton}
+        onClick={() => {
+          router.back();
+        }}
+      >
+        Back to search results
+      </a>
+      <ImageWithFallback
+        className={avatarStyles.avatar}
+        name={profile.full_name}
+        width={150}
+        height={150}
+        src={imageurl}
+        fallbackSrc={`/media/images/default-profile.png`}
+        alt="profile picture"
+      />
+      <div className={styles.padding}></div>
+      <Header text={profile.full_name} colour="blue" />
 
-			<Link href="/discover">
-				<a aria-label="discover">
-					<p style={{ textDecoration: "underline" }}>
-						Back to Search tutors
-					</p>
-				</a>
-			</Link>
-		</>
-	);
+      <ProfileInfo profile={profile} />
+
+      <ProfileMessage profile={profile} />
+    </>
+  );
 });
 
 // /* needed for data fetching before rendering - creates static versions of each page/path
@@ -88,12 +91,12 @@ export default withPageAuthRequired(function Profile({ profile }) {
 // }
 
 export async function getServerSideProps(context) {
-	const { params } = context;
-	const data = await prisma.profiles.findUnique({
-		where: { id: Number(params.profileId) },
-	});
+  const { params } = context;
+  const data = await prisma.profiles.findUnique({
+    where: { id: Number(params.profileId) },
+  });
 
-	return {
-		props: { profile: { ...data } },
-	};
+  return {
+    props: { profile: { ...data } },
+  };
 }
