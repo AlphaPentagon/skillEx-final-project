@@ -1,6 +1,6 @@
 import styles from "./ProfileCard.module.css";
 import Link from "next/link";
-
+import { useRouter } from "next/router";
 import ImageWithFallback from "../ImageWithFallBack";
 
 const ProfileCard = ({
@@ -11,6 +11,13 @@ const ProfileCard = ({
   bio,
   image,
 }) => {
+  // stores the current page location in local storage, so that the profileInfo page can route users back to their previous search history
+  // this instead of using router.back() on the profile card - as if the user was forced to login before landing on the profileId page, they will be routed back to an autho0 error page instead, which is bad for user experience
+  const router = useRouter();
+  const setBacklocation = () => {
+    window.localStorage.setItem("path", router.asPath);
+  };
+
   let imageurl = "/media/images/default-profile.png";
   if (image == null) {
     imageurl = "/media/images/default-profile.png";
@@ -19,6 +26,7 @@ const ProfileCard = ({
   } else {
     imageurl = "/media/images/default-profile.png";
   }
+
   return (
     <div className={styles.profileCard}>
       <div className={styles.imageContainer}>
@@ -42,7 +50,7 @@ const ProfileCard = ({
         <p className={styles.bio}>{bio}</p>
       </div>
       <Link href={`/profiles/${id}`}>
-        <div className={styles.buttonContainer}>
+        <div className={styles.buttonContainer} onClick={setBacklocation}>
           Get in Touch
           {/* <Button className={styles.button} text="Get in touch" type="profileCardButton" /> */}
         </div>
