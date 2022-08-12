@@ -60,6 +60,9 @@
 .signUpButton:hover {
   background-color: var(--terraCotta);
 }
+.aboutUs {
+  text-align: center;
+}
 
 .bothButtons {
   display: flex;
@@ -78,6 +81,9 @@
     width: min(100%, 400px);
     justify-self: center;
     border-radius: 0.5rem;
+  }
+  .aboutUs {
+    font-size: 1.3rem;
   }
 }
 /* .container {
