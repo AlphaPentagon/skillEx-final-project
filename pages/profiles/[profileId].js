@@ -28,7 +28,7 @@ export default withPageAuthRequired(function Profile({ profile }) {
         aria-roledescription="Back to search results"
         className={styles.backButton}
         onClick={() => {
-          router.back();
+          router.push(localStorage.getItem("path"));
         }}
       >
         Back to search results
