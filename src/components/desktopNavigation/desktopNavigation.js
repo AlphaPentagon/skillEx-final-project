@@ -34,7 +34,7 @@ export default function DesktopNavBar() {
             <li>
               <Link href="/api/auth/signup">
                 <a className={styles.button} title="Sign up">
-                  SignUp
+                  Sign up
                 </a>
               </Link>
             </li>

@@ -30,15 +30,14 @@ const AboutUs = () => {
 						</div>
 						<div className={styles.aboutUsContainer}>
 							<h3 className={styles.aboutUs}>
-								Have you ever wanted to learn a new skill? Or maybe you
-								want to share your skills with others?
-								<p>
-									SkillEx lets you search our community of volunteer
-									mentors and keen students, make contact and organise
-									1-2-1 sessions to share skills and knowhow.
-								</p>
-								Browse through our categories, find a member that suits
-								your needs and drop them a message.
+							Have you ever wanted to learn a new skill? Or Perhaps you have a hidden talent that you would like to share with others?
+
+						<p>SkillEx is a community of volunteer teachers and keen learners, We have a simple and easy to use platform which allows you to share skills and KNOWHOW!</p>
+
+Browse through our categories and simply find a member that suits your needs and send them a message. 
+
+Start your journey now by visiting our Discover Page
+
 								<p className={styles.startYourJourney}>
 									Start your journey below by visiting our discover
 									page.
@@ -62,7 +61,7 @@ const AboutUs = () => {
 											<a>
 												<Button
 													className={styles.signUpButton}
-													text="Sign Up"
+													text="Sign up"
 													type="signUpBorderButton"
 												></Button>
 											</a>

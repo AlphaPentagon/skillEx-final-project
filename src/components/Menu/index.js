@@ -93,7 +93,7 @@ export default function Menu() {
                     toggleMenu();
                   }}
                 >
-                  Log in
+                  Login
                 </a>
               </>
             )}

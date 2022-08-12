@@ -43,4 +43,9 @@
     width: 35%;
   }
 
+  .description:hover{
+    background-color: var(--blue);
+    cursor: pointer;
+  }
+
 }

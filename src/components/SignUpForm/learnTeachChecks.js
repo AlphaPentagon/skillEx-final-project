@@ -33,9 +33,9 @@ export default function LearnTeachChecks() {
                 type="checkbox"
                 name="learn"
                 value={item}
-                onClick={() => {
-                  setIsSkills(true);
-                }}
+                // onClick={() => {
+                //   setIsSkills(true);
+                // }}
               />
               <span className={styles.teach} />
             </label>
@@ -47,9 +47,9 @@ export default function LearnTeachChecks() {
                 type="checkbox"
                 name="teach"
                 value={item}
-                onClick={() => {
-                  setIsSkills(true);
-                }}
+                // onClick={() => {
+                //   setIsSkills(true);
+                // }}
               />
               <span className={styles.learn} />
             </label>
