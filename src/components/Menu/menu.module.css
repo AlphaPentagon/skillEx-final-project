@@ -1,11 +1,17 @@
-.menuCloseImage {
-	width: 60px;
-	height: 60px;
-}
 .menu {
 	height: auto;
 	width: 20%;
 	cursor: pointer;
+}
+
+.menuOpenImage {
+	width: 60px;
+	height: 60px;
+}
+
+.menuCloseImage {
+	width: 100px;
+	height: 100px;
 }
 
 .menuClose {
