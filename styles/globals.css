@@ -15,16 +15,19 @@
 @font-face {
   font-family: "mainLogo";
   src: url("/Fonts/FrederickatheGreat-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "subTitle";
   src: url("/Fonts/Hyperjump ExtraBold.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "copyFont";
   src: url("/Fonts/Hyperjump Regular.otf");
+  font-display: swap;
 }
 
 body {
