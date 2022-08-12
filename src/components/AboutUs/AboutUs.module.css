@@ -12,6 +12,7 @@
   justify-content: center;
 }
 
+
 .aboutUs {
   background-color: var(--terraCotta);
   color: var(--cream);
@@ -30,9 +31,12 @@
   border-radius: 0.5rem;
 }
 
+
 .image {
   max-width: 100%;
 }
+
+
 
 .textContainer {
   display: flex;
@@ -110,7 +114,7 @@
 
   .image {
     border-radius: 0.3rem;
-    width: 1000px;
+    width: 500px;
   }
 
   .aboutText {
