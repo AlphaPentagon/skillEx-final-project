@@ -8,10 +8,10 @@ const ProfileMessage = ({ profile }) => {
 
   const handleSend = (event) => {
     event.preventDefault();
-    console.log(text);
+    //console.log(text);
     setText("");
     setMessageSent(true);
-    console.log(messageSent);
+    //console.log(messageSent);
   };
 
   const handleChange = (event) => {
@@ -23,12 +23,16 @@ const ProfileMessage = ({ profile }) => {
       <form className={styles.profileInfoForm} onSubmit={handleSend}>
         <textarea
           onChange={handleChange}
-          placeholder="Type your message here..."
+          placeholder={`Send a message to ${profile.preferred_name}...`}
           value={text}
         ></textarea>
         <Button type="profileInfoButton" text="Send" />
       </form>
-      <h3>{messageSent ? "Your message has been sent!" : null}</h3>
+      <h3>
+        {messageSent
+          ? `Your message has been sent to ${profile.preferred_name} !`
+          : null}
+      </h3>
     </div>
   );
 };

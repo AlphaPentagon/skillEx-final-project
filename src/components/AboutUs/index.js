@@ -6,8 +6,9 @@ import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0";
 
 const AboutUs = () => {
-	// Auth0
-	const { user } = useUser();
+  // Auth0
+  const { user } = useUser();
+
 
 	return (
 		<div className={styles.container}>

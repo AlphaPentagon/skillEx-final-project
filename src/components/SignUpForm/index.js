@@ -13,6 +13,7 @@ export default function SignUpForm() {
   }
 
   async function handleSubmit(e) {
+    e.preventDefault();
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
     let imageUrl = document.querySelector("#imageUrl").value;
@@ -48,10 +49,11 @@ export default function SignUpForm() {
 
       body: JSON.stringify(profile),
     });
+    window.location.href = "/profiles/my-profile";
   }
 
   return (
-    <form className={styles.signUpSubContainer} action="/profiles/my-profile">
+    <form className={styles.signUpSubContainer}>
       <NamesAndDetails />
       <LearnTeachChecks />
       <div className={styles.termsContainer}>

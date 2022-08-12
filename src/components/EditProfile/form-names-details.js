@@ -1,6 +1,6 @@
 import styles from "./EditProfile.module.css";
 
-export default function NamesAndDetails() {
+export default function NamesAndDetails({ profile }) {
   return (
     <form className={styles.container}>
       <label className={styles.label} for="fullName">
@@ -11,18 +11,18 @@ export default function NamesAndDetails() {
         id="fullName"
         name="fullName"
         className={styles.inputField}
-        placeholder="e.g. Jane Smith"
+        placeholder={profile.full_name}
       />
 
       <label className={styles.label} for="username">
-        Preffered name:
+        Preferred name:
       </label>
       <input
         type="text"
         id="username"
         name="username"
         className={styles.inputField}
-        placeholder="e.g. Jane"
+        placeholder={profile.preferred_name}
       />
 
       <label className={styles.label} for="imageUrl">
@@ -33,7 +33,7 @@ export default function NamesAndDetails() {
         id="imageUrl"
         name="imageUrl"
         className={styles.inputField}
-        placeholder="e.g. https://www.github.com/githubprofile.png"
+        placeholder={profile.avatar_url}
       />
 
       <label className={styles.label} id={styles.descLabel} for="description">
@@ -44,7 +44,7 @@ export default function NamesAndDetails() {
         type="text"
         name="description"
         id={styles.description}
-        placeholder="Please introduce yourself to the Skillex community here."
+        placeholder={profile.bio}
       />
 
       {/* <button className={styles.uploadPhotoButton}>Upload Photo</button> */}
