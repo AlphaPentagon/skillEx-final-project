@@ -24,9 +24,9 @@ const AboutUs = () => {
                 src="/media/images/AboutUsNew.mp4"
                 alt="diagram showing how skillswapping works"
                 // className={styles.image}
-                width={500}
+                width={380}
                 height={250}
-             controls />
+              controls />
             </div>
             <div className={styles.aboutUsContainer}>
               <h3 className={styles.aboutUs}>
