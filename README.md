@@ -1,4 +1,8 @@
-![Logo](https://skill-ex.vercel.app/media/icons/LogoMain.svg)
+<!-- ![Logo](https://skill-ex.vercel.app/media/icons/LogoMain.svg) -->
+
+
+<img src="./public/media/icons/LogoMainWhiteBackground.jpg" width="100%" />
+
 
 ## School of Code Bootcamp 12
 
