@@ -19,7 +19,7 @@ export default function Home() {
 				<link rel="icon" href="/LightBulbFAVICON.ico" />
 			</Head>
 
-			<Header text="Exchanging skills and knowhow made easy for FREE!" />
+			<Header text="Exchange skills & knowhow for FREE!" />
 			{/* <p className={styles.sloganText}>
         Exchanging skills and knowhow made easy for FREE!
       </p> */}

@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Layout from "../src/components/Layout/Layout";
 import Head from "next/head";
+import PageWrapper from "../src/components/Pagewrapper";
 //Auth0
 import { UserProvider } from "@auth0/nextjs-auth0";
 
@@ -15,9 +16,11 @@ function MyApp({ Component, pageProps }) {
 				/>
 			</Head>
 			<UserProvider>
-				<Layout>
-					<Component {...pageProps} />
-				</Layout>
+				<PageWrapper>
+					<Layout>
+						<Component {...pageProps} />
+					</Layout>
+				</PageWrapper>
 			</UserProvider>
 		</>
 	);

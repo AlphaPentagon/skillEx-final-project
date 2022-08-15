@@ -3,13 +3,13 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
 	projectId: "rbyncf",
 	defaultCommandTimeout: 3000,
-	viewportHeight: 1000,
-	viewportWidth: 1000,
 
 	e2e: {
 		baseUrl: "https://skill-ex.vercel.app",
-		experimentalSessionAndOrigin: true,
+		viewportWidth: 390,
+		viewportHeight: 844,
 		defaultCommandTimeout: 500,
+		experimentalSessionAndOrigin: true,
 		devServer: {
 			framework: "next",
 			bundler: "webpack",
