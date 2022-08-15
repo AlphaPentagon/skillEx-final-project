@@ -1,26 +1,30 @@
 .sloganText {
-  background-color: var(--terraCotta);
-  color: var(--cream);
-  width: 100%;
-  padding-inline: 3rem;
-  padding-block: 0.5rem;
-  margin: 0.1rem 0 0 0;
+	background-color: var(--terraCotta);
+	color: var(--cream);
+	width: 100%;
+	padding-inline: 3rem;
+	padding-block: 0.5rem;
+	margin: 0.1rem 0 0 0;
+}
+
+.homeHeader h1 {
+	text-transform: none;
 }
 
 .discoverHeading {
-  color: var(--darkBrown);
-  margin: 1rem 0 0.5rem 0;
-  padding-top: 1.4rem;
+	color: var(--darkBrown);
+	margin: 1rem 0 0.5rem 0;
+	padding-top: 1.4rem;
 }
 @media only screen and (min-width: 800px) {
-  .sloganText {
-    background-color: var(--terraCotta);
-    font-size: 1.7rem;
-    color: var(--cream);
-    width: 100%;
-    padding-inline: 3rem;
-    padding-block: 0.5rem;
-    margin: 0.1rem 0 0 0;
-    margin-bottom: 0.8rem;
-  }
+	.sloganText {
+		background-color: var(--terraCotta);
+		font-size: 1.7rem;
+		color: var(--cream);
+		width: 100%;
+		padding-inline: 3rem;
+		padding-block: 0.5rem;
+		margin: 0.1rem 0 0 0;
+		margin-bottom: 0.8rem;
+	}
 }

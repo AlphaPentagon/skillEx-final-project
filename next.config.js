@@ -19,6 +19,8 @@ const nextConfig = {
 			"upload.wikimedia.org",
 			"d1csarkz8obe9u.cloudfront.net",
 			"www.playbookux.com",
+			"www.nicepng.com",
+			"www.themoviedb.org",
 		],
 	},
 };
