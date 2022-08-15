@@ -17,7 +17,9 @@ export default function SignUpForm() {
     let fullName = document.querySelector("#fullName").value;
     let username = document.querySelector("#username").value;
     let imageUrl = document.querySelector("#imageUrl").value;
-    let description = document.querySelector("[name='description']").value;
+    let description = document.querySelector(
+      "textarea[name='description']"
+    ).value;
     let learnAll = [];
     let teachAll = [];
     let learn = document.querySelectorAll("input[name='learn']:checked");
