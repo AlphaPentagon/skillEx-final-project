@@ -14,27 +14,27 @@ export default function Menu() {
 		setMenuOpen(!menuOpen);
 	};
 
-	const [currentProfile, setCurrentProfile] = useState({});
-	useEffect(() => {
-		const getUserID = async () => {
-			const response = await fetch("/api/auth/me");
-			const data = await response.json();
-			const profileId = data.sub;
-			const url = `/api/profiles/getUser/${profileId}`;
+	// const [currentProfile, setCurrentProfile] = useState({});
+	// useEffect(() => {
+	// 	const getUserID = async () => {
+	// 		const response = await fetch("/api/auth/me");
+	// 		const data = await response.json();
+	// 		const profileId = data.sub;
+	// 		const url = `/api/profiles/getUser/${profileId}`;
 
-			fetch(url)
-				.then((res) => res.json())
-				.then((data) => {
-					setCurrentProfile(data[0]);
-				});
-		};
-		getUserID();
-	}, []);
+	// 		fetch(url)
+	// 			.then((res) => res.json())
+	// 			.then((data) => {
+	// 				setCurrentProfile(data[0]);
+	// 			});
+	// 	};
+	// 	getUserID();
+	// }, []);
 
 	return (
 		<>
 			<div id="menu">
-				{!menuOpen && !user && (
+				{/* {!menuOpen && !user && (
 					<div className={styles.menu} onClick={toggleMenu}>
 						<Image
 							className={styles.menuOpenImage}
@@ -55,7 +55,20 @@ export default function Menu() {
 							height={90}
 						/>
 					</div>
+				)} */}
+
+				{!menuOpen && (
+					<div className={styles.menu} onClick={toggleMenu}>
+						<Image
+							className={styles.menuOpenImage}
+							src="/media/icons/menuIcon.png"
+							alt="open menu icon"
+							width={90}
+							height={90}
+						/>
+					</div>
 				)}
+
 				{menuOpen && (
 					<div className={styles.modal} onClick={toggleMenu}>
 						<div className={styles.menuClose}>
@@ -67,7 +80,7 @@ export default function Menu() {
 								height={60}
 							/>
 						</div>
-						{user && (
+						{/* {user && (
 							<>
 								<p className={styles.pageLinks}>
 									Hi, {currentProfile.preferred_name}!
@@ -80,7 +93,7 @@ export default function Menu() {
 									width={90}
 								/>
 							</>
-						)}
+						)} */}
 
 						<ul className={styles.pageLinks}>
 							<Link href="/">
