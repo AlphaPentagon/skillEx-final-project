@@ -61,7 +61,7 @@ export default function Menu() {
 					<div className={styles.menu} onClick={toggleMenu}>
 						<Image
 							className={styles.menuOpenImage}
-							src="/media/icons/menuOpen.png"
+							src="/media/icons/menuIcon.png"
 							alt="open menu icon"
 							width={90}
 							height={90}
