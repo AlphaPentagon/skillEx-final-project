@@ -16,7 +16,7 @@ export default function NamesAndDetails() {
       />
 
       <label className={styles.label} for="username">
-        Preffered name:
+        Preferred name:
       </label>
       <input
         type="text"

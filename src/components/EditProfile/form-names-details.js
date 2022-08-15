@@ -11,7 +11,7 @@ export default function NamesAndDetails({ profile }) {
         id="fullName"
         name="fullName"
         className={styles.inputField}
-        placeholder={profile.full_name}
+        defaultValue={profile.full_name}
       />
 
       <label className={styles.label} for="username">
@@ -22,7 +22,7 @@ export default function NamesAndDetails({ profile }) {
         id="username"
         name="username"
         className={styles.inputField}
-        placeholder={profile.preferred_name}
+        defaultValue={profile.preferred_name}
       />
 
       <label className={styles.label} for="imageUrl">
@@ -33,7 +33,7 @@ export default function NamesAndDetails({ profile }) {
         id="imageUrl"
         name="imageUrl"
         className={styles.inputField}
-        placeholder={profile.avatar_url}
+        defaultValue={profile.avatar_url}
       />
 
       <label className={styles.label} id={styles.descLabel} for="description">
@@ -44,7 +44,7 @@ export default function NamesAndDetails({ profile }) {
         type="text"
         name="description"
         id={styles.description}
-        placeholder={profile.bio}
+        defaultValue={profile.bio}
       />
 
       {/* <button className={styles.uploadPhotoButton}>Upload Photo</button> */}
