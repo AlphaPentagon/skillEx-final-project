@@ -49,7 +49,7 @@ const skills = [
   },
   {
     skill_id: 9,
-    skill_name: "martial-arts",
+    skill_name: "martial arts",
     image: "/media/categories/martialarts.jpg",
     description: "Karate fight",
   },
