@@ -12,6 +12,8 @@ Our skill sharing platform, SkillEx, provides an opportunity for people to upski
 
 The 1:1 delivery model will improve learning outcomes and learner engagement when compared with passive learning resources (e.g. YouTube) while enabling human connection and interaction for those who are socially isolated.
 
+[Demo](https://skill-ex.vercel.app/)
+
 ## Features
 
 - Create new user & edit existing user profile
